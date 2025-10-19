@@ -1,0 +1,266 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">.dstreet-body-container {
+            font-family: 'Arial', sans-serif;
+            background: #fff;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .dstreet-header {
+            color: #0066cc;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .dstreet-intro {
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: #333;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+            border-radius: 12px;
+            border: 2px solid #0066cc;
+        }
+
+        .dstreet-highlight {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        /* Image carousel wrapper */
+        .dstreet-carousel-wrapper {
+            max-width: 1000px;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 0.5rem;
+            padding: 0 10px;
+        }
+
+        .dstreet-carousel-bar {
+            width: 6px;
+            height: 450px;
+            background: linear-gradient(180deg, #ffbf3c, #e6a829);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 850px) {
+            .dstreet-carousel-bar {
+                height: 300px;
+            }
+        }
+
+        /* Image carousel */
+        .dstreet-carousel {
+            max-width: 800px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            height: 450px;
+            flex-shrink: 1;
+        }
+
+        @media (max-width: 850px) {
+            .dstreet-carousel {
+                height: 300px;
+            }
+        }
+
+        .dstreet-carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            border-radius: 12px;
+        }
+
+        .dstreet-carousel img.active {
+            opacity: 1;
+        }
+
+        /* Donation items section */
+        .dstreet-items-section {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff4e6 100%);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 3px solid #ffbf3c;
+            margin: 2rem auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 15px rgba(255, 191, 60, 0.3);
+        }
+
+        .dstreet-items-section h4 {
+            color: #002856;
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .dstreet-items-grid {
+            display: grid;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+            text-align: left;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .dstreet-items-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        .dstreet-items-column {
+            background: rgba(255, 255, 255, 0.6);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 2px solid rgba(255, 191, 60, 0.3);
+        }
+
+        .dstreet-items-column h5 {
+            color: #002856;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .dstreet-items-column ul {
+            margin: 0;
+            padding-left: 1.5rem;
+            list-style-type: circle;
+        }
+
+        .dstreet-items-column li {
+            margin: 0.6rem 0;
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.4;
+        }
+
+        /* Contact box */
+        .dstreet-contact-box {
+            background: linear-gradient(135deg, #e6f3ff 0%, #f0f8ff 100%);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 3px solid #0066cc;
+            margin: 2rem auto;
+            max-width: 1000px;
+            box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+        }
+
+        .dstreet-contact-box h4 {
+            color: #002856;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .dstreet-phone {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0066cc;
+            margin: 1rem 0;
+        }
+</style>
+<div class="dstreet-body-container">
+	<div class="dstreet-intro">
+		<p><strong>D Street Shelter is looking for volunteers!</strong></p>
+
+		<p>Located at <span class="dstreet-highlight">317 E 15th St.</span>, they are a 50 bed capacity shelter that is open <span class="dstreet-highlight">7 days a week, 24 hours per day</span>. The shelter is accepting volunteers to use their kitchen to prepare dinner and serve on site. They serve a light breakfast, lunch and dinner and accept food donations, as well.</p>
+	</div>
+
+	<div class="dstreet-carousel-wrapper">
+		<div class="dstreet-carousel-bar">&nbsp;</div>
+
+		<div class="dstreet-carousel"><img alt="D Street Shelter" class="active" src="/sites/cec.ucmerced.edu/files/images/dstreetshelter1.jpg" /> <img alt="D Street Shelter" src="/sites/cec.ucmerced.edu/files/images/dstreetshelter2.jpg" /> <img alt="D Street Shelter" src="/sites/cec.ucmerced.edu/files/images/dstreetshelter3.jpg" /></div>
+
+		<div class="dstreet-carousel-bar">&nbsp;</div>
+	</div>
+
+	<div class="dstreet-items-section">
+		<h4>Donations That Would Be Appreciated</h4>
+
+		<div class="dstreet-items-grid">
+			<div class="dstreet-items-column">
+				<h5>Bread &amp; Grains</h5>
+
+				<ul>
+					<li>White sliced bread</li>
+					<li>Hot dog buns</li>
+					<li>Pasta noodles</li>
+					<li>Spaghetti</li>
+					<li>Cereal</li>
+				</ul>
+			</div>
+
+			<div class="dstreet-items-column">
+				<h5>Proteins &amp; Dairy</h5>
+
+				<ul>
+					<li>Hot dogs</li>
+					<li>Lunch meat</li>
+					<li>Hamburger</li>
+					<li>Tuna</li>
+					<li>Peanut butter</li>
+					<li>Milk</li>
+				</ul>
+			</div>
+
+			<div class="dstreet-items-column">
+				<h5>Produce &amp; Other</h5>
+
+				<ul>
+					<li>Fruit</li>
+					<li>Lettuce</li>
+					<li>Vegetables</li>
+					<li>Pasta sauce</li>
+					<li>Jelly</li>
+				</ul>
+			</div>
+		</div>
+
+		<p style="margin-top: 2rem; font-size: 0.95rem; color: #666; font-style: italic;">All food donations are greatly appreciated and help us serve our community!</p>
+	</div>
+
+	<div class="dstreet-contact-box">
+		<h4>Ready to volunteer or donate?</h4>
+
+		<p>Please contact the D Street Homeless Shelter to find out about an upcoming service opportunity.</p>
+
+		<div class="dstreet-phone">(209) 725-8188</div>
+
+		<p style="margin-top: 1.5rem; font-weight: bold; color: #0066cc;">Thank you for making a difference!</p>
+	</div>
+</div>
+<script>
+        // Image carousel rotation
+        let currentImage = 0;
+        const images = document.querySelectorAll('.dstreet-carousel img');
+        
+        function rotateImages() {
+            images[currentImage].classList.remove('active');
+            currentImage = (currentImage + 1) % images.length;
+            images[currentImage].classList.add('active');
+        }
+        
+        // Rotate images every 3 seconds
+        setInterval(rotateImages, 3000);
+    </script>

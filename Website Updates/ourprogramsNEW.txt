@@ -1,0 +1,161 @@
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">.cec-title-line {
+            border-bottom: 2px solid #E5E5E5;
+            text-align: center;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+            color: #0f2d52;
+        }
+
+        .cec-blocks-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cec-identity-block {
+            border-radius: 16px;
+            padding: 60px 30px;
+            text-align: center;
+            color: white;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cec-identity-block::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(15, 45, 82, 0.65);
+            z-index: 0;
+            transition: background 0.3s ease;
+        }
+
+        .cec-identity-block::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, #dbaa00 0%, #f0c930 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .cec-identity-block:hover::before {
+            opacity: 0.85;
+        }
+
+        .cec-identity-block:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(219, 170, 0, 0.3);
+        }
+
+        .cec-student-block {
+            background-image: url('/sites/cec.ucmerced.edu/files/images/studentsmain.jpg');
+        }
+
+        .cec-corps-block {
+            background-image: url('/sites/cec.ucmerced.edu/files/images/collegecorpsmain.jpg');
+        }
+
+        .cec-partner-block {
+            background-image: url('/sites/cec.ucmerced.edu/files/images/jamboreemain.jpg');
+        }
+
+        .cec-block-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .cec-block-title {
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+            color: white;
+        }
+
+        .cec-block-subtitle {
+            font-size: 32px;
+            opacity: 1;
+            font-weight: 700;
+            color: white;
+            margin: 0;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .cec-blocks-container {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
+            }
+            
+            .cec-identity-block {
+                padding: 50px 25px;
+            }
+            
+            .cec-block-title {
+                font-size: 16px;
+            }
+            
+            .cec-block-subtitle {
+                font-size: 28px;
+            }
+            
+            .cec-title-line {
+                font-size: 24px;
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .cec-identity-block {
+                padding: 40px 20px;
+            }
+            
+            .cec-block-subtitle {
+                font-size: 24px;
+            }
+        }
+</style>
+<div class="cec-blocks-container">
+	<div class="cec-identity-block cec-student-block" onclick="window.location.href='https://cec.ucmerced.edu/students'">
+		<div class="cec-block-content">
+			<h3 class="cec-block-title">I am a</h3>
+
+			<p class="cec-block-subtitle">Student</p>
+		</div>
+	</div>
+
+	<div class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/collegecorps'">
+		<div class="cec-block-content">
+			<h3 class="cec-block-title">I am</h3>
+
+			<p class="cec-block-subtitle">College Corps</p>
+		</div>
+	</div>
+
+	<div class="cec-identity-block cec-partner-block" onclick="window.location.href='https://cec.ucmerced.edu/community-partners'">
+		<div class="cec-block-content">
+			<h3 class="cec-block-title">I am a</h3>
+
+			<p class="cec-block-subtitle">Community Partner</p>
+		</div>
+	</div>
+</div>

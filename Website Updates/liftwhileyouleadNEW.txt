@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lift While You Lead Program</title>
+    <style>
+        .lwyl-page * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .lwyl-page {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .lwyl-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .lwyl-header {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: linear-gradient(135deg, #0f2d52 0%, #1a4573 100%);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(15, 45, 82, 0.3);
+        }
+
+        .lwyl-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+        }
+
+        .lwyl-header p {
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .lwyl-content-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #dbaa00;
+        }
+
+        .lwyl-content-box h2 {
+            color: #0f2d52;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .lwyl-content-box h3 {
+            color: #0f2d52;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .lwyl-content-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.2rem;
+        }
+
+        .lwyl-content-box ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .lwyl-content-box li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .lwyl-content-box strong {
+            color: #0f2d52;
+        }
+
+        .lwyl-highlight-box {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #dbaa00;
+            margin-bottom: 1.5rem;
+        }
+
+        .lwyl-highlight-box p {
+            margin-bottom: 1rem;
+        }
+
+        .lwyl-highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .lwyl-dropdown {
+            margin-bottom: 2rem;
+        }
+
+        .lwyl-dropdown-header {
+            background: linear-gradient(135deg, #0f2d52 0%, #1a4573 100%);
+            color: white;
+            padding: 1.5rem;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(15, 45, 82, 0.2);
+        }
+
+        .lwyl-dropdown-subtitle {
+            font-size: 0.85rem;
+            font-weight: normal;
+            text-transform: none;
+            margin-top: 0.3rem;
+            opacity: 0.9;
+        }
+
+        .lwyl-dropdown-header:hover {
+            background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
+            box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
+        }
+
+        .lwyl-dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-top: none;
+            border-radius: 0 0 8px 8px;
+        }
+
+        .lwyl-dropdown-content.lwyl-active {
+            max-height: 2000px;
+            padding: 1.5rem;
+            margin-top: -8px;
+            overflow-y: auto;
+        }
+
+        .lwyl-session-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            background: #f9f9f9;
+            border-left: 3px solid #dbaa00;
+        }
+
+        .lwyl-session-date {
+            min-width: 80px;
+            text-align: center;
+            background: #0f2d52;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 8px;
+        }
+
+        .lwyl-session-month {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+        }
+
+        .lwyl-session-day {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .lwyl-session-details h4 {
+            color: #0f2d52;
+            margin-bottom: 0.5rem;
+        }
+
+        .lwyl-session-details p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .lwyl-forms-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #dbaa00;
+            margin-top: 2rem;
+        }
+
+        .lwyl-forms-section h3 {
+            color: #0f2d52;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .lwyl-forms-section p {
+            color: #555;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .lwyl-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #0f2d52;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(15, 45, 82, 0.4);
+            text-align: center;
+        }
+
+        .lwyl-button:hover {
+            background: #dbaa00;
+            color: #0f2d52 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(219, 170, 0, 0.5);
+        }
+
+        .lwyl-button-center {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .lwyl-page {
+                margin-right: 40px;
+            }
+
+            .lwyl-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .lwyl-content-box {
+                padding: 1.5rem;
+            }
+
+            .lwyl-session-item {
+                flex-direction: column;
+            }
+
+            .lwyl-session-date {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lwyl-page">
+        <div class="lwyl-container">
+            <div class="lwyl-content-box">
+                <h2>About the Program</h2>
+                <p>Lift While You Lead (LWYL) connects undergraduate students at UC Merced with students in Merced and the surrounding Central Valley area. UC Merced students serve as <strong>mentors to high school students</strong> enrolled in Women's Studies classes at <strong>Golden Valley High School</strong> and <strong>Yosemite High School</strong>.</p>
+                
+                <p>The small group mentoring relationship provides mentors and mentees with support, guidance, and encouragement – all with an emphasis on health, education, and leadership. Beyond small group mentoring, all participants are also strongly encouraged to participate in Women's Programs activities and other events related to the theme Lift While You Lead.</p>
+
+                <div class="lwyl-highlight-box">
+                    <p><strong>The Lift While You Lead Women's Program has been federally recognized by President Obama's administration.</strong></p>
+                    <p><strong>By participating in the Lift While You Lead program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
+                </div>
+
+                <h3>Time Commitments</h3>
+                <ul>
+                    <li>Runs every <strong>Wednesday or Friday</strong> (with exception to Holidays)</li>
+                    <li>50 minute class time plus commute time (per week)</li>
+                    <li>1-2 hours of program planning with your group (per week) unless group decides to assign different members days to plan</li>
+                    <li>Approximately 3 hours per week for 10 weeks of total commitment</li>
+                </ul>
+
+                <h3>When & Where</h3>
+                <p><strong>Golden Valley High School or Yosemite High School in Merced, CA</strong></p>
+                <p>Ms. Delgado's Women's Studies Class on:</p>
+                <ul>
+                    <li>Friday, 4th Period at Golden Valley HS (11:18am-12:06pm)</li>
+                    <li>Friday, 5th Period at Golden Valley HS (12:11am-12:59pm)</li>
+                    <li>Wednesday, 7th Period at Yosemite High School (1:38pm - 2:20pm)</li>
+                </ul>
+                <p>Volunteers will be able to select one or more class periods to attend.</p>
+            </div>
+
+            <div class="lwyl-content-box">
+                <div class="lwyl-dropdown">
+                    <div class="lwyl-dropdown-header" onclick="toggleDropdown()">
+                        Start of Semester Required Info Sessions
+                        <div class="lwyl-dropdown-subtitle">You only have to attend one</div>
+                    </div>
+                    <div class="lwyl-dropdown-content" id="sessionsDropdown">
+                        
+                        <div class="lwyl-session-item">
+                            <div class="lwyl-session-date">
+                                <div class="lwyl-session-month">Sept</div>
+                                <div class="lwyl-session-day">2</div>
+                            </div>
+                            <div class="lwyl-session-details">
+                                <h4>Tuesday</h4>
+                                <p>12:00 PM - 1:00 PM via Zoom (ID: 838 6611 3515)</p>
+                                <p>Zoom Link: https://ucmerced.zoom.us/j/83866113515</p>
+                            </div>
+                        </div>
+
+                        <div class="lwyl-session-item">
+                            <div class="lwyl-session-date">
+                                <div class="lwyl-session-month">Sept</div>
+                                <div class="lwyl-session-day">3</div>
+                            </div>
+                            <div class="lwyl-session-details">
+                                <h4>Wednesday</h4>
+                                <p>10:30 AM - 11:30 AM @ Kolligan Library 362</p>
+                            </div>
+                        </div>
+
+                        <div class="lwyl-session-item">
+                            <div class="lwyl-session-date">
+                                <div class="lwyl-session-month">Sept</div>
+                                <div class="lwyl-session-day">9</div>
+                            </div>
+                            <div class="lwyl-session-details">
+                                <h4>Tuesday</h4>
+                                <p>11:30 AM - 12:30 PM @ Granite 172</p>
+                            </div>
+                        </div>
+
+                        <div class="lwyl-session-item">
+                            <div class="lwyl-session-date">
+                                <div class="lwyl-session-month">Sept</div>
+                                <div class="lwyl-session-day">11</div>
+                            </div>
+                            <div class="lwyl-session-details">
+                                <h4>Thursday</h4>
+                                <p>1:00 PM - 2:00 PM @ COB2 290</p>
+                            </div>
+                        </div>
+
+                        <div class="lwyl-session-item">
+                            <div class="lwyl-session-date">
+                                <div class="lwyl-session-month">Sept</div>
+                                <div class="lwyl-session-day">12</div>
+                            </div>
+                            <div class="lwyl-session-details">
+                                <h4>Mandatory Training</h4>
+                                <p>3:00 PM - 7:00 PM @ Granite Pass 162</p>
+                                <p>(Food will be provided!)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lwyl-forms-section">
+                <h3>Required Service Forms</h3>
+                <p>You must complete these required service forms to participate in the program.</p>
+                <div class="lwyl-button-center">
+                    <a href="https://cec.ucmerced.edu/required-service-forms" class="lwyl-button">Complete Forms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('sessionsDropdown');
+            dropdown.classList.toggle('lwyl-active');
+        }
+    </script>
+</body>
+</html>
