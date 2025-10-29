@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lift While You Lead Program</title>
-    <style>
-        .lwyl-page * {
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">.lwyl-page * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -15,12 +10,31 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             color: #333;
+            background-image: url('/sites/cec.ucmerced.edu/files/images/lwyllogo.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: 60%;
+            position: relative;
+        }
+
+        .lwyl-page::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: -1;
         }
 
         .lwyl-container {
             width: 100%;
             margin: 0 auto;
             padding: 0;
+            position: relative;
+            z-index: 1;
         }
 
         .lwyl-header {
@@ -47,7 +61,7 @@
         }
 
         .lwyl-content-box {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             padding: 2.5rem;
             border-radius: 12px;
             margin-bottom: 2rem;
@@ -194,7 +208,7 @@
         }
 
         .lwyl-forms-section {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             padding: 2rem;
             border-radius: 12px;
             box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -244,6 +258,7 @@
         @media (max-width: 768px) {
             .lwyl-page {
                 margin-right: 40px;
+                background-size: 70%;
             }
 
             .lwyl-header h1 {
@@ -262,124 +277,82 @@
                 min-width: auto;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="lwyl-page">
-        <div class="lwyl-container">
-            <div class="lwyl-content-box">
-                <h2>About the Program</h2>
-                <p>Lift While You Lead (LWYL) connects undergraduate students at UC Merced with students in Merced and the surrounding Central Valley area. UC Merced students serve as <strong>mentors to high school students</strong> enrolled in Women's Studies classes at <strong>Golden Valley High School</strong> and <strong>Yosemite High School</strong>.</p>
-                
-                <p>The small group mentoring relationship provides mentors and mentees with support, guidance, and encouragement – all with an emphasis on health, education, and leadership. Beyond small group mentoring, all participants are also strongly encouraged to participate in Women's Programs activities and other events related to the theme Lift While You Lead.</p>
+</style>
+<div class="lwyl-page">
+	<div class="lwyl-container">
+		<div class="lwyl-content-box">
+			<p>Lift While You Lead (LWYL) connects undergraduate students at UC Merced with students in Merced and the surrounding Central Valley area. UC Merced students serve as <strong>mentors to high school students</strong> enrolled in Women&#39;s Studies classes at <strong>Golden Valley High School</strong> and <strong>Yosemite High School</strong>.</p>
 
-                <div class="lwyl-highlight-box">
-                    <p><strong>The Lift While You Lead Women's Program has been federally recognized by President Obama's administration.</strong></p>
-                    <p><strong>By participating in the Lift While You Lead program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
-                </div>
+			<p>The small group mentoring relationship provides mentors and mentees with support, guidance, and encouragement &ndash; all with an emphasis on health, education, and leadership. Beyond small group mentoring, all participants are also strongly encouraged to participate in Women&#39;s Programs activities and other events related to the theme Lift While You Lead.</p>
 
-                <h3>Time Commitments</h3>
-                <ul>
-                    <li>Runs every <strong>Wednesday or Friday</strong> (with exception to Holidays)</li>
-                    <li>50 minute class time plus commute time (per week)</li>
-                    <li>1-2 hours of program planning with your group (per week) unless group decides to assign different members days to plan</li>
-                    <li>Approximately 3 hours per week for 10 weeks of total commitment</li>
-                </ul>
+			<div class="lwyl-highlight-box">
+				<p><strong>The Lift While You Lead Women&#39;s Program has been federally recognized by President Obama&#39;s administration.</strong></p>
 
-                <h3>When & Where</h3>
-                <p><strong>Golden Valley High School or Yosemite High School in Merced, CA</strong></p>
-                <p>Ms. Delgado's Women's Studies Class on:</p>
-                <ul>
-                    <li>Friday, 4th Period at Golden Valley HS (11:18am-12:06pm)</li>
-                    <li>Friday, 5th Period at Golden Valley HS (12:11am-12:59pm)</li>
-                    <li>Wednesday, 7th Period at Yosemite High School (1:38pm - 2:20pm)</li>
-                </ul>
-                <p>Volunteers will be able to select one or more class periods to attend.</p>
-            </div>
+				<p><strong>By participating in the Lift While You Lead program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
+			</div>
 
-            <div class="lwyl-content-box">
-                <div class="lwyl-dropdown">
-                    <div class="lwyl-dropdown-header" onclick="toggleDropdown()">
-                        Start of Semester Required Info Sessions
-                        <div class="lwyl-dropdown-subtitle">You only have to attend one</div>
-                    </div>
-                    <div class="lwyl-dropdown-content" id="sessionsDropdown">
-                        
-                        <div class="lwyl-session-item">
-                            <div class="lwyl-session-date">
-                                <div class="lwyl-session-month">Sept</div>
-                                <div class="lwyl-session-day">2</div>
-                            </div>
-                            <div class="lwyl-session-details">
-                                <h4>Tuesday</h4>
-                                <p>12:00 PM - 1:00 PM via Zoom (ID: 838 6611 3515)</p>
-                                <p>Zoom Link: https://ucmerced.zoom.us/j/83866113515</p>
-                            </div>
-                        </div>
+			<h3>Time Commitments</h3>
 
-                        <div class="lwyl-session-item">
-                            <div class="lwyl-session-date">
-                                <div class="lwyl-session-month">Sept</div>
-                                <div class="lwyl-session-day">3</div>
-                            </div>
-                            <div class="lwyl-session-details">
-                                <h4>Wednesday</h4>
-                                <p>10:30 AM - 11:30 AM @ Kolligan Library 362</p>
-                            </div>
-                        </div>
+			<ul>
+				<li>Runs every <strong>Wednesday or Friday</strong> (with exception to Holidays)</li>
+				<li>50 minute class time plus commute time (per week)</li>
+				<li>1-2 hours of program planning with your group (per week) unless group decides to assign different members days to plan</li>
+				<li>Approximately 3 hours per week for 10 weeks of total commitment</li>
+			</ul>
 
-                        <div class="lwyl-session-item">
-                            <div class="lwyl-session-date">
-                                <div class="lwyl-session-month">Sept</div>
-                                <div class="lwyl-session-day">9</div>
-                            </div>
-                            <div class="lwyl-session-details">
-                                <h4>Tuesday</h4>
-                                <p>11:30 AM - 12:30 PM @ Granite 172</p>
-                            </div>
-                        </div>
+			<h3>When &amp; Where</h3>
 
-                        <div class="lwyl-session-item">
-                            <div class="lwyl-session-date">
-                                <div class="lwyl-session-month">Sept</div>
-                                <div class="lwyl-session-day">11</div>
-                            </div>
-                            <div class="lwyl-session-details">
-                                <h4>Thursday</h4>
-                                <p>1:00 PM - 2:00 PM @ COB2 290</p>
-                            </div>
-                        </div>
+			<p><strong>Golden Valley High School or Yosemite High School in Merced, CA</strong></p>
 
-                        <div class="lwyl-session-item">
-                            <div class="lwyl-session-date">
-                                <div class="lwyl-session-month">Sept</div>
-                                <div class="lwyl-session-day">12</div>
-                            </div>
-                            <div class="lwyl-session-details">
-                                <h4>Mandatory Training</h4>
-                                <p>3:00 PM - 7:00 PM @ Granite Pass 162</p>
-                                <p>(Food will be provided!)</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+			<p>Ms. Delgado&#39;s Women&#39;s Studies Class on:</p>
 
-            <div class="lwyl-forms-section">
-                <h3>Required Service Forms</h3>
-                <p>You must complete these required service forms to participate in the program.</p>
-                <div class="lwyl-button-center">
-                    <a href="https://cec.ucmerced.edu/required-service-forms" class="lwyl-button">Complete Forms</a>
-                </div>
-            </div>
-        </div>
-    </div>
+			<ul>
+				<li>Friday, 4th Period at Golden Valley HS (11:18am-12:06pm)</li>
+				<li>Friday, 5th Period at Golden Valley HS (12:11am-12:59pm)</li>
+				<li>Wednesday, 7th Period at Yosemite High School (1:38pm - 2:20pm)</li>
+			</ul>
 
-    <script>
+			<p>Volunteers will be able to select one or more class periods to attend.</p>
+		</div>
+
+		<div class="lwyl-content-box">
+			<div class="lwyl-dropdown">
+				<div class="lwyl-dropdown-header" onclick="toggleDropdown()">Start of Semester Required Info Sessions
+					<div class="lwyl-dropdown-subtitle">You only have to attend one</div>
+				</div>
+
+				<div class="lwyl-dropdown-content" id="sessionsDropdown">
+					<div class="lwyl-session-item">
+						<div class="lwyl-session-date">
+							<div class="lwyl-session-month">Month</div>
+
+							<div class="lwyl-session-day">Day</div>
+						</div>
+
+						<div class="lwyl-session-details">
+							<h4>Optional Info Session - M/T/W/T/F</h4>
+
+							<p>00:00 AM/PM - 00:00 AM/PM via Zoom(ID:)/InPerson(Location:)</p>
+
+							<p>Zoom Link: NA</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="lwyl-forms-section">
+			<h3>Required Service Forms</h3>
+
+			<p>You must complete these required service forms to participate in the program.</p>
+
+			<div class="lwyl-button-center"><a class="lwyl-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a></div>
+		</div>
+	</div>
+</div>
+<script>
         function toggleDropdown() {
             const dropdown = document.getElementById('sessionsDropdown');
             dropdown.classList.toggle('lwyl-active');
         }
     </script>
-</body>
-</html>

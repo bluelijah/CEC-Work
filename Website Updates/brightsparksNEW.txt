@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Spark Scholars Program</title>
+    <style>
+        .bsp-page * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bsp-page {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-image: url('/sites/cec.ucmerced.edu/files/images/brightsparkslogoenhanced.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: contain;
+            position: relative;
+        }
+
+        .bsp-page::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: -1;
+        }
+
+        .bsp-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bsp-content-box {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #dbaa00;
+        }
+
+        .bsp-content-box h2 {
+            color: #0f2d52;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bsp-content-box h3 {
+            color: #0f2d52;
+            font-size: 1.4rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .bsp-content-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.2rem;
+        }
+
+        .bsp-content-box ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .bsp-content-box li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .bsp-content-box strong {
+            color: #0f2d52;
+        }
+
+        .bsp-highlight-box {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #dbaa00;
+            margin-bottom: 1.5rem;
+        }
+
+        .bsp-highlight-box p {
+            margin-bottom: 1rem;
+        }
+
+        .bsp-highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .bsp-forms-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #dbaa00;
+            margin-top: 2rem;
+        }
+
+        .bsp-forms-section h3 {
+            color: #0f2d52;
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .bsp-forms-section p {
+            color: #555;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .bsp-button {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: #0f2d52;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(15, 45, 82, 0.4);
+            text-align: center;
+        }
+
+        .bsp-button:hover {
+            background: #dbaa00;
+            color: #0f2d52 !important;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(219, 170, 0, 0.5);
+        }
+
+        .bsp-button-center {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .bsp-iframe-container {
+            margin-top: 2rem;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .bsp-page {
+                margin-right: 20px;
+                background-size: 80%;
+            }
+
+            .bsp-content-box {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bsp-page">
+        <div class="bsp-container">
+            <div class="bsp-content-box">
+                <h2>About the Program</h2>
+
+                <p>Bright Spark Scholars is a donor-funded tutoring program that began in Fall 2024. The program helps elementary students succeed in literacy and mathematics. This two-semester program is a partnership between UC Merced's Community Engagement Center and elementary schools within the City of Merced. Tutors receive curriculum training, transportation to the schools, and support to mentor their tutees in the important skills of literacy and numeracy – skills that help set them up for success later on in their academic, social, and economic lives.</p>
+
+                <div class="bsp-highlight-box">
+                    <p><strong>Each tutor who completes 60 service hours during the semester will receive a $1000 stipend (up to $2000 per academic year).</strong></p>
+
+                    <p><strong>By participating in the Bright Spark Scholars program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation is required for the Community Service Graduation Pin eligibility, which is a semester-long commitment.</p>
+                </div>
+
+                <h3>Pilot Year Success Story</h3>
+
+                <p>During the pilot year (2024–2025), 13 Bright Spark Scholars Tutors worked with K–3 students at Farmdale Elementary School, providing literacy instruction. Each tutor received transportation to the school for their sessions and averaged 6–8 hours per week on tutoring, lesson preparation, and training. Thanks to their dedication and hard work, the average reading level of the students they tutored <strong>increased by 1.2 grade levels</strong>!</p>
+
+                <h3>Expanding for 2025-2026</h3>
+
+                <p>As we're moving on to our 2nd year, we've added <strong>mathematics</strong> as a subject matter and are <strong>doubling</strong> the number of tutors and sites we'll be working with.</p>
+
+                <p><strong>For Fall 2025 - Spring 2026, we have a cohort of 30 tutors who will be working with K-5 students at two schools within the Merced City School District.</strong></p>
+            </div>
+
+            <div class="bsp-content-box">
+                <h2>Become a UCM Bright Spark Scholars Tutor</h2>
+
+                <p>Applications for <strong>Fall 2025-Spring 2026</strong> have <strong>closed</strong>. However, if you are interested in tutoring during the 2026-2027 school year, you can fill out the interest form below.</p>
+
+                <p>All UCM students are welcome to apply to be a part of this program – including AB 540 eligible students! Prospective tutors are required to attend an info session, submit an application (only students who attend an info session will receive access to the application), and receive training.</p>
+
+                <div class="bsp-highlight-box">
+                    <p><strong>Our initial info session period has closed, and we're starting processing applications. If you would like to express interest in the program, and would like to be considered for an ongoing wave of recruitment, should the program need it, please fill out the interest form below:</strong></p>
+                </div>
+
+                <div class="bsp-iframe-container"><iframe height="500px" src="https://ucmerced.az1.qualtrics.com/jfe/form/SV_6WLv0zh05lTA0zs" style="border: none;" width="100%"></iframe></div>
+
+                <p style="text-align: center; margin-top: 1rem;">Click <a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_6WLv0zh05lTA0zs" style="color: #0f2d52; font-weight: bold;">HERE</a> to register if the form above is not working.</p>
+            </div>
+
+            <div class="bsp-forms-section">
+                <h3>Required Service Forms</h3>
+
+                <p>You must complete these required service forms to participate in the program.</p>
+
+                <div class="bsp-button-center"><a class="bsp-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

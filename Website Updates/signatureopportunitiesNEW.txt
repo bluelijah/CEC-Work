@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signature Programs</title>
-    <style>
-        /* One-Time Service Events - Unique CSS Classes */
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">/* One-Time Service Events - Unique CSS Classes */
         .ots-section-headline {
             text-align: center;
             border-bottom: 2px solid #ffbf3c;
@@ -177,52 +172,48 @@
                 margin-right: 20px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="sig-page-container">
-        <p class="ots-intro-text">In addition to providing service hours, we are also happy to present additional community engagement opportunities! This includes informational sessions, awareness events, and philanthropy. Please see below to learn more about our signature opportunities.</p>
+</style>
+<div class="sig-page-container">
+	<p class="ots-intro-text">In addition to providing service hours, we are also happy to present additional community engagement opportunities! This includes informational sessions, awareness events, and philanthropy. Please see below to learn more about our signature opportunities.</p>
 
-        <h3 class="ots-section-headline">Community Service</h3>
+	<h3 class="ots-section-headline">Community Service</h3>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/pathways">Pathways of Public Service and Civic Engagement<br />
-                <span style="font-size: 0.85em; font-weight: normal;">Find the area of community service that works best for you! </span> </a></div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/pathways">Pathways of Public Service and Civic Engagement<br />
+			<span style="font-size: 0.85em; font-weight: normal;">Find the area of community service that works best for you! </span> </a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/psa">Public Service Announcements<br />
-                <span style="font-size: 0.85em; font-weight: normal;">An info session of upcoming opportunities followed by an arts-and-crafts service event </span> </a></div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/psa">Public Service Announcements<br />
+			<span style="font-size: 0.85em; font-weight: normal;">An info session of upcoming opportunities followed by an arts-and-crafts service event </span> </a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Alternative/Spring/Break/2026">Alternative Spring Break 2026<br />
-                <span style="font-size: 0.85em; font-weight: normal;">Learn as guests on Yurok land in this unique experience! </span> </a></div>
-        </div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Alternative/Spring/Break/2026">Alternative Spring Break 2026<br />
+			<span style="font-size: 0.85em; font-weight: normal;">Learn as guests on Yurok land in this unique experience! </span> </a></div>
+	</div>
 
-        <h3 class="ots-section-headline">Events & Happenings</h3>
+	<h3 class="ots-section-headline">Events &amp; Happenings</h3>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/HHAW-23">Hunger & Homelessness Awareness Week<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A national awareness week co-led by multiple UC Merced departments</span></a></div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/HHAW-23">Hunger &amp; Homelessness Awareness Week<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A national awareness week co-led by multiple UC Merced departments</span></a></div>
 
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/psa">Public Service Announcements<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">An info session of upcoming opportunities followed by an arts-and-crafts service event</span></a></div>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/psa">Public Service Announcements<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">An info session of upcoming opportunities followed by an arts-and-crafts service event</span></a></div>
 
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/Donald/A/Strauss/Foundation/Scholarship" target="_blank">Donald A. Strauss Foundation Scholarship Opportunity<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A Scholarship Opportunity for our Service Oriented students!</span></a></div>
-        </div>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/Donald/A/Strauss/Foundation/Scholarship">Donald A. Strauss Foundation Scholarship Opportunity<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A Scholarship Opportunity for our Service Oriented students!</span></a></div>
+	</div>
 
-        <h3 class="ots-section-headline">Philanthropy</h3>
+	<h3 class="ots-section-headline">Philanthropy</h3>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Thanks/for/Giving" target="_blank">Holiday Meals<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A food drive for local families</span></a></div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Thanks/for/Giving">Holiday Meals<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A food drive for local families</span></a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/meals-for-families" target="_blank">Home for the Holidays<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">Support a family</span></a></div>
-        </div>
-    </div>
-</body>
-</html>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/meals-for-families">Home for the Holidays<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">Support a family</span></a></div>
+	</div>
+</div>

@@ -1,0 +1,194 @@
+<style type="text/css">.volunteer-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .volunteer-container p {
+            max-width: 800px;
+            margin: 0 auto 25px auto;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #0077cc;
+        }
+
+        .volunteer-intro-box {
+            background: linear-gradient(135deg, rgba(0, 119, 204, 0.15), rgba(0, 119, 204, 0.05));
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 800px;
+            border: 3px solid #0077cc;
+            box-shadow: 0 4px 15px rgba(0, 119, 204, 0.3);
+        }
+
+        .event-details-box {
+            background: linear-gradient(135deg, rgba(219, 170, 0, 0.15), rgba(219, 170, 0, 0.05));
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px auto;
+            max-width: 800px;
+            border: 3px solid #dbaa00;
+            box-shadow: 0 4px 15px rgba(219, 170, 0, 0.3);
+        }
+
+        .volunteer-roles {
+            background: linear-gradient(135deg, rgba(0, 119, 204, 0.08), rgba(0, 119, 204, 0.03));
+            padding: 35px;
+            border-radius: 15px;
+            margin: 30px auto;
+            max-width: 800px;
+            border: 2px solid #0077cc;
+            box-shadow: 0 3px 12px rgba(0, 119, 204, 0.2);
+        }
+
+        .volunteer-roles h2 {
+            color: #0f2d52;
+            margin-bottom: 25px;
+            font-size: 1.8rem;
+        }
+
+        .roles-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .role-item {
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 8px;
+            border-left: 4px solid #dbaa00;
+        }
+
+        .role-item strong {
+            color: #0f2d52;
+            font-size: 1.1rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .role-item span {
+            color: #555;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        .signup-cta {
+            background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px auto;
+            max-width: 800px;
+            border: 3px solid #dbaa00;
+            box-shadow: 0 6px 20px rgba(219, 170, 0, 0.4);
+        }
+
+        .signup-cta h2 {
+            color: #0f2d52;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .signup-button {
+            display: inline-block;
+            padding: 18px 40px;
+            background: #0f2d52;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(15, 45, 82, 0.4);
+            margin-top: 15px;
+        }
+
+        .signup-button:hover {
+            background: #0077cc;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 119, 204, 0.5);
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: #666;
+            text-align: center;
+            margin: 30px auto 20px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .volunteer-container {
+                padding: 15px;
+            }
+
+            .roles-list {
+                grid-template-columns: 1fr;
+            }
+        }
+</style>
+<div class="volunteer-container">
+	<div class="volunteer-intro-box">
+		<p style="font-size: 1.2rem; margin-bottom: 15px;"><strong>Join us in honoring our fallen heroes!</strong></p>
+
+		<p>We need dedicated volunteers to help make this meaningful memorial race a success. Since 2008, Run for the Fallen has honored those who made the ultimate sacrifice. Your service will directly support this important community event and help keep the memory of our local fallen heroes alive.</p>
+	</div>
+
+	<div class="event-details-box"><span class="highlight" style="color: #dbaa00; font-size: 1.3rem;">EVENT DETAILS</span><br />
+		<br />
+		<strong>Date:</strong> November 9th<br />
+		<strong>Location:</strong> Merced College, 3600 M Street, Merced, CA 95348<br />
+		<em style="color: #666; font-size: 0.9rem;">(Near M St./Yosemite Ave. by the Field of Honor)</em><br />
+		<br />
+		<strong>Event Schedule:</strong><br />
+		Registration: 7:00 AM - 8:15 AM<br />
+		Opening Ceremony: 8:30 AM<br />
+		Kids Race (400m): 8:45 AM<br />
+		5K/10K Start: 9:00 AM<br />
+		<em style="color: #dbaa00;">Rain or Shine Event!</em></div>
+
+	<div class="volunteer-roles">
+		<h2>Ways You Can Help</h2>
+
+		<p style="font-size: 1.05rem; color: #555; margin-bottom: 20px;">Volunteers are essential to making this event successful. Here are some of the tasks where we need your support:</p>
+
+		<div class="roles-list">
+			<div class="role-item"><strong>Event Setup</strong> <span>Setting up registration areas, course signage, water stations, and event infrastructure</span></div>
+
+			<div class="role-item"><strong>Registration &amp; Check-In</strong> <span>Greeting participants, distributing race bibs and timing chips, and answering questions</span></div>
+
+			<div class="role-item"><strong>Course Support</strong> <span>Staffing water stations, encouraging runners, and helping ensure participant safety</span></div>
+
+			<div class="role-item"><strong>Finish Line Support</strong> <span>Welcoming finishers, distributing medals, and assisting with refreshments</span></div>
+
+			<div class="role-item"><strong>Event Cleanup</strong> <span>Breaking down the event area, removing signage, and returning equipment</span></div>
+
+			<div class="role-item"><strong>General Support</strong> <span>Helping wherever needed throughout the event to ensure everything runs smoothly</span></div>
+		</div>
+	</div>
+
+	<div class="signup-cta">
+		<h2>Ready to Make a Difference?</h2>
+
+		<p style="color: #0f2d52; font-size: 1.1rem; margin-bottom: 10px;">Sign up today to volunteer at Run for the Fallen!</p>
+		<a class="signup-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_9GIQCNgVgmCiY06" target="_blank">Sign Up to Volunteer</a>
+
+		<p style="color: #0f2d52; font-size: 0.9rem; margin-top: 20px;">Limited spots available - register early!</p>
+	</div>
+
+	<div class="contact-info"><strong>Questions?</strong><br />
+		Contact us at <a href="mailto:communityservice@ucmerced.edu" style="color: #0077cc;">communityservice@ucmerced.edu</a><br />
+		<br />
+		<em>Hosted by Merced Sunrise Rotary Club in partnership with Honor and Remember</em></div>
+</div>
