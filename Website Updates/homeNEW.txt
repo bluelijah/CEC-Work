@@ -1,10 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CEC Identity Blocks</title>
-    <style>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">.cec-mission-container {
+            max-width: 1200px;
+            margin: 0 20px 0 auto;
+            padding: 0 20px;
+            border-top: 4px solid #dbaa00;
+            border-bottom: 4px solid #dbaa00;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cec-mission-statement {
+            font-size: 18px;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+
+        .cec-mission-label {
+            font-weight: 700;
+            color: #003262;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.5;
+        }
+        
         .cec-title-line {
             border-bottom: 2px solid #E5E5E5;
             text-align: center;
@@ -17,9 +41,9 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            padding: 20px;
+            padding: 20px 0 20px 20px;
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 0 0 0 auto;
         }
 
         .cec-identity-block {
@@ -108,11 +132,8 @@
             .cec-blocks-container {
                 grid-template-columns: 1fr;
                 gap: 20px;
-                padding-left: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-right: 0;
-                margin-right: 30px;
+                padding: 20px 20px 10px 10px;
+                margin: 0 0 0 auto;
             }
             
             .cec-identity-block {
@@ -131,6 +152,23 @@
                 font-size: 24px;
                 margin-bottom: 30px;
             }
+            
+            .cec-mission-container {
+                padding: 0 15px;
+                height: auto;
+                min-height: 120px;
+                margin: 0 20px 0 auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+            
+            .cec-mission-statement {
+                font-size: 16px;
+            }
+            
+            .cec-mission-label {
+                font-size: 18px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -142,30 +180,33 @@
                 font-size: 24px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="cec-blocks-container">
-        <div class="cec-identity-block cec-student-block" onclick="window.location.href='https://cec.ucmerced.edu/students'">
-            <div class="cec-block-content">
-                <h3 class="cec-block-title">I am a</h3>
-                <p class="cec-block-subtitle">Student</p>
-            </div>
-        </div>
+</style>
+<div class="cec-mission-container">
+	<p class="cec-mission-statement"><span class="cec-mission-label">Our Mission:</span> The Community Engagement Center brings together UC Merced students, staff, faculty, and community members with local agencies and organizations. Together, we create reciprocal partnerships that generate student learning, build capacity, and solve problems through service, scholarship, and leadership. From local to global, these actions contribute to building a healthy and sustainable community, creating positive, direct change.</p>
+</div>
 
-        <div class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/collegecorps'">
-            <div class="cec-block-content">
-                <h3 class="cec-block-title">I am</h3>
-                <p class="cec-block-subtitle">College Corps</p>
-            </div>
-        </div>
+<div class="cec-blocks-container">
+	<div class="cec-identity-block cec-student-block" onclick="window.location.href='https://cec.ucmerced.edu/students'">
+		<div class="cec-block-content">
+			<h3 class="cec-block-title">I am a</h3>
 
-        <div class="cec-identity-block cec-partner-block" onclick="window.location.href='https://cec.ucmerced.edu/community-partners'">
-            <div class="cec-block-content">
-                <h3 class="cec-block-title">I am a</h3>
-                <p class="cec-block-subtitle">Community Partner</p>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+			<p class="cec-block-subtitle">Student</p>
+		</div>
+	</div>
+
+	<div class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/collegecorps'">
+		<div class="cec-block-content">
+			<h3 class="cec-block-title">I am</h3>
+
+			<p class="cec-block-subtitle">College Corps</p>
+		</div>
+	</div>
+
+	<div class="cec-identity-block cec-partner-block" onclick="window.location.href='https://cec.ucmerced.edu/community-partners'">
+		<div class="cec-block-content">
+			<h3 class="cec-block-title">I am a</h3>
+
+			<p class="cec-block-subtitle">Community Partner</p>
+		</div>
+	</div>
+</div>
