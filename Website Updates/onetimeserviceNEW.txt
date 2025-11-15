@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>One-Time Service Events</title>
-    <style>
-        /* One-Time Service Events - Unique CSS Classes */
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">/* One-Time Service Events - Unique CSS Classes */
 
         .ots-section-headline {
             border-bottom: 2px solid #ffbf3c;
@@ -87,86 +83,6 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(255, 191, 60, 0.4);
         }
-        
-        /* Toggle button styles for past events - unique class */
-        .ots-past-events-toggle {
-            cursor: pointer;
-            font-weight: bold;
-            color: #0077cc;
-            padding: 0.75em 1.5em;
-            border: 2px solid #0077cc;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
-            transition: all 0.3s ease;
-            user-select: none;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0, 119, 204, 0.1);
-        }
-        .ots-past-events-toggle:hover {
-            background: linear-gradient(135deg, #0077cc 0%, #005a99 100%);
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0, 119, 204, 0.3);
-        }
-        
-        /* Arrow indicator for toggle button - unique class */
-        .ots-past-events-toggle::after {
-            content: " ▼";
-            font-size: 0.9em;
-            margin-left: 8px;
-        }
-        .ots-past-events-toggle.ots-toggle-expanded::after {
-            content: " ▲";
-        }
-        
-        /* Past events container - hidden by default - unique class */
-        .ots-past-events-container {
-            display: none;
-            margin-top: 1rem;
-        }
-        
-        /* Smooth transition when showing/hiding - unique class */
-        .ots-past-events-container.ots-container-show {
-            display: block;
-            animation: otsFadeIn 0.4s ease-in;
-        }
-        
-        @keyframes otsFadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(-10px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        /* Past events use blue styling but smaller - unique class */
-        .ots-event-card-past a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 3.5em;
-            padding: 0.75em 1em;
-            border: 2px solid #0077cc;
-            border-radius: 6px;
-            color: #0077cc;
-            font-weight: 600;
-            font-size: 0.9em;
-            text-decoration: none;
-            background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
-            transition: all 0.3s ease;
-            box-shadow: 0 1px 4px rgba(0, 119, 204, 0.1);
-        }
-        .ots-event-card-past a:hover {
-            background: linear-gradient(135deg, #0077cc 0%, #005a99 100%);
-            color: #fff;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 10px rgba(0, 119, 204, 0.25);
-        }
 
         /* Mobile responsiveness */
         @media (max-width: 768px) {
@@ -174,87 +90,31 @@
                 margin-right: 20px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="ots-page-container">
-        <p class="ots-intro-text">The CEC also coordinates and publicizes one-time community service projects which provide students with the opportunity to partner with and get to know new community agencies and organizations and to participate in various short (1-4 hour) service events. Please contact communityservice@ucmerced.edu if you have any questions. Please see our sidebar menu for current projects!</p>
+</style>
+<div class="ots-page-container">
+	<p class="ots-intro-text">The CEC also coordinates and publicizes one-time community service projects which provide students with the opportunity to partner with and get to know new community agencies and organizations and to participate in various short (1-4 hour) service events. Please contact communityservice@ucmerced.edu if you have any questions. Please see our sidebar menu for current projects!</p>
 
-        <h3 class="ots-section-headline">UPCOMING One-Time Service Events</h3>
+	<h3 class="ots-section-headline">UPCOMING One-Time Service Events</h3>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/merced-nut-festival">Merced Nut Festival</a></div>
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/zombie-bike-ride">Zombie Bike Ride</a></div>
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/zoo-boo">Zoo Boo</a></div>
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/halloween-dance-party">Halloween Dance Party</a></div>
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/merced-field-honor-volunteer-opportunities">Field of Honor</a></div>
-        </div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/merced-field-honor-volunteer-opportunities">Field of Honor</a></div>
 
-        <h3 class="ots-section-headline">Ongoing One-Time Service Events</h3>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/HHAW">Hunger &amp; Homelessness Awareness Week</a></div>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/usda-food-distribution">USDA Food Distribution</a></div>
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/d-street-shelter">D Street Shelter</a></div>
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/clean-up">Community Clean-Up</a></div>
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/campus-garden">Campus Garden</a></div>
-        </div>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/mvpgr-clear-cocklebur">MVPGR Cocklebur Cleanup</a></div>
 
-        <h3 class="ots-section-headline">Past One-Time Service Events</h3>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/turkey-distribution">Turkey Distribution</a></div>
+	</div>
 
-        <div class="ots-past-events-toggle" id="otsPastEventsToggle" onclick="otsTogglePastEvents()">View Past Events</div>
+	<h3 class="ots-section-headline">Ongoing One-Time Service Events</h3>
 
-        <div class="ots-past-events-container" id="otsPastEventsContainer">
-            <div class="ots-events-grid">
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/Summer/2025/Volunteering">2025 Summer Volunteer Opportunities</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/Spring/2025/Earth/Month">Earth Week 2025</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/senior_sweethearts_25">Senior Sweethearts</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/mlkday2025">MLK Day of Service</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/current-events/one-time-service/field-honor">Field of Honor</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/clean-up">Fahrens Park Clean UP</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/restorative-justice-league-conference">Restorative Justice League Conference</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/halloween">Halloween Events</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/central-california-band-review">Central California Band Review</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/words-to-the-wise-2021">Words to the Wise 2021</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/mlk-week">MLK Jr. Celebration: Downtown Merced Clean-Up</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/mlk-day-of-service">MLK Day of Service</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/empty-bowl-project">Empty Bowl Project</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/philanthropy-month">Philanthropy Month</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/wordstothewise">Words to the Wise 2022</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/MLK-Game-Day">MLK: Game Day</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/Planada-En-Accion">Planada En Acción</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/flood-damage-restoration">Flood Damage Restoration</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/events/valentines-day-cards-seniors">Valentine's Day: Cards for Seniors</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/events/mlk-day-service-0">MLK Day of Service</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/day-of-discovery">Day of Discovery</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/clean-up">Love on Planada</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/events/springing-service-earth-day-clean">Springing into Service</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/events/tour-guide-black-alliance">Campus Tour Guide (with Black Alliance)</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/park-adventure">Play Adventure: Work Day</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/events/playhouse-merced-fireworks-fundraiser">Playhouse Merced: Fundraiser</a></div>
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/Pridefest">Pridefest</a></div>
-            </div>
-        </div>
-    </div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/usda-food-distribution">USDA Food Distribution</a></div>
 
-    <script>
-        function otsTogglePastEvents() {
-            const container = document.getElementById('otsPastEventsContainer');
-            const button = document.getElementById('otsPastEventsToggle');
-            
-            if (container.style.display === 'none' || container.style.display === '') {
-                // Show past events
-                container.style.display = 'block';
-                container.classList.add('ots-container-show');
-                button.classList.add('ots-toggle-expanded');
-                button.textContent = 'Hide Past Events';
-            } else {
-                // Hide past events
-                container.style.display = 'none';
-                container.classList.remove('ots-container-show');
-                button.classList.remove('ots-toggle-expanded');
-                button.textContent = 'View Past Events';
-            }
-        }
-    </script>
-</body>
-</html>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/d-street-shelter">D Street Shelter</a></div>
+
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/clean-up">Community Clean-Up</a></div>
+
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/campus-garden">Campus Garden</a></div>
+	</div>
+</div>

@@ -62,9 +62,7 @@
         .hhaw-partners {
             margin-top: 40px;
             padding: 25px;
-            background: rgba(255,255,255,0.1);
             border-radius: 10px;
-            backdrop-filter: blur(10px);
         }
         
         .hhaw-partners-label {
@@ -92,6 +90,8 @@
             width: 100%;
             height: auto;
             display: block;
+            filter: drop-shadow(0 0 20px rgba(255,255,255,0.8));
+            padding: 20px;
         }
         
         /* Info Section */
@@ -191,7 +191,22 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            overflow: hidden
+            overflow: hidden;
+        }
+        
+        .hhaw-event-flyer-content {
+            background: #f8f9fa;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .hhaw-event-flyer-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         
         .hhaw-event-header {
@@ -222,9 +237,13 @@
         }
         
         .hhaw-event-description {
-            line-height: 1.8;
+            line-height: 1.6;
             color: #555;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .hhaw-event-description p {
+            margin-bottom: 10px;
         }
         
         .hhaw-status-badge {
@@ -341,79 +360,6 @@
             background: #0f2d52;
         }
         
-        /* Shelter Section */
-        .hhaw-shelter-section {
-            background: white;
-            padding: 60px 20px;
-        }
-        
-        .hhaw-shelter-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-top: 30px;
-        }
-        
-        .hhaw-shelter-info {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            border-left: 5px solid #dbaa00;
-        }
-        
-        .hhaw-shelter-info h3 {
-            color: #0f2d52;
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-        
-        .hhaw-shelter-details {
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        
-        .hhaw-shelter-details strong {
-            color: #0f2d52;
-        }
-        
-        .hhaw-donations-list {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        
-        .hhaw-donations-list h3 {
-            color: #0f2d52;
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-        
-        .hhaw-donation-category h4 {
-            color: #dbaa00;
-            font-size: 1.1em;
-            margin: 15px 0 10px 0;
-        }
-        
-        .hhaw-donation-category ul {
-            list-style: none;
-            padding: 0;
-        }
-        
-        .hhaw-donation-category li {
-            padding: 5px 0 5px 20px;
-            position: relative;
-        }
-        
-        .hhaw-donation-category li:before {
-            content: "•";
-            color: #dbaa00;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
-        }
-        
         /* CTA Section */
         .hhaw-cta-section {
             background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
@@ -507,7 +453,8 @@
                 padding: 20px 15px;
             }
             
-            .hhaw-event-carousel-content {
+            .hhaw-event-carousel-content,
+            .hhaw-event-flyer-content {
                 padding: 20px 15px;
                 min-height: 400px;
             }
@@ -520,17 +467,8 @@
                 max-height: 500px;
             }
             
-            .hhaw-shelter-info,
-            .hhaw-donations-list {
-                padding: 20px 15px;
-            }
-            
             .hhaw-info-grid {
-                gap: 5px;
-            }
-            
-            .hhaw-shelter-content {
-                gap: 5px;
+                gap: 15px;
             }
             
             .hhaw-hero-dates {
@@ -549,8 +487,7 @@
                 flex-direction: column;
             }
             
-            .hhaw-info-grid,
-            .hhaw-shelter-content {
+            .hhaw-info-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -567,19 +504,19 @@
 <!-- Hero Section -->
 <div class="hhaw-hero">
 	<div class="hhaw-container">
-		<div class="hhaw-hero-dates">November 16-22, 2025</div>
+		<h2 class="hhaw-hero-dates">November 16-22, 2025</h2>
 
-		<p class="hhaw-hero-subtitle">Join UC Merced in a nationwide movement to raise awareness about hunger and homelessness. Together, we can make a difference in our community and support those in need.</p>
+		<p class="hhaw-hero-subtitle">Take part in a national movement to confront hunger and homelessness. UC Merced invites you to join a week of action, learning, and community support from November 16&ndash;22. Together, we can raise awareness, spark change, and uplift those facing housing and food insecurity.</p>
 
 		<div class="hhaw-partners">
-			<div class="hhaw-partners-label">A Collaboration Between</div>
+			<div class="hhaw-partners-label"><strong>A Collaboration Between</strong></div>
 
 			<div class="hhaw-partners-logos">
-				<div class="hhaw-partner-logo"><img alt="Community Engagement Center Logo" src="/sites/cec.ucmerced.edu/files/documents/cecgoldbluelogo.png" style="width: 170px; height: auto;" /></div>
+				<div class="hhaw-partner-logo"><img alt="Community Engagement Center Logo" src="/sites/cec.ucmerced.edu/files/images/logos/cecgoldbluelogo1.png" style="width: 230px; height: auto;" /></div>
 
-				<div class="hhaw-partner-logo"><img alt="Basic Needs Services Logo" src="/sites/cec.ucmerced.edu/files/documents/mercedbasicneedslogo.png" style="width: 150px; height: auto;" /></div>
+				<div class="hhaw-partner-logo"><img alt="Basic Needs Services Logo" src="/sites/cec.ucmerced.edu/files/documents/mercedbasicneedslogo.png" style="width: 230px; height: auto;" /></div>
 
-				<div class="hhaw-partner-logo"><img alt="Guardian Scholars Program Logo" src="/sites/cec.ucmerced.edu/files/documents/guardainscholarslogo.png" style="width: 110px; height: auto;" /></div>
+				<div class="hhaw-partner-logo"><img alt="Guardian Scholars Program Logo" src="/sites/cec.ucmerced.edu/files/documents/guardainscholarslogo.png" style="width: 170px; height: auto;" /></div>
 			</div>
 		</div>
 	</div>
@@ -596,19 +533,19 @@
 			<div class="hhaw-info-card">
 				<h3>Students Are Affected</h3>
 
-				<p>Basic needs insecurity affects college students across the nation, including food and housing instability. UC Merced is committed to supporting all Bobcats through our Basic Needs and Guardian Scholars programs.</p>
+				<p>Food and housing insecurity affect college students across the country, including right here at UC Merced. Through programs like Basic Needs and Guardian Scholars, we are committed to supporting every Bobcat&rsquo;s well-being and success.</p>
 			</div>
 
 			<div class="hhaw-info-card">
-				<h3>Community Impact</h3>
+				<h3>Your Impact Reaches the Community</h3>
 
-				<p>Your participation directly supports local organizations like the Merced County Community Action Agency and the D Street Shelter.</p>
+				<p>By participating, you help strengthen local organizations such as the Merced County Community Action Agency and the D Street Shelter &mdash; extending care and resources to those who need it most.</p>
 			</div>
 
 			<div class="hhaw-info-card">
-				<h3>Make a Difference</h3>
+				<h3>Small Actions Create Big Change</h3>
 
-				<p>Through education, service, fundraising, and advocacy, we can create lasting change in our community and support Bobcats in need.</p>
+				<p>Whether through education, service, or simply showing up, your involvement helps raise awareness and drive meaningful change in our campus and beyond.</p>
 			</div>
 		</div>
 	</div>
@@ -618,8 +555,43 @@
 <div class="hhaw-events-section">
 	<div class="hhaw-container">
 		<h2 class="hhaw-section-title">Week of Events</h2>
+		<!-- Event: Kick Off Event -->
 
-		<p class="hhaw-section-subtitle">Join us for meaningful activities designed to educate, serve, and advocate for those experiencing hunger and homelessness.</p>
+		<div class="hhaw-event-card">
+			<div class="hhaw-event-header">
+				<div>
+					<h3 class="hhaw-event-title">Rooted in Resilience</h3>
+				</div>
+
+				<div class="hhaw-event-date">Monday, Nov 17</div>
+			</div>
+
+			<div class="hhaw-event-location">Location: Commuter Lounge&nbsp;| 5:00 PM - 7:00 PM</div>
+
+			<div class="hhaw-event-description">
+				<p>Join us for our Hunger &amp; Homelessness Awareness Week Kickoff!<br />
+					We will be watching &quot;Homeless to Harvard&quot; as we reflect on the realities many individuals face and the importance of advocacy, resilience, and compassion within our community. During the film, immerse yourself in the spirit of the season with meaningful arts and crafts that symbolize the growth you&rsquo;ve made during your time on campus.</p>
+
+				<p>We look forward to creating, learning, and reflecting together.&nbsp;</p>
+			</div>
+		</div>
+		<!-- Event: Social Media Campaign -->
+
+		<div class="hhaw-event-card">
+			<div class="hhaw-event-header">
+				<div>
+					<h3 class="hhaw-event-title">Social Media Campaign</h3>
+				</div>
+
+				<div class="hhaw-event-date">Wednesday, Nov 19</div>
+			</div>
+
+			<div class="hhaw-event-location">Join us on Instagram!</div>
+
+			<div class="hhaw-event-description">Follow along on Instagram as we share stories, facts, and ways to get involved during&nbsp;Hunger and Homelessness Awareness Week!</div>
+
+			<div style="display: flex; gap: 10px; flex-wrap: wrap;"><a class="hhaw-btn" href="https://www.instagram.com/ucmercedcec/" target="_blank">Follow @ucmercedcec</a> <a class="hhaw-btn" href="https://www.instagram.com/ucmbasicneeds/?hl=en" target="_blank">Follow @ucmbasicneeds</a> <a class="hhaw-btn" href="https://www.instagram.com/guardianscholars_ucm/?hl=en" target="_blank">Follow @ucmguardianscholars</a></div>
+		</div>
 		<!-- Event: Empty Bowl Project -->
 
 		<div class="hhaw-event-card hhaw-event-card-split">
@@ -630,14 +602,16 @@
 							<h3 class="hhaw-event-title">Empty Bowl Project</h3>
 							<span class="hhaw-status-badge">Limited Space</span></div>
 
-						<div class="hhaw-event-date">Nov 20</div>
+						<div class="hhaw-event-date">Thursday, Nov 20</div>
 					</div>
 
-					<div class="hhaw-event-location">Location TBA</div>
+					<div class="hhaw-event-location">Location: California Room</div>
 
-					<div class="hhaw-event-description">Join us for an evening of creativity and learning! Hear from UC Merced chefs about food sustainability and upcycling, then paint your own bowl to support the cause.<br />
-						<br />
-						All painted bowls will be part of a fundraiser benefiting the Merced County Community Action Agency and the D Street Shelter. Plus, earn <strong>1 hour of community service</strong>!</div>
+					<div class="hhaw-event-description">
+						<p>Join us for an evening of service and learning!&nbsp;All painted bowls will be part of a fundraiser benefiting the Merced County Community Action Agency!</p>
+
+						<p>Plus, earn <strong>1 hour of community service</strong>!</p>
+					</div>
 
 					<div class="hhaw-alert"><strong>Registration Required:</strong> Space is limited for this event. Register early to secure your spot!</div>
 					<a class="hhaw-btn" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_1U0zAsL7MQD6M6i" target="_blank">Register Now</a></div>
@@ -664,167 +638,247 @@
 							</div>
 						</div>
 
-						<div class="hhaw-carousel-dots">&nbsp;</div>
+						<div class="hhaw-carousel-dots">
+							<div class="hhaw-dot active">&nbsp;</div>
+
+							<div class="hhaw-dot">&nbsp;</div>
+
+							<div class="hhaw-dot">&nbsp;</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
-<!-- Shelter Section -->
+		<!-- Event: Campus Garden -->
 
-<div class="hhaw-shelter-section">
-	<div class="hhaw-container">
-		<h2 class="hhaw-section-title">Ongoing Events</h2>
-
-		<p class="hhaw-section-subtitle">The D Street Shelter is a vital resource in our community, and your support makes a real difference for individuals and families experiencing homelessness.</p>
-
-		<div class="hhaw-shelter-content">
-			<div class="hhaw-shelter-info">
-				<h3>About D Street Shelter</h3>
-
-				<div class="hhaw-shelter-details">
-					<p><strong>Location:</strong> 317 E 15th St., Merced</p>
-
-					<p><strong>Capacity:</strong> 50 beds</p>
-
-					<p><strong>Hours:</strong> Open 24 hours a day, 7 days a week</p>
-					&nbsp;
-
-					<p>The shelter serves a light breakfast, lunch, and dinner daily and welcomes volunteers to help prepare and serve meals using their kitchen facilities.</p>
-					&nbsp;
-
-					<p><strong>Ready to help?</strong> Contact the D Street Homeless Shelter to learn about upcoming volunteer opportunities and how you can make a difference.</p>
-				</div>
-				<a class="hhaw-btn hhaw-btn-secondary" href="https://cec.ucmerced.edu/d-street-shelter" target="_blank">Learn More</a></div>
-
-			<div class="hhaw-donations-list">
-				<h3>Donations Needed</h3>
-
-				<div class="hhaw-donation-category">
-					<h4>Bread &amp; Grains</h4>
-
-					<ul>
-						<li>White sliced bread</li>
-						<li>Hot dog buns</li>
-						<li>Pasta noodles</li>
-						<li>Spaghetti</li>
-						<li>Cereal</li>
-					</ul>
+		<div class="hhaw-event-card">
+			<div class="hhaw-event-header">
+				<div>
+					<h3 class="hhaw-event-title">Campus Garden Volunteering</h3>
 				</div>
 
-				<div class="hhaw-donation-category">
-					<h4>Proteins &amp; Dairy</h4>
+				<div class="hhaw-event-date">Friday, Nov 21</div>
+			</div>
 
-					<ul>
-						<li>Hot dogs</li>
-						<li>Lunch meat</li>
-						<li>Hamburger</li>
-						<li>Tuna</li>
-						<li>Peanut butter</li>
-						<li>Milk</li>
-					</ul>
+			<div class="hhaw-event-location">Campus Garden | 9:00 AM - 11:00 AM</div>
+
+			<div class="hhaw-event-description">Get your hands dirty and help grow fresh produce for our community! Join us at the Campus Garden to learn about sustainable food systems and contribute to food security efforts. No experience necessary &ndash; just bring your enthusiasm and willingness to help!</div>
+			<a class="hhaw-btn" href="https://cec.ucmerced.edu/campus-garden" target="_blank">Learn More</a></div>
+		<!-- Collaborative Events Section -->
+
+		<h2 class="hhaw-section-title" style="margin-top: 60px;">Collaborative Events</h2>
+
+		<p class="hhaw-section-subtitle">Partner organizations across campus are joining the effort to support our community during Hunger and Homelessness Awareness Week.</p>
+		<!-- Event: Gratitude Cards for Community -->
+
+		<div class="hhaw-event-card hhaw-event-card-split">
+			<div class="hhaw-event-content-wrapper">
+				<div class="hhaw-event-text-content">
+					<div class="hhaw-event-header">
+						<div>
+							<h3 class="hhaw-event-title">Gratitude Cards for Community</h3>
+
+							<h4><strong>Eligible for CatLife Hours!</strong></h4>
+						</div>
+
+						<div class="hhaw-event-date">Nov 17-18</div>
+					</div>
+
+					<div class="hhaw-event-location">Graduate Cultural Resource Center (COB 2,190) &amp; Asian &amp; Pacific Islander Resource Center (SR 101) | 9:00 AM - 5:00 PM</div>
+
+					<div class="hhaw-event-description">
+						<p>Express gratitude and support your community by creating beautiful, creative cards! Students can earn CatLife community service hours by making gratitude cards during the two-day event.</p>
+
+						<p><strong>How it works:</strong></p>
+
+						<ul style="margin-left: 20px; margin-bottom: 15px;">
+							<li>Create 1 card = Earn 1 CatLife hour</li>
+							<li>Create 2 cards = Earn 2 CatLife hours</li>
+							<li>Create 3 cards = Earn 3 CatLife hours (maximum)</li>
+						</ul>
+
+						<p>Stop by either location during the two days to participate. All materials will be provided! This event is hosted by Social Justice Initiatives &amp; Identity Programs.</p>
+					</div>
 				</div>
 
-				<div class="hhaw-donation-category">
-					<h4>Produce &amp; Other</h4>
-
-					<ul>
-						<li>Fruit</li>
-						<li>Lettuce</li>
-						<li>Vegetables</li>
-						<li>Pasta sauce</li>
-						<li>Jelly</li>
-					</ul>
-				</div>
-
-				<p style="margin-top: 20px; color: #555; font-style: italic;">All food donations are greatly appreciated and help us serve our community!</p>
+				<div class="hhaw-event-flyer-content"><img alt="Gratitude Cards Event Flyer" src="/sites/cec.ucmerced.edu/files/images/sjiflyer2.png" /></div>
 			</div>
 		</div>
-	</div>
+		<!-- Event: Cards of Care -->
+
+		<div class="hhaw-event-card">
+			<div class="hhaw-event-header">
+				<div>
+					<h3 class="hhaw-event-title">Cards of Care</h3>
+
+					<h4><strong>Eligible for CatLife Hours!</strong></h4>
+				</div>
+
+				<div class="hhaw-event-date">Tuesday, November 17</div>
+			</div>
+
+			<div class="hhaw-event-location">KL 184&nbsp;| 11:00 AM - 1:00 PM</div>
+
+			<div class="hhaw-event-description">We will be showing a short documentary titled, &quot;Silent Voices,&quot; which highlights the experiences of the homeless population in the Central Valley, specifically in Merced. After the video, students will write encouragement cards that will be delivered to the D Street Shelter. In addition, we will be collecting donations of hygiene products to donate to the shelter.</div>
+		</div>
+		<!-- Event: Care Package Creation & Basic Needs Resource Fair -->
+
+		<div class="hhaw-event-card hhaw-event-card-split">
+			<div class="hhaw-event-content-wrapper">
+				<div class="hhaw-event-text-content">
+					<div class="hhaw-event-header">
+						<div>
+							<h3 class="hhaw-event-title">Care Package Creation &amp; Resource Fair</h3>
+							<span class="hhaw-status-badge">Limited to 50 Students</span>
+
+							<h4><strong>Eligible for CatLife Hours!</strong></h4>
+						</div>
+
+						<div class="hhaw-event-date">Tuesday, Nov 19</div>
+					</div>
+
+					<div class="hhaw-event-location">Granite 101 | 12:00 PM - 3:00 PM</div>
+
+					<div class="hhaw-event-description">
+						<p>Join us for a meaningful afternoon of service! The first 50 students will create care packages to distribute to those in need in our community.</p>
+
+						<p><strong>Event includes:</strong></p>
+
+						<ul style="margin-left: 20px; margin-bottom: 15px;">
+							<li>Presentation about Hunger &amp; Homelessness Awareness Week</li>
+							<li>Care package assembly (materials provided for 50 packages)</li>
+							<li>Basic Needs resource distribution and information</li>
+							<li>Complimentary sandwiches and drinks</li>
+							<li>Opportunity to distribute packages after creation</li>
+						</ul>
+
+						<p>Students will complete a Microsoft Form to confirm attendance and earn CatLife hours. This event is a collaboration with Basic Needs Services, hosted by Social Justice Initiatives &amp; Identity Programs.</p>
+					</div>
+
+					<div class="hhaw-alert"><strong>Limited Capacity:</strong> Only 50 students can participate due to materials availability!</div>
+				</div>
+
+				<div class="hhaw-event-flyer-content"><img alt="Care Package Event Flyer" src="/sites/cec.ucmerced.edu/files/images/sjiflyer1.png" /></div>
+			</div>
+		</div>
+
+		<div class="hhaw-event-card">
+			<div class="hhaw-event-header">
+				<div>
+					<h3 class="hhaw-event-title">Health Promotion Open House</h3>
+				</div>
+
+				<div class="hhaw-event-date">Thursday, November 20</div>
+			</div>
+
+			<div class="hhaw-event-location">Granite Pass 159&nbsp;| 12:00 PM - 2:00 PM</div>
+
+			<div class="hhaw-event-description">
+				<p>The <a href="https://healthpromotion.ucmerced.edu//" style="color: #0f2d52; font-weight: bold; text-decoration: underline;" target="_blank">Health Promotion</a>&nbsp;team is hosting an opportunity to learn about Health Promotion Programs &amp; services and participate in a gratitude activity!</p>
+
+				<p><em>*This event is not eligible for CatLife hours</em></p>
+			</div>
+		</div>
+		<!-- Event: Rotaract Club Meeting -->
+
+		<div class="hhaw-event-card">
+			<div class="hhaw-event-header">
+				<div>
+					<h3 class="hhaw-event-title">Rotaract Club Meeting</h3>
+
+					<h4><strong>Eligible for CatLife Hours!</strong></h4>
+				</div>
+
+				<div class="hhaw-event-date">Thursday, November 20</div>
+			</div>
+
+			<div class="hhaw-event-location">Glacier 120&nbsp;| 7:00 PM</div>
+
+			<div class="hhaw-event-description">The <a href="https://www.mercedsunriserotary.org/featured-causes" style="color: #0f2d52; font-weight: bold; text-decoration: underline;" target="_blank">Rotaract Club</a>&nbsp;is writing cards of encouragement to people experiencing homelessness.&nbsp;</div>
+		</div>
+		<!-- CTA Section -->
+
+		<div class="hhaw-cta-section">
+			<div class="hhaw-container">
+				<h2>Every Action Makes a Difference</h2>
+
+				<p>Whether you participate in events, volunteer, or spread awareness, your involvement matters. Join the UC Merced community in supporting those experiencing hunger and homelessness.</p>
+
+				<div class="hhaw-cta-buttons"><a class="hhaw-btn hhaw-btn-secondary" href="https://basicneeds.ucmerced.edu/" target="_blank">Visit Basic Needs</a> <a class="hhaw-btn hhaw-btn-secondary" href="https://guardianscholars.ucmerced.edu/" target="_blank">Visit Guardian Scholars</a> <a class="hhaw-btn hhaw-btn-secondary" href="https://hhweek.org/" target="_blank">About NHHAW&nbsp;Week</a></div>
+			</div>
+		</div>
+		<!-- Footer -->
+
+		<div class="hhaw-footer">
+			<div class="hhaw-container">
+				<p><strong>Questions?</strong> Visit us at the&nbsp;Community Engagement Center -&nbsp;KL 190</p>
+
+				<p>Monday - Friday, 9:00 AM - 5:00 PM</p>
+
+				<p><a href="mailto:communityservice@ucmerced.edu">Contact Us</a></p>
+
+				<div class="hhaw-footer-links"><a href="https://www.instagram.com/ucmercedcec/" target="_blank">Instagram</a> <a href="https://basicneeds.ucmerced.edu/" target="_blank">Basic Needs</a> <a href="https://guardianscholars.ucmerced.edu/" target="_blank">Guardian Scholars</a> <a href="https://hhweek.org/" target="_blank">National HH Week</a></div>
+
+				<p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">&copy; 2025 UC Merced | Community Engagement Center, Basic Needs, &amp; Guardian Scholars</p>
+			</div>
+		</div>
+		<script async src="//www.instagram.com/embed.js"></script><script>
+// Instagram Carousel Functionality
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hhaw-carousel-slide');
+const dots = document.querySelectorAll('.hhaw-dot');
+const slideInterval = 5000; // 5 seconds per slide
+let autoPlayInterval;
+
+function showSlide(index) {
+	slides.forEach(slide => slide.classList.remove('active'));
+	dots.forEach(dot => dot.classList.remove('active'));
+	
+	slides[index].classList.add('active');
+	dots[index].classList.add('active');
+	
+	if (window.instgrm) {
+		window.instgrm.Embeds.process();
+	}
+}
+
+function nextSlide() {
+	currentSlide = (currentSlide + 1) % slides.length;
+	showSlide(currentSlide);
+}
+
+function goToSlide(index) {
+	currentSlide = index;
+	showSlide(currentSlide);
+	resetAutoPlay();
+}
+
+function startAutoPlay() {
+	autoPlayInterval = setInterval(nextSlide, slideInterval);
+}
+
+function resetAutoPlay() {
+	clearInterval(autoPlayInterval);
+	startAutoPlay();
+}
+
+dots.forEach((dot, index) => {
+	dot.addEventListener('click', () => goToSlide(index));
+});
+
+window.addEventListener('load', () => {
+	startAutoPlay();
+	setTimeout(() => {
+		if (window.instgrm) {
+			window.instgrm.Embeds.process();
+		}
+	}, 1000);
+});
+
+const carousel = document.querySelector('.hhaw-instagram-carousel');
+if (carousel) {
+	carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+	carousel.addEventListener('mouseleave', () => startAutoPlay());
+}
+</script></div>
 </div>
-<!-- CTA Section -->
-
-<div class="hhaw-cta-section">
-	<div class="hhaw-container">
-		<h2>Every Action Makes a Difference</h2>
-
-		<p>Whether you participate in events, volunteer, or spread awareness, your involvement matters. Join the UC Merced community in supporting those experiencing hunger and homelessness.</p>
-
-		<div class="hhaw-cta-buttons"><a class="hhaw-btn hhaw-btn-secondary" href="https://basicneeds.ucmerced.edu/" target="_blank">Visit Basic Needs</a> <a class="hhaw-btn hhaw-btn-secondary" href="https://cec.ucmerced.edu/" target="_blank">Community Engagement Center</a> <a class="hhaw-btn hhaw-btn-secondary" href="https://hhweek.org/" target="_blank">About HH Week</a></div>
-	</div>
-</div>
-<!-- Footer -->
-
-<div class="hhaw-footer">
-	<div class="hhaw-container">
-		<p><strong>Questions?</strong> Contact the Community Engagement Center at KL 190</p>
-
-		<p>Monday - Friday, 9:00 AM - 5:00 PM</p>
-
-		<p>You can also <a href="mailto:communityservice@ucmerced.edu">email us</a></p>
-
-		<div class="hhaw-footer-links"><a href="https://www.instagram.com/ucmercedcec/" target="_blank">Instagram</a> <a href="https://basicneeds.ucmerced.edu/" target="_blank">Basic Needs</a> <a href="https://cec.ucmerced.edu/calendar" target="_blank">CEC Calendar</a> <a href="https://hhweek.org/" target="_blank">National HH Week</a></div>
-
-		<p style="margin-top: 30px; font-size: 0.9em; opacity: 0.8;">&copy; 2025 UC Merced | Community Engagement Center, Basic Needs, &amp; Guardian Scholars</p>
-	</div>
-</div>
-<script async src="//www.instagram.com/embed.js"></script><script>
-        // Instagram Carousel Functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.hhaw-carousel-slide');
-        const dots = document.querySelectorAll('.hhaw-dot');
-        const slideInterval = 5000; // 5 seconds per slide
-        let autoPlayInterval;
-
-        function showSlide(index) {
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            slides[index].classList.add('active');
-            dots[index].classList.add('active');
-            
-            if (window.instgrm) {
-                window.instgrm.Embeds.process();
-            }
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            showSlide(currentSlide);
-        }
-
-        function goToSlide(index) {
-            currentSlide = index;
-            showSlide(currentSlide);
-            resetAutoPlay();
-        }
-
-        function startAutoPlay() {
-            autoPlayInterval = setInterval(nextSlide, slideInterval);
-        }
-
-        function resetAutoPlay() {
-            clearInterval(autoPlayInterval);
-            startAutoPlay();
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => goToSlide(index));
-        });
-
-        window.addEventListener('load', () => {
-            startAutoPlay();
-            setTimeout(() => {
-                if (window.instgrm) {
-                    window.instgrm.Embeds.process();
-                }
-            }, 1000);
-        });
-
-        const carousel = document.querySelector('.hhaw-instagram-carousel');
-        if (carousel) {
-            carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
-            carousel.addEventListener('mouseleave', () => startAutoPlay());
-        }
-    </script>
