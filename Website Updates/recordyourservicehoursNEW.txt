@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record Your Service Hours</title>
-    <style>
-        /* Modern styling inspired by Pathways page */
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">/* Modern styling inspired by Pathways page */
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
@@ -205,86 +200,82 @@
                 margin-right: 20px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="mic-page-container">
-        <div class="mic-intro">
-            <p>If you are already partnering with a community agency or organization and are providing service, <strong>TELL US ABOUT IT!</strong></p>
+</style>
+<div class="mic-page-container">
+	<div class="mic-intro">
+		<p>If you are already partnering with a community agency or organization and are providing service, <strong>TELL US ABOUT IT!</strong></p>
 
-            <p><strong>Please record your service hours by entering them into your personal or your group or organization's CatLife account.</strong></p>
+		<p><strong>Please record your service hours by entering them into your personal or your group or organization&#39;s CatLife account.</strong></p>
 
-            <p>YOU are making a tremendous impact, and if we can begin to gather an accurate record of all the service you do, we can share and celebrate, and open new doors!</p>
+		<p>YOU are making a tremendous impact, and if we can begin to gather an accurate record of all the service you do, we can share and celebrate, and open new doors!</p>
 
-            <p>Recording service hours can also be a benefit for your future resume or graduate school application. It also contributes to the year-end total number of service hours contributed by UC Merced students, a number that needs YOUR hours to be more accurate.</p>
-        </div>
+		<p>Recording service hours can also be a benefit for your future resume or graduate school application. It also contributes to the year-end total number of service hours contributed by UC Merced students, a number that needs YOUR hours to be more accurate.</p>
+	</div>
 
-        <h2 class="section-headline">Which Hours Do You Record in CatLife?</h2>
+	<h2 class="section-headline">Which Hours Do You Record in CatLife?</h2>
 
-        <div class="mic-comparison-container">
-            <div class="mic-do-box">
-                <div class="mic-box-title">✓ Record in CatLife: Community Service Hours</div>
+	<div class="mic-comparison-container">
+		<div class="mic-do-box">
+			<div class="mic-box-title">✓ Record in CatLife: Community Service Hours</div>
 
-                <div class="mic-box-content">
-                    <p>Direct <strong>community service</strong> is characterized by <strong><em>action</em></strong> (hands-on service) that meets a community-identified need for the benefit of underserved individuals, groups, or organizations and projects focused on issues that benefit the common good.</p>
+			<div class="mic-box-content">
+				<p>Direct <strong>community service</strong> is characterized by <strong><em>action</em></strong> (hands-on service) that meets a community-identified need for the benefit of underserved individuals, groups, or organizations and projects focused on issues that benefit the common good.</p>
 
-                    <p>It should help improve the quality of life for community residents and helps to solve public problems, such as:</p>
+				<p>It should help improve the quality of life for community residents and helps to solve public problems, such as:</p>
 
-                    <ul>
-                        <li>Tutoring K-12 students</li>
-                        <li>Youth development</li>
-                        <li>Literacy and education</li>
-                        <li>Social services</li>
-                        <li>Health and wellness</li>
-                        <li>Safety and crime prevention</li>
-                        <li>Transportation</li>
-                        <li>Recreation</li>
-                        <li>Rural development</li>
-                        <li>Neighborhood and community improvement</li>
-                    </ul>
-                </div>
-            </div>
+				<ul>
+					<li>Tutoring K-12 students</li>
+					<li>Youth development</li>
+					<li>Literacy and education</li>
+					<li>Social services</li>
+					<li>Health and wellness</li>
+					<li>Safety and crime prevention</li>
+					<li>Transportation</li>
+					<li>Recreation</li>
+					<li>Rural development</li>
+					<li>Neighborhood and community improvement</li>
+				</ul>
+			</div>
+		</div>
 
-            <div class="mic-dont-box">
-                <div class="mic-box-title">✗ NOT in CatLife</div>
+		<div class="mic-dont-box">
+			<div class="mic-box-title">✗ NOT in CatLife</div>
 
-                <div class="mic-box-content">
-                    <p><strong>Volunteer work on campus that benefits only the on-campus community.</strong></p>
+			<div class="mic-box-content">
+				<p><strong>Volunteer work on campus that benefits only the on-campus community.</strong></p>
 
-                    <p>For example: tabling for your RCO to recruit more members, helping set up for an event only open to the UC Merced campus community, etc.</p>
+				<p>For example: tabling for your RCO to recruit more members, helping set up for an event only open to the UC Merced campus community, etc.</p>
 
-                    <p><strong>Philanthropy/Fundraising</strong> generally refers to activities related to securing donations to benefit and support an organization, group or agency that is dedicated to helping those in need (i.e. St. Jude's, American Cancer Society, Red Cross, etc.).</p>
+				<p><strong>Philanthropy/Fundraising</strong> generally refers to activities related to securing donations to benefit and support an organization, group or agency that is dedicated to helping those in need (i.e. St. Jude&#39;s, American Cancer Society, Red Cross, etc.).</p>
 
-                    <p><strong><em><u>PLEASE DO NOT</u></em></strong> record your philanthropy/fundraising hours and/or your organizational service hours in CatLife as it will invalidate all posted service hours!</p>
+				<p><strong><em><u>PLEASE DO NOT</u></em></strong> record your philanthropy/fundraising hours and/or your organizational service hours in CatLife as it will invalidate all posted service hours!</p>
 
-                    <p>Philanthropy/fundraising and organization service hours must be captured by your organization through other means of your choice.</p>
-                </div>
-            </div>
-        </div>
+				<p>Philanthropy/fundraising and organization service hours must be captured by your organization through other means of your choice.</p>
+			</div>
+		</div>
+	</div>
 
-        <div class="mic-instructions-box">
-            <h4>Want to Register Your Service Hours? Follow These Steps:</h4>
+	<div class="mic-instructions-box">
+		<h4>Want to Register Your Service Hours? Follow These Steps:</h4>
 
-            <p><strong>Step 1:</strong> Go to <a href="https://catlife.ucmerced.edu/" target="_blank">https://catlife.ucmerced.edu/</a></p>
+		<p><strong>Step 1:</strong> Go to <a href="https://catlife.ucmerced.edu/" target="_blank">https://catlife.ucmerced.edu/</a></p>
 
-            <p><strong>Step 2:</strong> Sign In to Catlife</p>
+		<p><strong>Step 2:</strong> Sign In to Catlife</p>
 
-            <p><strong>Step 3:</strong> Click on "Forms" in the top-right corner</p>
+		<p><strong>Step 3:</strong> Click on &quot;Forms&quot; in the top-right corner</p>
 
-            <p><strong>Step 4:</strong> Click on the "Apply for Opportunity" form</p>
+		<p><strong>Step 4:</strong> Click on the &quot;Apply for Opportunity&quot; form</p>
 
-            <p><strong>Step 5:</strong> Fill in the information! If you are filling out the form on behalf of a club or org, please select "Organization Service" and select the name of your club/org from the drop-down list. Please make the description as detailed as possible in detailing your service activities.</p>
+		<p><strong>Step 5:</strong> Fill in the information! If you are filling out the form on behalf of a club or org, please select &quot;Organization Service&quot; and select the name of your club/org from the drop-down list. Please make the description as detailed as possible in detailing your service activities.</p>
 
-            <div class="mic-video-container"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/XmENwqphXuE" title="YouTube video player" width="560"></iframe></div>
+		<div class="mic-video-container"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/XmENwqphXuE" title="YouTube video player" width="560"></iframe></div>
 
-            <p style="text-align: center; margin-top: 1.5rem;"><a class="mic-cta-button" href="https://ucmerced.presence.io/form/apply-for-opportunity" target="_blank">Click Here to Access the Form</a></p>
-        </div>
+		<p style="text-align: center; margin-top: 1.5rem;"><a class="mic-cta-button" href="https://ucmerced.presence.io/form/apply-for-opportunity" target="_blank">Click Here to Access the Form</a></p>
+	</div>
 
-        <div class="mic-closing-note">
-            <p>Both community service and philanthropy are excellent opportunities to positively impact the community and beyond. For the sake of "tracking" or "capturing" service hours, however, they are tracked or counted differently, so please be sure to enter them appropriately.</p>
+	<div class="mic-closing-note">
+		<p>Both community service and philanthropy are excellent opportunities to positively impact the community and beyond. For the sake of &quot;tracking&quot; or &quot;capturing&quot; service hours, however, they are tracked or counted differently, so please be sure to enter them appropriately.</p>
 
-            <p><strong>If you are not sure, <a href="mailto:communityservice@ucmerced.edu">PLEASE ASK!!</a></strong></p>
-        </div>
-    </div>
-</body>
-</html>
+		<p><strong>If you are not sure, <a href="mailto:communityservice@ucmerced.edu">PLEASE ASK!!</a></strong></p>
+	</div>
+</div>

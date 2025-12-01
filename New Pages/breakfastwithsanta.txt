@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast with Santa - UC Merced</title>
+    <style type="text/css">
+        /* CEC Page Styles */
+        .cec-page * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cec-page {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .cec-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .cec-header {
+            display: none;
+        }
+
+        .cec-content-box {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #dbaa00;
+        }
+
+        .cec-content-box h2 {
+            color: #0f2d52;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .cec-content-box p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .cec-content-box strong {
+            color: #0f2d52;
+        }
+
+        .cec-content-box em {
+            color: #dbaa00;
+        }
+
+        .cec-highlight-box {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #dbaa00;
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .cec-highlight-box p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #0f2d52;
+            font-weight: bold;
+        }
+
+        .volunteer-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            border-top: 4px solid #0f2d52;
+        }
+
+        .volunteer-section h2 {
+            color: #0f2d52;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .volunteer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .volunteer-card {
+            padding: 2rem;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #dbaa00;
+            transition: all 0.3s ease;
+        }
+
+        .volunteer-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            border-left-color: #0f2d52;
+        }
+
+        .volunteer-card h3 {
+            color: #0f2d52;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .volunteer-card .count {
+            background: #0f2d52;
+            color: #dbaa00;
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .volunteer-card p {
+            font-size: 1rem;
+            color: #555;
+            line-height: 1.8;
+            margin: 0.8rem 0;
+        }
+
+        .volunteer-card strong {
+            color: #0f2d52;
+        }
+
+        .volunteer-card em {
+            color: #dbaa00;
+        }
+
+        .volunteer-card ul {
+            list-style: none;
+            margin: 1rem 0;
+            padding-left: 0;
+        }
+
+        .volunteer-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .volunteer-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #dbaa00;
+            font-weight: bold;
+        }
+
+        .signup-cta {
+            background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
+            padding: 3rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(219, 170, 0, 0.3);
+            margin-bottom: 2rem;
+        }
+
+        .signup-cta h3 {
+            color: #0f2d52;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .signup-cta p {
+            color: #0f2d52;
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .signup-button {
+            display: inline-block;
+            background: #0f2d52;
+            color: white !important;
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none !important;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .signup-button:hover {
+            background: #0a1d36;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(15, 45, 82, 0.3);
+            color: white !important;
+        }
+
+        .dress-code-box {
+            background: linear-gradient(135deg, #fffbf0 0%, #fff9e6 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #dbaa00;
+            text-align: center;
+        }
+
+        .dress-code-box p {
+            margin: 0;
+            font-size: 1.1rem;
+            color: #0f2d52;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-top: 2rem;
+            text-align: center;
+            border-top: 4px solid #dbaa00;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-info p {
+            font-size: 1.1rem;
+            color: #555;
+            margin: 0;
+        }
+
+        .contact-info a {
+            color: #dbaa00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            color: #0f2d52;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 1024px) {
+            .volunteer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cec-header h1 {
+                font-size: 1.8rem;
+            }
+
+            .cec-content-box {
+                padding: 1.5rem;
+                margin-right: 20px;
+            }
+
+            .volunteer-section {
+                margin-right: 20px;
+            }
+
+            .volunteer-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .volunteer-card {
+                padding: 1.5rem;
+            }
+
+            .signup-cta {
+                margin-right: 20px;
+                padding: 2rem;
+            }
+
+            .signup-cta h3 {
+                font-size: 1.4rem;
+            }
+
+            .contact-info {
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cec-page">
+        <!-- Header -->
+        <div class="cec-header">
+            <div class="cec-container">
+                <h1>Breakfast with Santa</h1>
+                <p>Volunteer Opportunities</p>
+            </div>
+        </div>
+
+        <div class="cec-container">
+            <!-- Main Content -->
+            <div class="cec-content-box">
+                <h2>Join Us for a Festive Community Event!</h2>
+                <p>We are excited to share that our annual Breakfast with Santa event is right around the corner, and we have some great volunteer opportunities available! This is one of our most popular community events of the year, and <strong>we couldn't make it happen without your support.</strong></p>
+
+                <div class="cec-highlight-box">
+                    <p><em>Help us create magical memories for our community!</em></p>
+                </div>
+
+                <p>If you are available to volunteer, please sign up using the button below. We can't wait to see you there!</p>
+            </div>
+
+            <!-- Volunteer Opportunities -->
+            <div class="volunteer-section">
+                <h2>Volunteer Opportunities</h2>
+
+                <div class="volunteer-grid">
+                    <!-- Setup Crew Card -->
+                    <div class="volunteer-card">
+                        <h3>Set-Up Crew</h3>
+                        <div class="count">5 Positions Available</div>
+                        
+                        <p><strong>Date & Time:</strong></p>
+                        <p><em>Friday, December 12, 2025</em></p>
+                        <p><em>4:00 PM – 8:00 PM</em></p>
+
+                        <p><strong>Responsibilities:</strong></p>
+                        <ul>
+                            <li>Prepare the event space</li>
+                            <li>Decorate for the holiday</li>
+                            <li>Arrange tables and chairs</li>
+                            <li>Assist with craft station setup</li>
+                            <li>Set up activity stations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Day-Of Volunteers Card -->
+                    <div class="volunteer-card">
+                        <h3>Day-Of Event Volunteers</h3>
+                        <div class="count">8 Positions Available</div>
+                        
+                        <p><strong>Date & Time:</strong></p>
+                        <p><em>Saturday, December 13, 2025</em></p>
+                        <p><em>7:30 AM – 12:30 PM</em></p>
+
+                        <p><strong>Support Roles:</strong></p>
+                        <ul>
+                            <li>Greet families and check in attendees</li>
+                            <li>Assist with crafts and activities</li>
+                            <li>Help serve breakfast</li>
+                            <li>Support photo area with Santa</li>
+                            <li>General event assistance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Dress Code Note -->
+                <div class="dress-code-box">
+                    <p>Please come dressed appropriately and festively for the event!</p>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="signup-cta">
+                <h3>Ready to Volunteer?</h3>
+                <p>Sign up today to be part of this wonderful community event!</p>
+                <a href="https://www.cervistech.com/acts/console.php?console_id=0188&console_type=event_list&ht=1&event_id=266" class="signup-button" target="_blank">Volunteer Today!</a>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <p>For questions or accommodations, please contact the Community Engagement Center at <a href="mailto:communityservice@ucmerced.edu">communityservice@ucmerced.edu</a>.</p>
+                <p style="margin-top: 1rem; font-size: 1rem;">Thank you for your continued support and dedication to our community!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

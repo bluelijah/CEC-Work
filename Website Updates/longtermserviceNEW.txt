@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Long-Term Service Programs</title>
-    <style>
-        /* One-Time Service Events - Unique CSS Classes */
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">/* One-Time Service Events - Unique CSS Classes */
         .ots-events-body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             line-height: 1.6;
@@ -183,70 +178,71 @@
                 margin-right: 20px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="lts-page-container">
-        <p class="ots-intro-text">The Community Engagement Center at UC Merced offers a variety of pathways to engage with the community. Each of the Impact Initiatives requires students to attend an initial training and a semester-long commitment. The Initiatives offer the opportunity to develop relationships and to see and experience change over time. They are, at once, challenging and inspiring! Click on any of the initiatives down below to learn more.</p>
+</style>
+<div class="lts-page-container">
+	<p class="ots-intro-text">The Community Engagement Center at UC Merced offers a variety of pathways to engage with the community. Each of the Impact Initiatives requires students to attend an initial training and a semester-long commitment. The Initiatives offer the opportunity to develop relationships and to see and experience change over time. They are, at once, challenging and inspiring! Click on any of the initiatives down below to learn more.</p>
 
-        <p class="ots-intro-text">By participating in any of the following programs, you will be eligible for our <strong><a href="https://cec.ucmerced.edu/Graduation/Pin" style="color: #0077cc; text-decoration: none;" target="_blank">Community Service Graduation Pin</a>!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
+	<p class="ots-intro-text">By participating in any of the following programs, you will be eligible for our <strong><a href="https://cec.ucmerced.edu/Graduation/Pin" style="color: #0077cc; text-decoration: none;">Community Service Graduation Pin</a>!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
 
-        <h3 class="ots-section-headline">Ongoing Programs</h3>
+	<h3 class="ots-section-headline">Ongoing Programs</h3>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/lift-while-you-lead">Lift While You Lead<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A semester-long mentorship of high school students in Women's Studies classes</span></a></div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/lift-while-you-lead">Lift While You Lead<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A semester-long mentorship of high school students in Women&#39;s Studies classes</span></a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Bright-Sparks-Program" target="_blank">Bright Spark Scholars Program<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A long-term service opportunity to tutor elementary-aged students at schools in Merced</span></a></div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Bright-Sparks-Program">Bright Spark Scholars Program<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A long-term service opportunity to tutor elementary-aged students at schools in Merced</span></a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/current-events/long-term-service/best-you-best-future-program" target="_blank">Best You Best Future<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A semester-long opportunity to tutor-mentor younger students</span></a></div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/current-events/long-term-service/best-you-best-future-program">Best You Best Future<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A semester-long opportunity to tutor-mentor younger students</span></a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/leadershipandservicellc" target="_blank">Leadership & Service LLC<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">An opportunity for first-years to learn about service and connect with like-minded students</span></a></div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/leadershipandservicellc">Leadership &amp; Service LLC<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">An opportunity for first-years to learn about service and connect with like-minded students</span></a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/mcoe" target="_blank">MCOE Tutoring Program<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">A long term opportunity for UCM students to serve as mentors for Merced residents</span></a></div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/mcoe">MCOE Tutoring Program<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">A long term opportunity for UCM students to serve as mentors for Merced residents</span></a></div>
 
-            <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/library/literacy/program" target="_blank">Merced County Library Literacy Program<br />
-                <br />
-                <span style="font-size: 0.85em; font-weight: normal;">An opportunity to use your language and mentoring skills to teach others</span></a></div>
-        </div>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/library/literacy/program">Merced County Library Literacy Program<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">An opportunity to use your language and mentoring skills to teach others</span></a></div>
 
-        <h3 class="ots-section-headline">Other Opportunities</h3>
+		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Alternative/Spring/Break/2026">Alternative Spring Break<br />
+			<br />
+			<span style="font-size: 0.85em; font-weight: normal;">Learn as guests on Yurok land in this unique experience! </span> </a></div>
+	</div>
 
-        <div class="ots-events-grid">
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/tutoring" target="_blank">Tutoring</a></div>
+	<h3 class="ots-section-headline">Other Opportunities</h3>
 
-            <div class="ots-event-card-blue"><a href="https://conversationstoremember.org/" target="_blank">Conversations to Remember</a></div>
+	<div class="ots-events-grid">
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/tutoring">Tutoring</a></div>
 
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/tutoring" target="_blank">Read & Succeed</a></div>
+		<div class="ots-event-card-blue"><a href="https://conversationstoremember.org/">Conversations to Remember</a></div>
 
-            <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/alzheimers-association" target="_blank">Alzheimer's Association</a></div>
-        </div>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/tutoring">Read &amp; Succeed</a></div>
 
-        <h3 class="ots-section-headline">Past Opportunities</h3>
+		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/alzheimers-association">Alzheimer&#39;s Association</a></div>
+	</div>
 
-        <div class="ots-past-events-toggle" id="otsPastEventsToggle" onclick="otsTogglePastEvents()">View Past Opportunities</div>
+	<h3 class="ots-section-headline">Past Opportunities</h3>
 
-        <div class="ots-past-events-container" id="otsPastEventsContainer">
-            <div class="ots-events-grid">
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/projects-with-purpose" target="_blank">Projects with Purpose</a></div>
+	<div class="ots-past-events-toggle" id="otsPastEventsToggle" onclick="otsTogglePastEvents()">View Past Opportunities</div>
 
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/bobcat-online-homework-help" target="_blank">Bobcat Online Homework Help</a></div>
+	<div class="ots-past-events-container" id="otsPastEventsContainer">
+		<div class="ots-events-grid">
+			<div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/projects-with-purpose">Projects with Purpose</a></div>
 
-                <div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/merced-county-project-10" target="_blank">Merced County Project 10%</a></div>
-            </div>
-        </div>
-    </div>
+			<div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/bobcat-online-homework-help">Bobcat Online Homework Help</a></div>
 
-    <script>
+			<div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/merced-county-project-10">Merced County Project 10%</a></div>
+		</div>
+	</div>
+</div>
+<script>
         function otsTogglePastEvents() {
             const container = document.getElementById('otsPastEventsContainer');
             const button = document.getElementById('otsPastEventsToggle');
@@ -264,5 +260,3 @@
             }
         }
     </script>
-</body>
-</html>
