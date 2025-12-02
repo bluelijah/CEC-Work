@@ -389,13 +389,13 @@
         }
         
         .cc-footer a {
-            color: #FFBF3C;
+            color: #FFBF3C !important;
             text-decoration: none;
             font-weight: 600;
         }
         
         .cc-footer a:hover {
-            color: #ffd666;
+            color: #ffd666 !important;
             text-decoration: underline;
         }
         
@@ -744,7 +744,13 @@
 		<div class="cc-cohort-content" id="cohort4">
 			<h3 class="cc-cohort-title">Cohort 4 (2025-2026)</h3>
 
-			<p style="text-align: center; font-size: 1.1em; margin-bottom: 30px;">Information coming soon!</p>
+			<div class="cc-cohort-stats">
+				<ul>
+					<li><strong>138 Fellows Enrolled</strong></li>
+					<li><strong>27 Community Host Sites</strong></li>
+					<li><strong>7 New Host Sites</strong></li>
+				</ul>
+			</div>
 
 			<h4 style="text-align: center; color: #002856; margin-top: 40px; margin-bottom: 20px;"><strong>Where do Fellows Serve?</strong></h4>
 
@@ -769,9 +775,9 @@
 
 			<p style="text-align: center; margin-bottom: 15px;">In this page you will find answers to some frequently asked questions about the College Corps Program.</p>
 
-			<p style="text-align: center; margin-bottom: 15px;">Please feel free to check out our Instagram <a href="https://www.instagram.com/ucmcollegecorps/?igsh=enh5eWVxaGtleGRj&amp;utm_source=qr#" style="color: #002856; font-weight: bold;" target="_blank">@ucmcollegecorps</a>, as well as our partnering office <a href="https://www.instagram.com/ucmercedcec/?igsh=NTc4MTIwNjQ2YQ%3D%3D#" style="color: #002856; font-weight: bold;" target="_blank">@ucmercedcec</a>, where information and updates on current Fellows progress and any upcoming service opportunities will continuously be posted!</p>
+			<p style="text-align: center; margin-bottom: 15px;">Please feel free to check out our Instagram <a href="https://www.instagram.com/ucmcollegecorps/?igsh=enh5eWVxaGtleGRj&amp;utm_source=qr#" target="_blank">@ucmcollegecorps</a>, as well as our partnering office <a href="https://www.instagram.com/ucmercedcec/?igsh=NTc4MTIwNjQ2YQ%3D%3D#" target="_blank">@ucmercedcec</a>, where information and updates on current Fellows progress and any upcoming service opportunities will continuously be posted!</p>
 
-			<p style="text-align: center;">If you are on campus, please feel free to visit us in <strong>KL 172</strong> or send us an email at <a href="mailto:collegecorps@ucmerced.edu" style="color: #002856; font-weight: bold;">collegecorps@ucmerced.edu</a></p>
+			<p style="text-align: center;">If you are on campus, please feel free to visit us in <strong>KL 172</strong> or send us an email at <a href="mailto:collegecorps@ucmerced.edu">collegecorps@ucmerced.edu</a></p>
 		</div>
 	</div>
 </div>
