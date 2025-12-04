@@ -186,6 +186,16 @@
 
 			<p><strong>Example:</strong> A student helped a local non-profit launch an anti-vape campaign for rural middle school students by creating a website and social media campaign. The project lasted 6 months and included a survey to measure impact.</p>
 		</div>
+
+		<div class="step">
+			<h3>Step 5: Submit Your Application</h3>
+
+			<p>Once you have completed all the requirements (Steps 1-4), fill out the formal application for the Public Service &amp; Leadership Certificate. The CEC will verify your information and confirm your completion of all requirements.</p>
+
+			<div style="margin: 20px 0;"><a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_2aYTpTQGOascmeW" style="display: inline-block; background-color: #dbaa00; color: #003366; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease; border: 2px solid #dbaa00;" target="_blank">Complete the PSL Certificate Application</a></div>
+
+			<p class="note">Make sure you have completed all previous steps before submitting your application.</p>
+		</div>
 	</div>
 
 	<h2>Why Should I Apply?</h2>
