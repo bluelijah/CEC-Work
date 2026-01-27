@@ -1,6 +1,60 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-<style type="text/css">.bybf-page * {
+<style type="text/css">/* --- Infinite Scroller --- */
+.infinite-slider {
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  background: transparent;
+  margin-bottom: 2rem;
+}
+
+.infinite-slider .track {
+  display: flex;
+  width: max-content;
+  gap: 8px;
+  animation: scroll-left 35s linear infinite;
+  will-change: transform;
+}
+
+/* One "card" */
+.infinite-slider .slide {
+  flex: 0 0 auto;
+  width: clamp(220px, 28vw, 360px);
+  height: clamp(140px, 18vw, 220px);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+}
+
+.infinite-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+  transform: scale(1.06);
+}
+
+.infinite-slider .slide:hover img {
+  transform: scale(1.15);
+}
+
+.infinite-slider .slide:nth-child(2) img,
+.infinite-slider .slide:nth-child(7) img {
+  object-position: center 25%;
+}
+
+@keyframes scroll-left {
+  to { transform: translateX(-50%); }
+}
+
+/* accessibility: respect users who prefer less motion */
+@media (prefers-reduced-motion: reduce) {
+  .infinite-slider .track { animation: none; }
+}
+
+.bybf-page * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -108,6 +162,18 @@
 .bybf-dropdown-header:hover {
     background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
     box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
+}
+
+.bybf-dropdown-header::after {
+    content: ' ▼';
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.bybf-dropdown-header.bybf-active::after {
+    transform: rotate(180deg);
 }
 
 .bybf-dropdown-content {
@@ -243,14 +309,43 @@
     .bybf-session-date {
         min-width: auto;
     }
+    
+    .bybf-button-center {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .bybf-button {
+        margin-left: 0 !important;
+    }
 }
 </style>
 <div class="bybf-page">
-	<div class="bybf-container">
-		<div class="bybf-content-box">
-			<h2>Become a Best You, Best Future Mentor</h2>
+	<div class="bybf-container"><!-- Image Slider at Top -->
+		<div class="infinite-slider">
+			<div class="track"><!-- SET A -->
+				<div class="slide"><img alt="BYBF 1" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img1.jpeg" /></div>
 
-			<p>Are you looking for a service opportunity that will allow you to gain experience working with youth while empowering them? If so, Best You, Best Future (BYBF) is the perfect opportunity for you! The Community Engagement Center has partnered with 4 local school districts: Livingston, Weaver, Merced River &amp; Planada to bring their 6th grade students to UC Merced for a personalized tour, lunch and an empowering workshop! The Campus Visits will take place in March and April during a weekday (Monday - Friday) for two and a half hours, volunteers will be able to select which campus visits they can attend once they have completed the BYBF volunteer training.</p>
+				<div class="slide"><img alt="BYBF 2" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img2.jpeg" /></div>
+
+				<div class="slide"><img alt="BYBF 3" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img3.jpeg" /></div>
+
+				<div class="slide"><img alt="BYBF 4" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img4.jpeg" /></div>
+				<!-- SET B (duplicate for seamless loop) -->
+
+				<div class="slide"><img alt="BYBF 1" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img1.jpeg" /></div>
+
+				<div class="slide"><img alt="BYBF 2" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img2.jpeg" /></div>
+
+				<div class="slide"><img alt="BYBF 3" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img3.jpeg" /></div>
+
+				<div class="slide"><img alt="BYBF 4" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img4.jpeg" /></div>
+			</div>
+		</div>
+
+		<div class="bybf-content-box">
+			<p>Are you looking for a service opportunity that will allow you to gain experience working with youth while empowering them? If so, Best You, Best Future (BYBF) is the perfect opportunity for you! The Community Engagement Center has partnered with 4 local school districts: Livingston, Weaver, Merced River &amp; Planada to bring their 7th grade students to UC Merced for a personalized tour, lunch and an empowering workshop! The Campus Visits will take place in March and April during a weekday (Monday - Friday) for two and a half hours, volunteers will be able to select which campus visits they can attend once they have completed the BYBF volunteer training.</p>
 
 			<p>We are looking for volunteers who want to make a positive impact in our local youth. Volunteers must attend a training in order to become a BYBF Mentor.</p>
 
@@ -262,21 +357,60 @@
 		<div class="bybf-content-box">
 			<div class="bybf-dropdown">
 				<div class="bybf-dropdown-header" onclick="toggleBybfDropdown()">Upcoming Info Sessions and Training</div>
+				<!-- INFO SESSION 1 -->
 
 				<div class="bybf-dropdown-content" id="bybfSessionsDropdown">
 					<div class="bybf-session-item">
 						<div class="bybf-session-date">
-							<div class="bybf-session-month">Month</div>
+							<div class="bybf-session-month">January</div>
 
-							<div class="bybf-session-day">Day</div>
+							<div class="bybf-session-day">30th</div>
 						</div>
 
 						<div class="bybf-session-details">
-							<h4>Optional Info Session - M/T/W/T/F</h4>
+							<h4>Info Session - Friday</h4>
 
-							<p>00:00 AM/PM - 00:00 AM/PM via Zoom(ID:)/InPerson(Location:)</p>
+							<p>11:00 AM via Zoom</p>
 
-							<p>Zoom Link: NA</p>
+							<p>Zoom ID: 931 494 5028</p>
+						</div>
+					</div>
+				</div>
+				<!-- INFO SESSION 2 -->
+
+				<div class="bybf-dropdown-content" id="bybfSessionsDropdown">
+					<div class="bybf-session-item">
+						<div class="bybf-session-date">
+							<div class="bybf-session-month">January</div>
+
+							<div class="bybf-session-day">30</div>
+						</div>
+
+						<div class="bybf-session-details">
+							<h4>Info Session - Friday</h4>
+
+							<p>12:00 PM via Zoom</p>
+
+							<p>Zoom ID: 931 494 5028</p>
+						</div>
+					</div>
+				</div>
+				<!-- TRAINING SESSION 1 -->
+
+				<div class="bybf-dropdown-content" id="bybfSessionsDropdown">
+					<div class="bybf-session-item">
+						<div class="bybf-session-date">
+							<div class="bybf-session-month">February</div>
+
+							<div class="bybf-session-day">6</div>
+						</div>
+
+						<div class="bybf-session-details">
+							<h4>Training Session - Friday</h4>
+
+							<p>11:00 AM InPerson</p>
+
+							<p>Location: Granite Pass 115</p>
 						</div>
 					</div>
 				</div>
@@ -285,16 +419,20 @@
 	</div>
 
 	<div class="bybf-forms-section">
-		<h3>Required Service Forms</h3>
+		<h3>Required Service Forms and Registration</h3>
 
-		<p>You must complete these required service forms to participate in the program.</p>
+		<p>You must complete these required service forms to participate in the program, and register below.</p>
 
-		<div class="bybf-button-center"><a class="bybf-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a></div>
+		<div class="bybf-button-center"><a class="bybf-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a> <a class="bybf-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_9FCg5RH6AJOQ3f8" style="margin-left: 1rem;">Register</a></div>
 	</div>
 </div>
 <script>
-    function toggleBybfDropdown() {
-        const dropdown = document.getElementById('bybfSessionsDropdown');
+function toggleBybfDropdown() {
+    const header = document.querySelector('.bybf-dropdown-header');
+    const dropdowns = document.querySelectorAll('.bybf-dropdown-content');
+    header.classList.toggle('bybf-active');
+    dropdowns.forEach(dropdown => {
         dropdown.classList.toggle('bybf-active');
-    }
+    });
+}
 </script>
