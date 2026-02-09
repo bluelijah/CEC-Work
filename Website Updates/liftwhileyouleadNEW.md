@@ -10,7 +10,7 @@
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.6;
             color: #333;
-            background-image: url('/sites/cec.ucmerced.edu/files/images/lwyllogo.png');
+            background-image: url('/sites/g/files/ufvvjh561/f/images/lwyllogo.png');
             background-repeat: no-repeat;
             background-position: center center;
             background-attachment: fixed;
@@ -125,31 +125,51 @@
             margin-bottom: 2rem;
         }
 
-        .lwyl-dropdown-header {
-            background: linear-gradient(135deg, #0f2d52 0%, #1a4573 100%);
-            color: white;
-            padding: 1.5rem;
-            cursor: pointer;
-            border-radius: 8px;
-            font-weight: bold;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(15, 45, 82, 0.2);
-        }
+.lwyl-dropdown-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: linear-gradient(135deg, #0f2d52 0%, #1a4573 100%);
+    color: white;
+    padding: 1.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(15, 45, 82, 0.2);
+}
 
-        .lwyl-dropdown-subtitle {
-            font-size: 0.85rem;
-            font-weight: normal;
-            text-transform: none;
-            margin-top: 0.3rem;
-            opacity: 0.9;
-        }
+.lwyl-dropdown-header > div:first-child {
+    display: flex;
+    align-items: center;
+}
 
-        .lwyl-dropdown-header:hover {
-            background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
-            box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
-        }
+.lwyl-dropdown-header > div:first-child::after {
+    content: ' ▼';
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.lwyl-dropdown-header.lwyl-active > div:first-child::after {
+    transform: rotate(180deg);
+}
+
+.lwyl-dropdown-subtitle {
+    font-size: 0.85rem;
+    font-weight: normal;
+    text-transform: none;
+    margin-top: 0.3rem;
+    opacity: 0.9;
+}
+
+.lwyl-dropdown-header:hover {
+    background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
+    box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
+}
 
         .lwyl-dropdown-content {
             max-height: 0;
@@ -250,12 +270,26 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(219, 170, 0, 0.5);
         }
+.lwyl-button-center {
+    text-align: center;
+}
 
-        .lwyl-button-center {
-            text-align: center;
-        }
+
+.lwyl-dropdown-header.lwyl-active::after {
+    transform: rotate(180deg);
+}
 
         @media (max-width: 768px) {
+    .lwyl-button-center {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .lwyl-button {
+        margin-left: 0 !important;
+    }
+
             .lwyl-page {
                 margin-right: 40px;
                 background-size: 70%;
@@ -317,24 +351,77 @@
 
 		<div class="lwyl-content-box">
 			<div class="lwyl-dropdown">
-				<div class="lwyl-dropdown-header" onclick="toggleDropdown()">Start of Semester Required Info Sessions
+				<div class="lwyl-dropdown-header" onclick="toggleDropdown()">
+					<div>Start of Semester Required Info Sessions and Training</div>
+
 					<div class="lwyl-dropdown-subtitle">You only have to attend one</div>
 				</div>
 
-				<div class="lwyl-dropdown-content" id="sessionsDropdown">
+				<div class="lwyl-dropdown-content" id="sessionsDropdown"><!-- INFO SESSION 1 -->
 					<div class="lwyl-session-item">
 						<div class="lwyl-session-date">
-							<div class="lwyl-session-month">Month</div>
+							<div class="lwyl-session-month">January</div>
 
-							<div class="lwyl-session-day">Day</div>
+							<div class="lwyl-session-day">28</div>
 						</div>
 
 						<div class="lwyl-session-details">
-							<h4>Optional Info Session - M/T/W/T/F</h4>
+							<h4>Info Session - Wednesday</h4>
 
-							<p>00:00 AM/PM - 00:00 AM/PM via Zoom(ID:)/InPerson(Location:)</p>
+							<p>1:30 PM - 2:30 PM In Person</p>
 
-							<p>Zoom Link: NA</p>
+							<p>Location: Granite 162</p>
+						</div>
+					</div>
+					<!-- INFO SESSION 2 -->
+
+					<div class="lwyl-session-item">
+						<div class="lwyl-session-date">
+							<div class="lwyl-session-month">January</div>
+
+							<div class="lwyl-session-day">30</div>
+						</div>
+
+						<div class="lwyl-session-details">
+							<h4>Info Session - Friday</h4>
+
+							<p>11:30 AM - 12:30 PM In Person</p>
+
+							<p>Location: KL 184D</p>
+						</div>
+					</div>
+					<!-- INFO SESSION 3 -->
+
+					<div class="lwyl-session-item">
+						<div class="lwyl-session-date">
+							<div class="lwyl-session-month">February</div>
+
+							<div class="lwyl-session-day">4</div>
+						</div>
+
+						<div class="lwyl-session-details">
+							<h4>Info Session - Wednesday</h4>
+
+							<p>1:30 PM - 2:30 PM <a href="https://ucmerced.zoom.us" style="color: #0f2d52; font-weight: bold;">via Zoom</a></p>
+
+							<p>Meeting ID: 885 3397 3329</p>
+						</div>
+					</div>
+					<!-- TRAINING SESSION 1 -->
+
+					<div class="lwyl-session-item">
+						<div class="lwyl-session-date">
+							<div class="lwyl-session-month">February</div>
+
+							<div class="lwyl-session-day">6</div>
+						</div>
+
+						<div class="lwyl-session-details">
+							<h4><strong>Mandatory</strong> Training Session - Friday</h4>
+
+							<p>3:00 PM - 6:00 PM In Person</p>
+
+							<p>Location: Glacier Point 140</p>
 						</div>
 					</div>
 				</div>
@@ -342,17 +429,19 @@
 		</div>
 
 		<div class="lwyl-forms-section">
-			<h3>Required Service Forms</h3>
+			<h3>Required Service Forms and Registration</h3>
 
-			<p>You must complete these required service forms to participate in the program.</p>
+			<p>You must complete these required service forms to participate in the program, and register below.</p>
 
-			<div class="lwyl-button-center"><a class="lwyl-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a></div>
+			<div class="lwyl-button-center"><a class="lwyl-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a> <a class="lwyl-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_0IBQcP6wXR0wado" style="margin-left: 1rem;">Register</a></div>
 		</div>
 	</div>
 </div>
 <script>
-        function toggleDropdown() {
-            const dropdown = document.getElementById('sessionsDropdown');
-            dropdown.classList.toggle('lwyl-active');
-        }
+function toggleDropdown() {
+    const header = document.querySelector('.lwyl-dropdown-header');
+    const dropdown = document.getElementById('sessionsDropdown');
+    header.classList.toggle('lwyl-active');
+    dropdown.classList.toggle('lwyl-active');
+}
     </script>

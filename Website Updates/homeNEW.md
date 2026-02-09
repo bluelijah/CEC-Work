@@ -44,6 +44,7 @@
             padding: 20px 0 20px 20px;
             max-width: 1200px;
             margin: 0 0 0 auto;
+            margin-right: 30px;
         }
 
         .cec-identity-block {
@@ -95,15 +96,15 @@
         }
 
         .cec-student-block {
-            background-image: url('/sites/cec.ucmerced.edu/files/images/studentsmain.jpg');
+            background-image: url('/sites/g/files/ufvvjh561/f/images/studentsmain.jpg');
         }
 
         .cec-corps-block {
-            background-image: url('/sites/cec.ucmerced.edu/files/images/collegecorpsmain.jpg');
+            background-image: url('/sites/g/files/ufvvjh561/f/images/collegecorpsmain.jpg');
         }
 
         .cec-partner-block {
-            background-image: url('/sites/cec.ucmerced.edu/files/images/jamboreemain.jpg');
+            background-image: url('/sites/g/files/ufvvjh561/f/images/jamboreemain.jpg');
         }
 
         .cec-block-content {
@@ -194,7 +195,7 @@
 		</div>
 	</div>
 
-	<div class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/collegecorps'">
+	<div class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/college-corps-directory'">
 		<div class="cec-block-content">
 			<h3 class="cec-block-title">I am</h3>
 
