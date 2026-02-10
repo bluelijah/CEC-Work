@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Use row 1 (index=1) as header, skip the first line of machine codes
-df = pd.read_csv("canra.csv", header=1)
+df = pd.read_csv("csvs/canra.csv", header=1)
 
 # Clean up
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]

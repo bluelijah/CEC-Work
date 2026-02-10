@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load CSV, use second row (row index 1) as header
-df = pd.read_csv("confidentiality.csv", header=1)
+df = pd.read_csv("csvs/confidentiality.csv", header=1)
 
 # Remove any "Unnamed" columns that Qualtrics sometimes adds
 df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
