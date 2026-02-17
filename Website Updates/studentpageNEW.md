@@ -37,28 +37,27 @@
             border-left: 5px solid #dbaa00;
         }
         
-        .step-number {
-            display: inline-block;
-            background: #dbaa00;
-            color: #0f2d52;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 40px;
-            font-weight: bold;
-            font-size: 1.3em;
-            margin-right: 15px;
-            vertical-align: middle;
-        }
-        
-        .step-section h2 {
-            display: inline-block;
-            color: #0f2d52;
-            margin: 0 0 20px 0;
-            font-size: 1.8em;
-            vertical-align: middle;
-        }
+.step-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #dbaa00;
+    color: #0f2d52;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-right: 15px;
+}
+
+.step-section h2 {
+    display: inline-flex;
+    align-items: center;
+    color: #0f2d52;
+    margin: 0 0 20px 0;
+    font-size: 1.8em;
+}
         
         .step-section p {
             color: #555;
@@ -196,14 +195,14 @@
 	<div class="welcome-section">
 		<h1>Welcome, Students!</h1>
 
-		<p>This page will serve as your comprehensive guide to community engagement at UC Merced. As a new member of the Merced community, you have the opportunity to make a meaningful impact while developing valuable skills and connections. Follow the steps below to begin your community engagement journey!</p>
+		<p>This page will serve as your comprehensive guide to community engagement at UC Merced. As a member of the Merced community, you have the opportunity to make a meaningful impact while developing valuable skills and connections. Follow the steps below to begin your community engagement journey!</p>
 	</div>
 
 	<div class="step-section"><span class="step-number">1</span>
 
 		<h2>Complete Required Service Forms</h2>
 
-		<p>Before you can begin volunteering, you&#39;ll need to complete our required service forms. These forms ensure that you&#39;re prepared and covered for your service activities. This is your first and most important step!</p>
+		<p>Many volunteer opportunities require that you complete our required service forms. These forms ensure that you&#39;re prepared and covered for what may come up during service. <strong>You can either fill them out now, or wait, and see which ones are required for your chosen service.</strong></p>
 
 		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Required Forms</a></div>
 	</div>
@@ -223,7 +222,7 @@
 		</div>
 
 		<div class="subsection">
-			<h3>One-Time Service Projects</h3>
+			<h3>One-Time Service Opportunities</h3>
 
 			<p>Perfect for busy schedules! If you&#39;re looking for single-day opportunities or want to try different types of service, explore our one-time projects.</p>
 
@@ -231,11 +230,11 @@
 		</div>
 
 		<div class="subsection">
-			<h3>Long-Term Service Opportunities</h3>
+			<h3>Long-Term Service Opportunities - (Lift While You Lead, College Corps, Bright Sparks...)</h3>
 
 			<p>Ready for a deeper commitment? Long-term service allows you to build lasting relationships and see the impact of your work over time.</p>
 
-			<div class="button-container"><a class="cta-button-secondary" href="https://cec.ucmerced.edu/Long/Term/Service">Explore Long-Term Service</a> <a class="cta-button-secondary" href="https://cec.ucmerced.edu/signature-opportunities">View Signature Opportunities</a></div>
+			<div class="button-container"><a class="cta-button-secondary" href="https://cec.ucmerced.edu/Long/Term/Service">Explore Long-Term Service</a></div>
 		</div>
 
 		<div class="subsection">
@@ -257,7 +256,7 @@
 
 		<h2>Student Collaborations</h2>
 
-		<p>Connect with fellow students who share your passion for community engagement! Learn about student-led initiatives, collaborative projects, and ways to partner with other Bobcats to amplify your impact.</p>
+		<p>Connect with US, and learn about student-led initiatives, collaborative projects, and ways to partner with the CEC to amplify your impact.</p>
 
 		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/students/student-collaborations">Explore Student Collaborations</a></div>
 	</div>
