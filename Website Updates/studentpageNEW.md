@@ -145,49 +145,7 @@
         
         @media (max-width: 768px) {
             .student-guide-container {
-                padding: 15px;
-                margin-right: 20px;
-            }
-            
-            .welcome-section {
-                padding: 25px;
-            }
-            
-            .welcome-section h1 {
-                font-size: 1.8em;
-            }
-            
-            .step-section {
-                padding: 20px;
-            }
-
-            .subsection {
-                padding: 15px;
-            }
-            
-            .button-container {
-                flex-direction: column;
-            }
-            
-            .cta-button {
-                width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-            }
-
-            .cta-button-secondary {
-                width: 100%;
-                text-align: center;
-                box-sizing: border-box;
-            }
-
-            .step-section p {
-                font-size: 1em;
-            }
-
-            .step-section a[href^="mailto"] {
-                font-size: 0.85em;
-                word-break: break-all;
+                margin-right: 30px;
             }
         }
 </style>

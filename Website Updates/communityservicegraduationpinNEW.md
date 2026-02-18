@@ -6,12 +6,12 @@
     margin: 0;
   }
 
-  .pin-container {
-    width: 100%;
-    max-width: none;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.pin-container {
+    box-sizing: border-box;  /* ensures padding doesn’t add extra width */
+    margin: 0 auto;          /* center container */
+    max-width: 100%;         /* prevents horizontal overflow */
+    padding: 0 15px;         /* reduce side padding for mobile */
+}
 
   h1, h2, h3, h4 {
     font-weight: 700;
@@ -55,12 +55,23 @@
     font-size: 0.9em;
     color: #666;
   }
+
+@media (max-width: 768px) {
+    .pin-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .highlight-box {
+        padding: 15px;   /* shrink inner padding for small screens */
+    }
+
+    ul, ol {
+        margin-left: 15px; /* keep lists inside screen width */
+    }
+}
 </style>
 <div class="pin-container">
-	<div class="highlight-box">
-		<p><strong>Honoring UC Merced students who demonstrate exceptional dedication to serving and empowering our local Merced community.</strong></p>
-	</div>
-
 	<h2>Apply Today!</h2>
 
 	<p>The Community Service Graduation Pin honors students who have demonstrated exceptional dedication to supporting and empowering our local Merced community. This recognition is awarded to those who have embraced experiential opportunities, allowing these experiences to shape them into exemplary Bobcats.</p>

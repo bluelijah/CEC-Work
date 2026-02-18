@@ -108,6 +108,11 @@
 iframe {
     border-radius: 8px;
 }
+@media (max-width: 768px) {
+    .partner-guide-container {
+        margin-right: 30px;
+    }
+}
 </style>
 <div class="partner-guide-container">
 	<div class="welcome-section">
@@ -172,7 +177,7 @@ iframe {
 			<p><strong>If you have partnered with UC Merced, your organization may be eligible to be nominated.</strong></p>
 		</div>
 
-		<div class="button-container"><a class="cta-button" href="#">Learn More About the Award</a></div>
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/community-partner-impact-award">Learn More About the Award</a></div>
 	</div>
 
 	<div class="step-section" style="border-left-color:#0f2d52;">

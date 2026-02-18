@@ -6,12 +6,12 @@
     margin: 0;
   }
 
-  .pslc-container {
-    width: 100%;
-    max-width: none;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+.pslc-container {
+    box-sizing: border-box;  /* include padding in width */
+    margin: 0 auto;          /* center container */
+    max-width: 100%;         /* prevent horizontal overflow */
+    padding: 0 15px;         /* reduce side padding for mobile friendliness */
+}
 
   h1, h2, h3 {
     font-weight: 700;
@@ -105,13 +105,42 @@
     font-size: 0.9em;
     color: #666;
   }
+
+@media (max-width: 768px) {
+    .pslc-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .step {
+        padding: 15px;         /* shrink inner step boxes on mobile */
+    }
+
+    .qr-section {
+        flex-direction: column;  /* stack QR image and text */
+        align-items: flex-start;
+    }
+
+    .course-list {
+        columns: 1;              /* one column on small screens */
+    }
+
+    iframe {
+        width: 100%;             /* make iframe responsive */
+        height: auto;
+    }
+}
 </style>
 <div class="pslc-container">
-	<div class="highlight-box">
-		<p><strong>For students who demonstrate commitment to public service &amp; leadership through co-curricular experiences during their time at UC Merced!</strong></p>
+	<h2>Want to get a Public Service &amp; Leadership Certificate?</h2>
 
-		<p>For students who want to gain hands-on experience in their fields of study, further develop their interpersonal skills, and add multiple experiences to their resumes.</p>
-	</div>
+	<p>If you are a student who:</p>
+
+	<ul>
+		<li>Demonstrates commitment to public service and leadership through co-curricular experiences</li>
+		<li>Likes gaining hands-on experience</li>
+		<li>Wants to develop their interpersonal skills</li>
+	</ul>
 
 	<h2>Benefits of PSLC</h2>
 
@@ -129,7 +158,7 @@
 
 			<p>Discover which pathway(s) to public service most speak to your interests and goals.</p>
 
-			<div class="qr-section"><img alt="Scan QR to take the Pathways Assessment" src="/sites/cec.ucmerced.edu/files/images/pathwaysqr.png" />
+			<div class="qr-section"><img alt="Scan QR to take the Pathways Assessment" src="/sites/g/files/ufvvjh561/f/images/pathwaysqr.png" />
 				<p><a href="https://stanforduniversity.qualtrics.com/jfe/form/SV_2sO52GgyYDCVUkm" target="_blank">Take the Pathways to Public Service Assessment, and Save Your Results.</a></p>
 			</div>
 
@@ -176,7 +205,7 @@
 				<li>NSED 024, 034, 064, 074, 150, 174, 184</li>
 			</ul>
 
-			<p class="note">If you believe your course qualifies but is not listed, email <a href="mailto:ucmercedcec.edu">ucmercedcec.edu</a>.</p>
+			<p class="note">If you believe your course qualifies but is not listed, email communityservice@ucmerced.edu.</p>
 		</div>
 
 		<div class="step">
@@ -192,11 +221,17 @@
 
 			<p>Once you have completed all the requirements (Steps 1-4), fill out the formal application for the Public Service &amp; Leadership Certificate. The CEC will verify your information and confirm your completion of all requirements.</p>
 
-			<div style="margin: 20px 0;"><a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_2aYTpTQGOascmeW" style="display: inline-block; background-color: #dbaa00; color: #003366; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease; border: 2px solid #dbaa00;" target="_blank">Complete the PSL Certificate Application</a></div>
+			<div style="margin: 20px 0;"><a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_9QyRUheXdSuIMui" style="display: inline-block; background-color: #dbaa00; color: #003366; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1em; transition: background-color 0.3s ease; border: 2px solid #dbaa00;" target="_blank">Complete the PSL Certificate Application</a></div>
 
 			<p class="note">Make sure you have completed all previous steps before submitting your application.</p>
 		</div>
 	</div>
+
+	<div class="highlight-box">
+		<h3 style="margin-top: 0;">Official PSL Certificate Guide</h3>
+
+		<p>Want all this information in one convenient document?</p>
+		<a href="https://ucmerced.box.com/s/6uem1v2q9a9dl3reglyg1s83jknfkvk5" style="display: inline-block; background-color: #dbaa00; color: #003366; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: bold;" target="_blank">Download the Official Guide (PDF) </a></div>
 
 	<h2>Why Should I Apply?</h2>
 
