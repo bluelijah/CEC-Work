@@ -1,146 +1,182 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 <style type="text/css">.staff {
-            border-bottom: 2px solid #ffbf3c;
-        }
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            padding: 20px;
-            justify-content: center;
-        }
-        /* special handling for sections with few cards */
-        .card-container:has(.flip-card:nth-child(1):nth-last-child(-n+3)) {
-            grid-template-columns: repeat(auto-fit, minmax(250px, 325px));
-        }
-        .flip-card {
-            background-color: transparent;
-            width: 100%;
-            max-width: 325px;
-            height: 434px;
-            perspective: 1000px;
-        }
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border-radius: 15px;
-        }
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-        .flip-card-front, .flip-card-back {
-            border-radius: 15px;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            overflow: hidden;
-        }
-        .flip-card-front {
-            background-color: #fff;
-        }
-        .flip-card-back {
-            background: linear-gradient(300deg, #a6beea, #f4cd2a);
-            color:#0F2D52;
-            transform: rotateY(180deg);
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
-            padding: 20px;
-            box-sizing: border-box;
-            font-size: 0.9rem;
-            margin-bottom: 8px;
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(15, 45, 82, 0.5) transparent;
-        }
+    border-bottom: 2px solid #ffbf3c;
+}
 
-        /* custom scrollbar for webkit browsers */
-        .flip-card-back::-webkit-scrollbar {
-            width: 6px;
-        }
-        .flip-card-back::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-        }
-        .flip-card-back::-webkit-scrollbar-thumb {
-            background: rgba(15, 45, 82, 0.5);
-            border-radius: 3px;
-        }
-        .flip-card-back::-webkit-scrollbar-thumb:hover {
-            background: rgba(15, 45, 82, 0.7);
-        }
-        
-        .flip-card-back h1{
-            font-size: 1.4rem;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-        .flip-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        .flip-card img[alt="Kasia Holland"] {
-            transform: scale(1.1);
-        }
-        .flip-card img[alt="Colin Gage"] {
-            transform: scale(1.4);
-        }
-        .flip-card img[alt="Melina Ramirez"] {
-            transform: scale(1.4);
-        }
-        .flip-card img[alt="Veronica Diaz Fletes"] {
-            transform: scale(1.4);
-        }
-        .flip-card img[alt="Michelle Clark"] {
-            transform: scale(1.4);
-        }
-        #searchBar {
-            width: 100%;
-            max-width: 400px;
-            padding: 10px;
-            margin: 20px auto;
-            display: block;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .filter-buttons {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .filter-buttons button {
-            margin: 5px;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            background-color: #ffbf3c;
-            color: white;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-        }
-        .filter-buttons button:hover {
-            background-color: #e6a700;
-            transform: scale(1.05);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-        }
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card-container:has(.flip-card:nth-child(1):nth-last-child(-n+3)) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 325px));
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    max-width: 325px;
+    height: 434px;
+    perspective: 1000px;
+    cursor: default;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
+
+/* Hover mode (default) */
+body.mode-hover .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Click mode */
+body.mode-click .flip-card {
+    cursor: pointer;
+}
+
+body.mode-click .flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, 
+.flip-card-back {
+    border-radius: 15px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    background-color: #ffffff;
+}
+
+.flip-card-back {
+    background: linear-gradient(300deg, #a6beea, #f4cd2a);
+    color: #0F2D52;
+    transform: rotateY(180deg);
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 0.9rem;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(15,45,82,0.5) transparent;
+}
+
+.flip-card-back::-webkit-scrollbar { width: 6px; }
+.flip-card-back::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); }
+.flip-card-back::-webkit-scrollbar-thumb { background: rgba(15,45,82,0.5); border-radius: 3px; }
+.flip-card-back::-webkit-scrollbar-thumb:hover { background: rgba(15,45,82,0.7); }
+
+.flip-card-back h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.flip-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.05);
+}
+
+#searchBar {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.filter-buttons button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffbf3c;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.filter-buttons button:hover {
+    background-color: #e6a700;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Flip mode toggle buttons */
+.flip-mode-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.flip-mode-buttons button {
+    margin: 5px;
+    padding: 10px 16px;
+    border: 2px solid #003366;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    font-size: 0.9rem;
+}
+
+.flip-mode-buttons button:hover {
+    background-color: #00509e;
+    border-color: #00509e;
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.flip-mode-buttons button.active {
+    background-color: #ffffff;
+    color: #003366;
+    border-color: #003366;
+}
+
+.flip-mode-buttons button.active:hover {
+    background-color: #e8eef5;
+    color: #003366;
+    border-color: #003366;
+    transform: scale(1.05);
+}
 </style>
 <p><input id="searchBar" placeholder="Search by name, title, or email..." type="text" /></p>
 
 <div class="filter-buttons"><button onclick="filterStaff('all')">All</button><button onclick="filterStaff('professional')">Professional Staff</button><button onclick="filterStaff('student')">CEC Student Staff</button><button onclick="filterStaff('driver')">Bright Sparks Student Staff</button></div>
+
+<div class="flip-mode-buttons"><button class="active" id="btn-hover" onclick="setFlipMode('hover')">Hover to flip</button><button id="btn-click" onclick="setFlipMode('click')">Click to flip</button></div>
 
 <h3 class="staff" style="text-align: center;">Professional Staff</h3>
 
 <div class="card-container" id="professional">
 	<div class="flip-card" data-email="vdoty@ucmerced.edu" data-name="Vernette Doty" data-role="Director">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Vernette Doty" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/people/doty_vernette_f21_3.jpg" /></div>
+			<div class="flip-card-front"><img alt="Vernette Doty" src="https://cec.ucmerced.edu/sites/g/files/ufvvjh561/f/people/doty_vernette_f21_3.jpg" /></div>
 
 			<div class="flip-card-back">
 				<h1>Vernette Doty</h1>
@@ -158,7 +194,7 @@
 
 	<div class="flip-card" data-email="atafolla@ucmerced.edu" data-name="Andrea Tafolla" data-role="Associate Director">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Andrea Tafolla" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/people/tafolla_andrea_f21_2.jpg" /></div>
+			<div class="flip-card-front"><img alt="Andrea Tafolla" src="https://cec.ucmerced.edu/sites/g/files/ufvvjh561/f/people/tafolla_andrea_f21_2.jpg" /></div>
 
 			<div class="flip-card-back">
 				<h1>Andrea Tafolla</h1>
@@ -176,7 +212,7 @@
 
 	<div class="flip-card" data-email="colingage@ucmerced.edu" data-name="Colin Gage" data-role="Bright Spark Scholars Coordinator">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Colin Gage" src="/sites/cec.ucmerced.edu/files/documents/colin_gage_photo.jpg" /></div>
+			<div class="flip-card-front"><img alt="Colin Gage" src="/sites/g/files/ufvvjh561/f/documents/colin_gage_photo.jpg" /></div>
 
 			<div class="flip-card-back">
 				<h1>Colin Gage</h1>
@@ -196,7 +232,7 @@
 
 	<div class="flip-card" data-email="pricillacardenas@ucmerced.edu" data-name="Pricilla Cardenas" data-role="Community Engagement Coordinator">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Pricilla Cardenas" src="/sites/cec.ucmerced.edu/files/documents/pricilla_headshot.jpg" /></div>
+			<div class="flip-card-front"><img alt="Pricilla Cardenas" src="/sites/g/files/ufvvjh561/f/documents/pricilla_headshot.jpg" /></div>
 
 			<div class="flip-card-back">
 				<h1>Pricilla Cardenas</h1>
@@ -218,7 +254,7 @@
 <div class="card-container" id="student">
 	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Elijah Olson" data-role="Website Developer and Data Technician">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Elijah Olson" src="/sites/cec.ucmerced.edu/files/people/elijaholson1.png" /></div>
+			<div class="flip-card-front"><img alt="Elijah Olson" src="/sites/g/files/ufvvjh561/f/people/elijaholson1.png" /></div>
 
 			<div class="flip-card-back">
 				<h1>Elijah Olson</h1>
@@ -240,7 +276,7 @@
 
 	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Veronica Diaz Fletes" data-role="Student Driver and Weekend Lead">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Veronica Diaz Fletes" src="/sites/cec.ucmerced.edu/files/people/veronica_fall2025.jpeg" /></div>
+			<div class="flip-card-front"><img alt="Veronica Diaz Fletes" src="/sites/g/files/ufvvjh561/f/people/veronica_fall2025.jpeg" style="transform: scale(1.15);" /></div>
 
 			<div class="flip-card-back">
 				<h1>Veronica Diaz Fletes</h1>
@@ -254,7 +290,7 @@
 				<p>I manage the Community Engagement Center&#39;s social media platforms, where I create content to highlight our programs and promote new service events. I also support the center through outreach and administrative work, helping connect students with opportunities to get involved.</p>
 
 				<div class="quote-strengths">
-					<p>Strengths: Coming soon!</p>
+					<p>Strengths: Creative, Leader, Problem Solver, Analytical, Proactive</p>
 				</div>
 			</div>
 		</div>
@@ -262,14 +298,14 @@
 
 	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Michelle Clark" data-role="Service and Leadership Programs Student Assistant">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Michelle Clark" src="/sites/cec.ucmerced.edu/files/people/mickey_fall2025.jpeg" /></div>
+			<div class="flip-card-front"><img alt="Michelle Clark" src="/sites/g/files/ufvvjh561/f/people/mickey_fall2025.jpeg" style="transform: scale(1.15);" /></div>
 
 			<div class="flip-card-back">
 				<h1>Michelle Clark</h1>
 
 				<p><strong>Service and Leadership Programs Student Assistant</strong></p>
 
-				<p>3rd year Environmental Systems Science Major</p>
+				<p>3rd year, Environmental Systems Science Major</p>
 
 				<p>communityservice@ucmerced.edu</p>
 
@@ -282,16 +318,16 @@
 		</div>
 	</div>
 
-	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Melina Ramirez" data-role="Bright Spark Scholar Driver">
+	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Melina Ramirez" data-role="Long Term Service Coordinator">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Melina Ramirez" src="/sites/cec.ucmerced.edu/files/people/melina_spring2025.jpg" /></div>
+			<div class="flip-card-front"><img alt="Melina Ramirez" src="/sites/g/files/ufvvjh561/f/people/melina_spring2025.jpg" style="transform: scale(1.15);" /></div>
 
 			<div class="flip-card-back">
 				<h1>Melina Ramirez</h1>
 
-				<p><strong>Bright Spark Scholar Driver</strong></p>
+				<p><strong>Long Term Service Coordinator</strong></p>
 
-				<p>More info coming soon!</p>
+				<p>3rd Year, Political Science Major</p>
 
 				<p>communityservice@ucmerced.edu</p>
 
@@ -308,7 +344,7 @@
 <div class="card-container" id="driver">
 	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Kasia Holland" data-role="Bright Spark Scholars Program Student Lead">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Kasia Holland" src="/sites/cec.ucmerced.edu/files/people/kasia_fall_2025.jpeg" /></div>
+			<div class="flip-card-front"><img alt="Kasia Holland" src="/sites/g/files/ufvvjh561/f/people/kasia_fall_2025.jpeg" /></div>
 
 			<div class="flip-card-back">
 				<h1>Kasia Holland</h1>
@@ -328,44 +364,70 @@
 		</div>
 	</div>
 
-	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Isabella Carter" data-role="">
+	<div class="flip-card" data-email="communityservice@ucmerced.edu" data-name="Natalia Arreola" data-role="Role">
 		<div class="flip-card-inner">
-			<div class="flip-card-front"><img alt="Isabella Carter" src="/sites/cec.ucmerced.edu/files/people/person-placeholder.jpg" /></div>
+			<div class="flip-card-front"><img alt="Natalia Arreola" src="/sites/g/files/ufvvjh561/f/people/natalia_spring_2026.jpg" /></div>
 
 			<div class="flip-card-back">
-				<h1>Isabella Carter</h1>
+				<h1>Natalia Arreola</h1>
 
-				<p>&nbsp;</p>
+				<p><strong>Bright Sparks Scholar Student Assistant</strong></p>
 
-				<p>&nbsp;</p>
+				<p>2nd, Mechanical Engineering Major</p>
 
 				<p>communityservice@ucmerced.edu</p>
 
+				<p>Description</p>
+
 				<div class="quote-strengths">
-					<p>Strengths:</p>
+					<p>Strengths: Coming Soon!</p>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 <script>
-        document.getElementById('searchBar').addEventListener('keyup', function () {
-            let searchValue = this.value.toLowerCase();
-            document.querySelectorAll('.flip-card').forEach(card => {
-                let name = card.getAttribute('data-name').toLowerCase();
-                let role = card.getAttribute('data-role').toLowerCase();
-                let email = card.getAttribute('data-email').toLowerCase();
-                if (name.includes(searchValue) || role.includes(searchValue) || email.includes(searchValue)) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+    // Set initial mode
+    document.body.classList.add('mode-hover');
+
+    function setFlipMode(mode) {
+        // Unflip all cards when switching modes
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.classList.remove('flipped');
         });
 
-        function filterStaff(category) {
-            document.querySelectorAll('.card-container').forEach(container => {
-                container.style.display = category === 'all' || container.id === category ? 'grid' : 'none';
-            });
-        }
-    </script>
+        // Swap body class
+        document.body.classList.remove('mode-hover', 'mode-click');
+        document.body.classList.add('mode-' + mode);
+
+        // Update active button state
+        document.getElementById('btn-hover').classList.toggle('active', mode === 'hover');
+        document.getElementById('btn-click').classList.toggle('active', mode === 'click');
+    }
+
+    // Click-to-flip handler
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', function () {
+            if (document.body.classList.contains('mode-click')) {
+                this.classList.toggle('flipped');
+            }
+        });
+    });
+
+    // Search
+    document.getElementById('searchBar').addEventListener('keyup', function () {
+        let searchValue = this.value.toLowerCase();
+        document.querySelectorAll('.flip-card').forEach(card => {
+            let name = card.getAttribute('data-name').toLowerCase();
+            let role = card.getAttribute('data-role').toLowerCase();
+            let email = card.getAttribute('data-email').toLowerCase();
+            card.style.display = (name.includes(searchValue) || role.includes(searchValue) || email.includes(searchValue)) ? 'block' : 'none';
+        });
+    });
+
+    function filterStaff(category) {
+        document.querySelectorAll('.card-container').forEach(container => {
+            container.style.display = category === 'all' || container.id === category ? 'grid' : 'none';
+        });
+    }
+</script>

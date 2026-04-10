@@ -57,7 +57,10 @@
         }
         
         .cta-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             background: #dbaa00;
             color: #0f2d52 !important;
             padding: 14px 28px;
@@ -76,6 +79,31 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
             border: 2px solid #0f2d52;
+        }
+
+        .cta-button-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
+            background: #0f2d52 !important;
+            color: white !important;
+            border: 2px solid #0f2d52;
+            padding: 14px 28px;
+            text-decoration: none !important;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            font-size: 1.05em;
+        }
+        
+        .cta-button-secondary:hover {
+            background: #dbaa00 !important;
+            color: #0f2d52 !important;
+            border: 2px solid #dbaa00;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
         }
         
         @media (max-width: 768px) {
@@ -111,50 +139,42 @@
             }
         }
 </style>
+
 <div class="directory-container">
-	<div class="welcome-section">
-		<h1>Welcome to the College Corps Directory!</h1>
+    <div class="welcome-section">
+        <h1>Welcome to the College Corps Directory!</h1>
+        <p>Here you can find everything you&#39;ll need for College Corps related information and resources. Whether you&#39;re learning about the program for the first time, considering becoming a Fellow, or are currently serving, we&#39;ve organized everything you need in one place.</p>
+    </div>
 
-		<p>Here you can find everything you&#39;ll need for College Corps related information and resources. Whether you&#39;re learning about the program for the first time, considering becoming a Fellow, or are currently serving, we&#39;ve organized everything you need in one place.</p>
-	</div>
+    <div class="directory-section">
+        <h2>Learn What College Corps Is</h2>
+        <p>Discover how the #CaliforniansForAll College Corps program combines meaningful community service with financial support to help students graduate on time with less debt. Learn about our focus areas, program goals, and the impact Fellows are making across California.</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/college-corps">Explore College Corps</a>
+        </div>
+    </div>
 
-	<div class="directory-section">
-		<h2>Learn What College Corps Is</h2>
+    <div class="directory-section">
+        <h2>If You&#39;d Like to Become a College Corps Fellow</h2>
+        <p>Interested in joining College Corps? Learn about eligibility requirements, application processes, and the benefits of becoming a Fellow. Find out how you can serve your community while gaining valuable experience and reducing your educational costs.</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/college-corps/future-fellows">Future Fellows Information</a>
+        </div>
+    </div>
 
-		<p>Discover how the #CaliforniansForAll College Corps program combines meaningful community service with financial support to help students graduate on time with less debt. Learn about our focus areas, program goals, and the impact Fellows are making across California.</p>
+    <div class="directory-section">
+        <h2>If You Are Already a College Corps Fellow</h2>
+        <p>Access important resources for current Fellows including hour tracking, required forms, training schedules, and program updates. Stay connected with your cohort and find everything you need to successfully complete your term of service.</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/current-fellows">Current Fellows Resources</a>
+        </div>
+    </div>
 
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/college-corps">Explore College Corps</a></div>
-	</div>
-
-	<div class="directory-section">
-		<h2>If You&#39;d Like to Become a College Corps Fellow</h2>
-
-		<p>Interested in joining College Corps? Learn about eligibility requirements, application processes, and the benefits of becoming a Fellow. Find out how you can serve your community while gaining valuable experience and reducing your educational costs.</p>
-
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/college-corps/future-fellows">Future Fellows Information</a></div>
-	</div>
-
-	<div class="directory-section">
-		<h2>If You Are Already a College Corps Fellow</h2>
-
-		<p>Access important resources for current Fellows including hour tracking, required forms, training schedules, and program updates. Stay connected with your cohort and find everything you need to successfully complete your term of service.</p>
-
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/collegecorps/fellows">Current Fellows Resources</a></div>
-	</div>
-
-	<div class="directory-section" style="border-left-color: #0f2d52;">
-		<h2 style="display: block; margin-bottom: 15px;">Questions?</h2>
-
-		<p>Our College Corps team is here to support you. If you have any questions or need assistance, please don&#39;t hesitate to reach out!</p>
-
-		<p style="margin-bottom: 10px;"><strong>Visit us:</strong><br />
-			Community Engagement Center - KL 172<br />
-			Monday - Friday, 9:00 AM - 5:00 PM</p>
-
-		<p style="margin-bottom: 10px;"><strong>Email us:</strong><br />
-			<a href="mailto:collegecorps@ucmerced.edu" style="color: #dbaa00;">collegecorps@ucmerced.edu</a></p>
-
-		<p style="margin-bottom: 0;"><strong>Follow us on Instagram:</strong><br />
-			<a href="https://www.instagram.com/ucmcollegecorps/" style="color: #dbaa00;" target="_blank">@ucmcollegecorps</a> | <a href="https://www.instagram.com/ucmercedcec/" style="color: #dbaa00;" target="_blank">@ucmercedcec</a></p>
-	</div>
+    <div class="directory-section" style="border-left-color: #0f2d52;">
+        <h2>Questions?</h2>
+        <p>Our College Corps team is here to support you. If you have any questions or need assistance, please don&#39;t hesitate to reach out!</p>
+        <div class="button-container">
+            <a class="cta-button-secondary" href="https://cec.ucmerced.edu/college-corps-contact">Contact College Corps</a>
+        </div>
+    </div>
 </div>

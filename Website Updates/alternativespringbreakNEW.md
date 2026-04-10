@@ -6,7 +6,8 @@
   width: 100%;
   padding: 0;
   background: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  display: block;
 }
 
 .infinite-slider .track {
@@ -15,6 +16,10 @@
   width: max-content;
   animation: scroll-left 35s linear infinite;
   will-change: transform;
+}
+
+.infinite-slider .track.paused {
+  animation-play-state: paused;
 }
 
 /* One "card" */
@@ -32,11 +37,12 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transform: scale(1.05);
   transition: transform .35s ease;
 }
 
 .infinite-slider .slide:hover img {
-  transform: scale(1.06);
+  transform: scale(1.1);
 }
 
 @keyframes scroll-left {
@@ -46,6 +52,44 @@
 /* accessibility: respect users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   .infinite-slider .track { animation: none; }
+}
+
+/* Carousel wrapper for button positioning */
+.asb-slider-wrapper {
+  position: relative;
+}
+
+#sliderToggleBtn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 10px 18px;
+  min-height: 44px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  background-color: rgba(15, 45, 82, 0.7);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+}
+
+#sliderToggleBtn:hover {
+  background-color: rgba(15, 45, 82, 0.9);
+  transform: scale(1.05);
+}
+
+#sliderToggleBtn.paused-state {
+  background-color: rgba(255,255,255,0.9);
+  color: #003366;
+  border-color: white;
+}
+
+#sliderToggleBtn.paused-state:hover {
+  background-color: white;
+  transform: scale(1.05);
 }
 
 /* ASB Page Styles */
@@ -59,7 +103,7 @@
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-image: url('/sites/cec.ucmerced.edu/files/images/asb-logo.png');
+    background-image: url('/sites/g/files/ufvvjh561/f/images/asb-logo.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -335,114 +379,134 @@
 </style>
 <div class="asb-page">
 	<div class="asb-container"><!-- Image Slider at Top -->
-		<div class="infinite-slider">
-			<div class="track"><!-- SET A -->
-				<div class="slide"><img alt="1" src="/sites/g/files/ufvvjh561/f/images/shared_image-2.jpg" /></div>
+		<div class="asb-slider-wrapper"><button aria-label="Pause photo carousel" id="sliderToggleBtn" onclick="toggleSlider()">Pause carousel</button>
+			<div class="infinite-slider">
+				<div class="track" id="sliderTrack"><!-- SET A -->
+					<div class="slide"><img alt="ASB volunteers working in a garden on the Yurok Reservation" src="/sites/g/files/ufvvjh561/f/images/shared_image-2.jpg" /></div>
 
-				<div class="slide"><img alt="2" src="/sites/g/files/ufvvjh561/f/images/shared_image-3.jpg" /></div>
+					<div class="slide"><img alt="Students and community members standing by a river in Northern California" src="/sites/g/files/ufvvjh561/f/images/shared_image-3.jpg" /></div>
 
-				<div class="slide"><img alt="3" src="/sites/g/files/ufvvjh561/f/images/shared_image-4.jpg" /></div>
+					<div class="slide"><img alt="UC Merced students participating in a cultural workshop" src="/sites/g/files/ufvvjh561/f/images/shared_image-4.jpg" /></div>
 
-				<div class="slide"><img alt="4" src="/sites/g/files/ufvvjh561/f/images/shared_image.jpg" /></div>
+					<div class="slide"><img alt="Group of Alternative Spring Break volunteers posing together" src="/sites/g/files/ufvvjh561/f/images/shared_image.jpg" /></div>
 
-				<div class="slide"><img alt="5" src="/sites/g/files/ufvvjh561/f/images/shared_image_1.jpg" /></div>
-				<!-- SET B (duplicate) -->
+					<div class="slide"><img alt="Students learning about food sovereignty from Yurok community members" src="/sites/g/files/ufvvjh561/f/images/shared_image_1.jpg" /></div>
+					<!-- SET B (duplicate) -->
 
-				<div class="slide"><img alt="1" src="/sites/g/files/ufvvjh561/f/images/shared_image_2.jpg" /></div>
+					<div class="slide"><img alt="ASB volunteers working in a garden on the Yurok Reservation" src="/sites/g/files/ufvvjh561/f/images/shared_image_2.jpg" /></div>
 
-				<div class="slide"><img alt="2" src="/sites/g/files/ufvvjh561/f/images/shared_image_3.jpg" /></div>
+					<div class="slide"><img alt="Students and community members standing by a river in Northern California" src="/sites/g/files/ufvvjh561/f/images/shared_image_3.jpg" /></div>
 
-				<div class="slide"><img alt="3" src="/sites/g/files/ufvvjh561/f/images/shared_image_4.jpg" /></div>
+					<div class="slide"><img alt="UC Merced students participating in a cultural workshop" src="/sites/g/files/ufvvjh561/f/images/shared_image_4.jpg" /></div>
 
-				<div class="slide"><img alt="4" src="/sites/g/files/ufvvjh561/f/images/shared_image_6.jpg" /></div>
+					<div class="slide"><img alt="Group of Alternative Spring Break volunteers posing together" src="/sites/g/files/ufvvjh561/f/images/shared_image_6.jpg" /></div>
 
-				<div class="slide"><img alt="5" src="/sites/g/files/ufvvjh561/f/images/shared_image_7.jpg" /></div>
+					<div class="slide"><img alt="Students learning about food sovereignty from Yurok community members" src="/sites/g/files/ufvvjh561/f/images/shared_image_7.jpg" /></div>
+				</div>
 			</div>
-		</div>
-		<!-- Header -->
+			<!-- Header -->
 
-		<div class="asb-header">
-			<h1>Seeds of Connection</h1>
+			<div class="asb-header">
+				<h1>Seeds of Connection</h1>
 
-			<p>Alternative Spring Break 2026</p>
-		</div>
-		<!-- Main Content -->
-
-		<div class="asb-content-box">
-			<p>The Community Engagement Center invites interested students to attend an <strong>Information Session</strong> to learn more about the <strong>Alternative Spring Break 2026</strong> experience. This service-learning opportunity offers 12 third and fourth year UC Merced students a fully funded, week-long immersion on the <strong>Yurok Tribe Reservation</strong> in Northern California, focused on <strong>food sovereignty</strong> and <strong>cultural education</strong>.</p>
-
-			<div class="asb-highlight-box">
-				<p><strong>Attending an info session is mandatory in order to receive the official application.</strong></p>
+				<p>Alternative Spring Break 2026</p>
 			</div>
+			<!-- Main Content -->
 
-			<h2>What to Expect in the Info Session</h2>
+			<div class="asb-content-box">
+				<p>The Community Engagement Center invites interested students to attend an <strong>Information Session</strong> to learn more about the <strong>Alternative Spring Break 2026</strong> experience. This service-learning opportunity offers 12 third and fourth year UC Merced students a fully funded, week-long immersion on the <strong>Yurok Tribe Reservation</strong> in Northern California, focused on <strong>food sovereignty</strong> and <strong>cultural education</strong>.</p>
 
-			<ul>
-				<li>Overview of Alternative Spring Break goals and purpose</li>
-				<li>Trip details, service activities, and cultural learning</li>
-				<li>Expectations for participation, including lunch seminars</li>
-				<li>Application process and deadlines</li>
-				<li>Live Q&amp;A with CEC staff</li>
-			</ul>
-
-			<h2>About the Yurok Tribe!</h2>
-
-			<p>The Yurok Tribe is California&#39;s largest federally recognized tribe, with more then 5,000 enrolled members whose homelands span the lower Klamath River and North Coast in present-day Del Norte and Humboldt counties. The Yurok people have lived along the river and redwood coast since time immemorial in village communities, traveling by redwood canoe; salmon and acorns anchored daily life, and world-class basketry remains a hallmark of Yurok culture. Their language, Yurok (Saa&#39;agoch&#39;), is part of the Algic family, related to Wiyot and the Algonquian languages, and continues through active revitalization! Our program engages as guests on Yurok land, following Tribal guidance and supporting stewardship, language, and community priorities.</p>
-		</div>
-		<!-- Info Sessions Dropdown -->
-
-		<div class="asb-content-box">
-			<div class="asb-dropdown">
-				<div class="asb-dropdown-header" onclick="toggleDropdown()">Info Session Options
-					<div class="asb-dropdown-subtitle">You only have to attend one</div>
+				<div class="asb-highlight-box">
+					<p><strong>Attending an info session is mandatory in order to receive the official application.</strong></p>
 				</div>
 
-				<div class="asb-dropdown-content" id="sessionsDropdown">
-					<div class="asb-session-item">
-						<div class="asb-session-date">
-							<div class="asb-session-month">Month</div>
+				<h2>What to Expect in the Info Session</h2>
 
-							<div class="asb-session-day">Day</div>
-						</div>
+				<ul>
+					<li>Overview of Alternative Spring Break goals and purpose</li>
+					<li>Trip details, service activities, and cultural learning</li>
+					<li>Expectations for participation, including lunch seminars</li>
+					<li>Application process and deadlines</li>
+					<li>Live Q&amp;A with CEC staff</li>
+				</ul>
 
-						<div class="asb-session-details">
-							<h4>Optional Info Session - M/T/W/T/F</h4>
+				<h2>About the Yurok Tribe!</h2>
 
-							<p>00:00 AM/PM - 00:00 AM/PM via Zoom(ID:)/InPerson(Location:)</p>
+				<p>The Yurok Tribe is California&#39;s largest federally recognized tribe, with more then 5,000 enrolled members whose homelands span the lower Klamath River and North Coast in present-day Del Norte and Humboldt counties. The Yurok people have lived along the river and redwood coast since time immemorial in village communities, traveling by redwood canoe; salmon and acorns anchored daily life, and world-class basketry remains a hallmark of Yurok culture. Their language, Yurok (Saa&#39;agoch&#39;), is part of the Algic family, related to Wiyot and the Algonquian languages, and continues through active revitalization! Our program engages as guests on Yurok land, following Tribal guidance and supporting stewardship, language, and community priorities.</p>
+			</div>
+			<!-- Info Sessions Dropdown -->
 
-							<p>Zoom Link: NA</p>
+			<div class="asb-content-box">
+				<div class="asb-dropdown">
+					<div class="asb-dropdown-header" onclick="toggleDropdown()">Info Session Options
+						<div class="asb-dropdown-subtitle">You only have to attend one</div>
+					</div>
+
+					<div class="asb-dropdown-content" id="sessionsDropdown">
+						<div class="asb-session-item">
+							<div class="asb-session-date">
+								<div class="asb-session-month">Month</div>
+
+								<div class="asb-session-day">Day</div>
+							</div>
+
+							<div class="asb-session-details">
+								<h4>Optional Info Session - M/T/W/T/F</h4>
+
+								<p>00:00 AM/PM - 00:00 AM/PM via Zoom(ID:)/InPerson(Location:)</p>
+
+								<p>Zoom Link: NA</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<!-- Registration Form -->
+			<!-- Registration Form -->
 
-		<div class="asb-content-box">
-			<h2>Register for an Info Session</h2>
+			<div class="asb-content-box">
+				<h2>Register for an Info Session</h2>
 
-			<p>Please arrive on time. Each session will include a short presentation and time for questions.</p>
+				<p>Please arrive on time. Each session will include a short presentation and time for questions.</p>
 
-			<div class="asb-iframe-container"><iframe height="500px" src="https://ucmerced.az1.qualtrics.com/jfe/form/SV_8jnA92paBchCQtg" width="100%"></iframe></div>
+				<div class="asb-iframe-container"><iframe height="500px" src="https://ucmerced.az1.qualtrics.com/jfe/form/SV_8jnA92paBchCQtg" width="100%"></iframe></div>
 
-			<p style="text-align: center;">Click <a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_8jnA92paBchCQtg" style="color: #0f2d52; font-weight: bold;">HERE</a> to register if the form above is not working.</p>
-		</div>
-		<!-- Who Should Attend -->
+				<p style="text-align: center;">Click <a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_8jnA92paBchCQtg" style="color: #0f2d52; font-weight: bold;">HERE</a> to register if the form above is not working.</p>
+			</div>
+			<!-- Who Should Attend -->
 
-		<div class="asb-content-box">
-			<h2>Who Should Attend?</h2>
+			<div class="asb-content-box">
+				<h2>Who Should Attend?</h2>
 
-			<p>This opportunity is open to <strong>3rd and 4th year UC Merced students</strong> who are committed to service, reflection, and cultural humility. Space is limited, and attending an info session is the first step in the application process.</p>
+				<p>This opportunity is open to <strong>3rd and 4th year UC Merced students</strong> who are committed to service, reflection, and cultural humility. Space is limited, and attending an info session is the first step in the application process.</p>
 
-			<h2>Questions?</h2>
+				<h2>Questions?</h2>
 
-			<p>Email us at <a href="mailto:communityservice@ucmerced.edu" style="color: #0f2d52; font-weight: bold;">communityservice@ucmerced.edu</a>. We&#39;re happy to help!</p>
+				<p>Email us at <a href="mailto:communityservice@ucmerced.edu" style="color: #0f2d52; font-weight: bold;">communityservice@ucmerced.edu</a>. We&#39;re happy to help!</p>
+			</div>
 		</div>
 	</div>
-</div>
-<script>
-    function toggleDropdown() {
-        const dropdown = document.getElementById('sessionsDropdown');
-        dropdown.classList.toggle('asb-active');
+	<script>
+  var sliderPaused = false;
+
+  function toggleSlider() {
+    var track = document.getElementById('sliderTrack');
+    var btn = document.getElementById('sliderToggleBtn');
+    sliderPaused = !sliderPaused;
+    if (sliderPaused) {
+      track.classList.add('paused');
+      btn.textContent = 'Resume carousel';
+      btn.setAttribute('aria-label', 'Resume photo carousel');
+      btn.classList.add('paused-state');
+    } else {
+      track.classList.remove('paused');
+      btn.textContent = 'Pause carousel';
+      btn.setAttribute('aria-label', 'Pause photo carousel');
+      btn.classList.remove('paused-state');
     }
-</script>
+  }
+
+  function toggleDropdown() {
+    const dropdown = document.getElementById('sessionsDropdown');
+    dropdown.classList.toggle('asb-active');
+  }
+</script></div>

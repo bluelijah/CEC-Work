@@ -36,28 +36,29 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             border-left: 5px solid #dbaa00;
         }
-        
-.step-number {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background: #dbaa00;
-    color: #0f2d52;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 1.3em;
-    margin-right: 15px;
-}
 
-.step-section h2 {
-    display: inline-flex;
-    align-items: center;
-    color: #0f2d52;
-    margin: 0 0 20px 0;
-    font-size: 1.8em;
-}
+        .step-section h2 {
+            display: flex;
+            align-items: center;
+            color: #0f2d52;
+            margin: 0 0 20px 0;
+            font-size: 1.8em;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #dbaa00;
+            color: #0f2d52;
+            width: 32px;
+            height: 32px;
+            min-width: 32px;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 0.75em;
+            margin-right: 15px;
+        }
         
         .step-section p {
             color: #555;
@@ -73,7 +74,10 @@
         }
         
         .cta-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             background: #dbaa00;
             color: #0f2d52 !important;
             padding: 14px 28px;
@@ -95,10 +99,13 @@
         }
         
         .cta-button-secondary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             background: #0f2d52 !important;
             color: white !important;
             border: 2px solid #0f2d52;
-            display: inline-block;
             padding: 14px 28px;
             text-decoration: none !important;
             border-radius: 6px;
@@ -149,100 +156,88 @@
             }
         }
 </style>
+
 <div class="student-guide-container">
-	<div class="welcome-section">
-		<h1>Welcome, Students!</h1>
+    <div class="welcome-section">
+        <h1>Welcome, Students!</h1>
+        <p>This page will serve as your comprehensive guide to community engagement at UC Merced. As a member of the Merced community, you have the opportunity to make a meaningful impact while developing valuable skills and connections. Follow the steps below to begin your community engagement journey!</p>
+    </div>
 
-		<p>This page will serve as your comprehensive guide to community engagement at UC Merced. As a member of the Merced community, you have the opportunity to make a meaningful impact while developing valuable skills and connections. Follow the steps below to begin your community engagement journey!</p>
-	</div>
+    <div class="step-section">
+        <h2><span class="step-number" aria-hidden="true">1</span>Complete Required Service Forms</h2>
+        <p>Many volunteer opportunities require that you complete our required service forms. These forms ensure that you&#39;re prepared and covered for what may come up during service. <strong>You can either fill them out now, or wait, and see which ones are required for your chosen service.</strong></p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Required Forms</a>
+        </div>
+    </div>
 
-	<div class="step-section"><span class="step-number">1</span>
+    <div class="step-section">
+        <h2><span class="step-number" aria-hidden="true">2</span>Explore Service Opportunities</h2>
+        <p>Now it&#39;s time to discover what kind of community service resonates with you! We offer a variety of opportunities to match your interests, schedule, and commitment level.</p>
 
-		<h2>Complete Required Service Forms</h2>
+        <div class="subsection">
+            <h3>Browse All Upcoming Events</h3>
+            <p>Check out our calendar to see everything happening in the community engagement space.</p>
+            <div class="button-container">
+                <a class="cta-button" href="https://cec.ucmerced.edu/calendar">View Event Calendar</a>
+            </div>
+        </div>
 
-		<p>Many volunteer opportunities require that you complete our required service forms. These forms ensure that you&#39;re prepared and covered for what may come up during service. <strong>You can either fill them out now, or wait, and see which ones are required for your chosen service.</strong></p>
+        <div class="subsection">
+            <h3>One-Time Service Opportunities</h3>
+            <p>Perfect for busy schedules! If you&#39;re looking for single-day opportunities or want to try different types of service, explore our one-time projects.</p>
+            <div class="button-container">
+                <a class="cta-button-secondary" href="https://cec.ucmerced.edu/one-time-service-projects">Browse One-Time Projects</a>
+            </div>
+        </div>
 
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Required Forms</a></div>
-	</div>
+        <div class="subsection">
+            <h3>Long-Term Service Opportunities - (Lift While You Lead, College Corps, Bright Sparks...)</h3>
+            <p>Ready for a deeper commitment? Long-term service allows you to build lasting relationships and see the impact of your work over time.</p>
+            <div class="button-container">
+                <a class="cta-button-secondary" href="https://cec.ucmerced.edu/Long/Term/Service">Explore Long-Term Service</a>
+            </div>
+        </div>
 
-	<div class="step-section"><span class="step-number">2</span>
+        <div class="subsection">
+            <div class="info-box" role="note">
+                <p><strong>Not sure where to start?</strong> Take our Public Service Pathways Assessment to identify the types of service that align with your interests and values!</p>
+            </div>
+            <div class="button-container" style="margin-top: 15px;">
+                <a class="cta-button" href="https://cec.ucmerced.edu/pathways">Take the Pathways Assessment</a>
+            </div>
+        </div>
+    </div>
 
-		<h2>Explore Service Opportunities</h2>
+    <div class="step-section">
+        <h2><span class="step-number" aria-hidden="true">3</span>Student Collaborations</h2>
+        <p>Connect with US, and learn about student-led initiatives, collaborative projects, and ways to partner with the CEC to amplify your impact.</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/students/student-collaborations">Explore Student Collaborations</a>
+        </div>
+    </div>
 
-		<p>Now it&#39;s time to discover what kind of community service resonates with you! We offer a variety of opportunities to match your interests, schedule, and commitment level.</p>
+    <div class="step-section">
+        <h2><span class="step-number" aria-hidden="true">4</span>Record Your Service Hours</h2>
+        <p>Already completed community service? Don&#39;t forget to log your hours! Tracking your service is important for documenting your civic engagement and may be required for scholarships, programs, or graduation requirements.</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/service-hours">Service Hours Tracking Guide</a>
+        </div>
+    </div>
 
-		<div class="subsection">
-			<h3>Browse All Upcoming Events</h3>
+    <div class="step-section">
+        <h2><span class="step-number" aria-hidden="true">5</span>Student Awards</h2>
+        <p>Outstanding community engagement deserves recognition! Learn about awards and honors available to students who demonstrate exceptional commitment to service. Your dedication to making a difference could be celebrated!</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://cec.ucmerced.edu/student-awards">View Student Awards</a>
+        </div>
+    </div>
 
-			<p>Check out our calendar to see everything happening in the community engagement space.</p>
-
-			<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/calendar">View Event Calendar</a></div>
-		</div>
-
-		<div class="subsection">
-			<h3>One-Time Service Opportunities</h3>
-
-			<p>Perfect for busy schedules! If you&#39;re looking for single-day opportunities or want to try different types of service, explore our one-time projects.</p>
-
-			<div class="button-container"><a class="cta-button-secondary" href="https://cec.ucmerced.edu/one-time-service-projects">Browse One-Time Projects</a></div>
-		</div>
-
-		<div class="subsection">
-			<h3>Long-Term Service Opportunities - (Lift While You Lead, College Corps, Bright Sparks...)</h3>
-
-			<p>Ready for a deeper commitment? Long-term service allows you to build lasting relationships and see the impact of your work over time.</p>
-
-			<div class="button-container"><a class="cta-button-secondary" href="https://cec.ucmerced.edu/Long/Term/Service">Explore Long-Term Service</a></div>
-		</div>
-
-		<div class="subsection">
-			<h3>Online Service Options</h3>
-
-			<p>Prefer to volunteer from the comfort of your dorm or apartment? Check out our virtual community service opportunities.</p>
-
-			<div class="button-container"><a class="cta-button-secondary" href="https://cec.ucmerced.edu/remote-community-service-ideas">Discover Online Service</a></div>
-		</div>
-
-		<div class="info-box">
-			<p><strong>Not sure where to start?</strong> Take our Public Service Pathways Assessment to identify the types of service that align with your interests and values!</p>
-
-			<div class="button-container" style="margin-top: 15px;"><a class="cta-button" href="https://cec.ucmerced.edu/pathways">Take the Pathways Assessment</a></div>
-		</div>
-	</div>
-
-	<div class="step-section"><span class="step-number">3</span>
-
-		<h2>Student Collaborations</h2>
-
-		<p>Connect with US, and learn about student-led initiatives, collaborative projects, and ways to partner with the CEC to amplify your impact.</p>
-
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/students/student-collaborations">Explore Student Collaborations</a></div>
-	</div>
-
-	<div class="step-section"><span class="step-number">4</span>
-
-		<h2>Record Your Service Hours</h2>
-
-		<p>Already completed community service? Don&#39;t forget to log your hours! Tracking your service is important for documenting your civic engagement and may be required for scholarships, programs, or graduation requirements.</p>
-
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/service-hours">Service Hours Tracking Guide</a></div>
-	</div>
-
-	<div class="step-section"><span class="step-number">5</span>
-
-		<h2>Student Awards</h2>
-
-		<p>Outstanding community engagement deserves recognition! Learn about awards and honors available to students who demonstrate exceptional commitment to service. Your dedication to making a difference could be celebrated!</p>
-
-		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/student-awards">View Student Awards</a></div>
-	</div>
-
-	<div class="step-section" style="border-left-color: #0f2d52;">
-		<h2 style="display: block; margin-bottom: 15px;">Questions?</h2>
-
-		<p>Our team is here to support you throughout your community engagement journey. If you have any questions or need assistance, please don&#39;t hesitate to reach out!</p>
-
-		<p style="margin-bottom: 0;"><strong>Contact us:</strong><br />
-			<a href="mailto:communityservice@ucmerced.edu" style="color: #dbaa00;">communityservice@ucmerced.edu</a></p>
-	</div>
+    <div class="step-section" style="border-left-color: #0f2d52;">
+        <h2 style="display: flex; margin-bottom: 15px;">Questions?</h2>
+        <p>Our team is here to support you throughout your community engagement journey. If you have any questions or need assistance, please don&#39;t hesitate to reach out!</p>
+        <div class="button-container">
+            <a class="cta-button-secondary" href="https://cec.ucmerced.edu/About-Contact">Contact Us</a>
+        </div>
+    </div>
 </div>

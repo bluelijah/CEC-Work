@@ -1,14 +1,13 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>USDA Food Distribution</title>
-<style type="text/css">
-/* --- Infinite Scroller --- */
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">/* --- Infinite Scroller --- */
 .infinite-slider {
   overflow: hidden;
   width: 100%;
   padding: 0;
   background: transparent;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
+  display: block;
 }
 
 .infinite-slider .track {
@@ -19,7 +18,10 @@
   will-change: transform;
 }
 
-/* One "card" */
+.infinite-slider .track.paused {
+  animation-play-state: paused;
+}
+
 .infinite-slider .slide {
   flex: 0 0 auto;
   width: clamp(220px, 28vw, 360px);
@@ -34,20 +36,58 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transform: scale(1.05);
   transition: transform .35s ease;
 }
 
 .infinite-slider .slide:hover img {
-  transform: scale(1.06);
+  transform: scale(1.1);
 }
 
 @keyframes scroll-left {
   to { transform: translateX(-50%); }
 }
 
-/* accessibility: respect users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   .infinite-slider .track { animation: none; }
+}
+
+/* Carousel wrapper for button positioning */
+.usda-slider-wrapper {
+  position: relative;
+}
+
+#sliderToggleBtn {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  min-height: 44px;
+  padding: 8px 16px;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  background-color: rgba(15, 45, 82, 0.7);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+  backdrop-filter: blur(4px);
+}
+
+#sliderToggleBtn:hover {
+  background-color: rgba(15, 45, 82, 0.9);
+  transform: scale(1.05);
+}
+
+#sliderToggleBtn.paused-state {
+  background-color: rgba(255,255,255,0.9);
+  color: #003366;
+  border-color: white;
+}
+
+#sliderToggleBtn.paused-state:hover {
+  background-color: white;
+  transform: scale(1.05);
 }
 
 /* USDA Page Styles */
@@ -318,118 +358,113 @@
 </style>
 
 <div class="usda-page">
-    <!-- Image Slider at Top -->
+  <!-- Image Slider at Top -->
+  <div class="usda-slider-wrapper">
+    <button id="sliderToggleBtn" onclick="toggleSlider()" aria-label="Pause photo carousel">Pause carousel</button>
     <div class="infinite-slider">
-        <div class="track">
-            <!-- SET A -->
-            <div class="slide">
-                <img alt="USDA Food Distribution 1" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda1.jpeg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 2" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda2.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 3" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda3.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 4" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda4.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 5" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda5.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 6" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda6.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 7" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda7.jpg" />
-            </div>
-            
-            <!-- SET B (duplicate for seamless loop) -->
-            <div class="slide">
-                <img alt="USDA Food Distribution 1" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda1.jpeg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 2" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda2.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 3" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda3.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 4" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda4.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 5" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda5.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 6" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda6.jpg" />
-            </div>
-            <div class="slide">
-                <img alt="USDA Food Distribution 7" src="/sites/cec.ucmerced.edu/files/images/usdaFoodDistribution/usda7.jpg" />
-            </div>
-        </div>
+    <div class="track" id="sliderTrack">
+      <!-- SET A -->
+      <div class="slide"><img alt="USDA Food Distribution volunteers handing out food bags" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda1.jpeg" /></div>
+      <div class="slide"><img alt="Community members receiving food at a USDA distribution event" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda2.jpg" /></div>
+      <div class="slide"><img alt="UC Merced students volunteering at a USDA food distribution" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda3.jpg" /></div>
+      <div class="slide"><img alt="Volunteers in yellow vests organizing food boxes" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda4.jpg" /></div>
+      <div class="slide"><img alt="Food distribution line at a community site in Merced" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda5.jpg" /></div>
+      <div class="slide"><img alt="Volunteers loading food into vehicles at a distribution event" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda6.jpg" /></div>
+      <div class="slide"><img alt="Students and community members at a USDA food distribution site" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda7.jpg" /></div>
+      <!-- SET B (duplicate for seamless loop) -->
+      <div class="slide"><img alt="USDA Food Distribution volunteers handing out food bags" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda1.jpeg" /></div>
+      <div class="slide"><img alt="Community members receiving food at a USDA distribution event" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda2.jpg" /></div>
+      <div class="slide"><img alt="UC Merced students volunteering at a USDA food distribution" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda3.jpg" /></div>
+      <div class="slide"><img alt="Volunteers in yellow vests organizing food boxes" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda4.jpg" /></div>
+      <div class="slide"><img alt="Food distribution line at a community site in Merced" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda5.jpg" /></div>
+      <div class="slide"><img alt="Volunteers loading food into vehicles at a distribution event" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda6.jpg" /></div>
+      <div class="slide"><img alt="Students and community members at a USDA food distribution site" src="/sites/g/files/ufvvjh561/f/images/usdaFoodDistribution/usda7.jpg" /></div>
     </div>
+  </div>
 
-    <!-- Header -->
-    <div class="usda-header">
-        <div class="usda-container">
-            <h1>Calling All Bobcats!</h1>
-            <p>USDA Food Distribution Program</p>
-        </div>
-    </div>
-
+  <!-- Header -->
+  <div class="usda-header">
     <div class="usda-container">
-        <!-- Main Content -->
-        <div class="usda-content-box">
-            <p>USDA's food distribution programs strengthen the nutrition safety net through the distribution of USDA Foods and other nutrition assistance to children, low-income families, emergency feeding programs, and the elderly. This service is <strong>open to all students, staff, and community members</strong> in need of food assistance!</p>
+      <h1>Calling All Bobcats!</h1>
+      <p>USDA Food Distribution Program</p>
+    </div>
+  </div>
 
-            <div class="usda-highlight-box">
-                <p><strong><em>Food distributions no longer occur on a regular schedule, please check our calendar for more details such as time and location.</em></strong></p>
-                <p style="margin-top: 0.5rem;"><strong><em>Transportation will NOT be provided.</em></strong></p>
-            </div>
+  <div class="usda-container">
+    <!-- Main Content -->
+    <div class="usda-content-box">
+      <p>USDA&#39;s food distribution programs strengthen the nutrition safety net through the distribution of USDA Foods and other nutrition assistance to children, low-income families, emergency feeding programs, and the elderly. This service is <strong>open to all students, staff, and community members</strong> in need of food assistance!</p>
 
-            <p>For questions or accommodations, please contact the Community Engagement Center at <strong>communityservice@ucmerced.edu</strong>.</p>
-        </div>
+      <div class="usda-highlight-box" role="note">
+        <p><strong><em>Food distributions no longer occur on a regular schedule, please check our calendar for more details such as time and location.</em></strong></p>
+        <p style="margin-top: 0.5rem;"><strong><em>Transportation will NOT be provided.</em></strong></p>
+      </div>
 
-        <!-- Upcoming Dates -->
-        <div class="usda-dates-section">
-            <h2>Upcoming Distribution Dates</h2>
-
-            <div class="usda-event-item">
-                <div class="usda-event-date">
-                    <div class="usda-event-month">Nov.</div>
-                    <div class="usda-event-day">21</div>
-                </div>
-                <div class="usda-event-details">
-                    <h4>Friday, November 21st at 12:30 PM</h4>
-                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/yzDpgPN3nFG44vj39" target="_blank">St. Patrick's at 671 E Yosemite Avenue Merced, CA</a></p>
-                </div>
-            </div>
-
-            <div class="usda-event-item">
-                <div class="usda-event-date">
-                    <div class="usda-event-month">Nov.</div>
-                    <div class="usda-event-day">26</div>
-                </div>
-                <div class="usda-event-details">
-                    <h4>Wednesday, November 26th at 12:30 PM</h4>
-                    <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/PtakcTp6JTgTNoJg9" target="_blank">Sacred Heart Church at 519 W 12th St. Merced, CA</a></p>
-                </div>
-            </div>
-        </div>
+      <p>For questions or accommodations, please contact the Community Engagement Center at <a href="mailto:communityservice@ucmerced.edu" style="color: #0f2d52; font-weight: bold;">communityservice@ucmerced.edu</a>.</p>
     </div>
 
-    <!-- Volunteer Section -->
-    <div class="usda-volunteer-section">
-        <div class="usda-container">
-            <h2>Volunteers: Sign Up Today!</h2>
-            
-            <div class="usda-iframe-container">
-                <iframe src="https://calendly.com/ucm-cec/usda-food-distribution"></iframe>
-            </div>
+    <!-- Upcoming Dates -->
+    <div class="usda-dates-section">
+      <h2>Upcoming Distribution Dates</h2>
 
-            <div class="usda-fallback-link">
-                <p>If the link above does not work, <a href="https://calendly.com/ucm-cec/usda-food-distribution" target="_blank">please click here</a>.</p>
-            </div>
+      <div class="usda-event-item">
+        <div class="usda-event-date">
+          <div class="usda-event-month">April</div>
+          <div class="usda-event-day">17</div>
         </div>
+        <div class="usda-event-details">
+          <h4><a href="https://calendly.com/ucm-cec/usda-food-distribution-clone-1">Friday, April 17th at 12:30 PM</a></h4>
+          <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/yzDpgPN3nFG44vj39" target="_blank">St. Patrick&#39;s Parish Catholic Church at 671 E Yosemite Ave, Merced, CA 95340 (opens in new tab)</a></p>
+        </div>
+      </div>
+
+      <div class="usda-event-item">
+        <div class="usda-event-date">
+          <div class="usda-event-month">April</div>
+          <div class="usda-event-day">22</div>
+        </div>
+        <div class="usda-event-details">
+          <h4><a href="https://calendly.com/ucm-cec/usda-food-distribution-april-17th-clone">Wednesday, April 22nd at 12:30 PM</a></h4>
+          <p><strong>Location:</strong> <a href="https://maps.app.goo.gl/PtakcTp6JTgTNoJg9" target="_blank">Sacred Heart Church at 519 W 12th St. Merced, CA 95341 (opens in new tab)</a></p>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Volunteer Section -->
+  <div class="usda-volunteer-section">
+    <div class="usda-container">
+      <h2>Volunteers: Sign Up Today!</h2>
+      <div class="usda-iframe-container">
+        <iframe
+          src="https://calendly.com/ucm-cec/usda-food-distribution-clone-1"
+          title="Volunteer sign-up form for USDA Food Distribution via Calendly">
+        </iframe>
+      </div>
+      <div class="usda-fallback-link">
+        <p>If the link above does not work, <a href="https://calendly.com/ucm-cec/usda-food-distribution-clone-1" target="_blank">please click here (opens in new tab)</a>.</p>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+  var sliderPaused = false;
+
+  function toggleSlider() {
+    var track = document.getElementById('sliderTrack');
+    var btn = document.getElementById('sliderToggleBtn');
+    sliderPaused = !sliderPaused;
+    if (sliderPaused) {
+      track.classList.add('paused');
+      btn.textContent = 'Resume carousel';
+      btn.setAttribute('aria-label', 'Resume photo carousel');
+      btn.classList.add('paused-state');
+    } else {
+      track.classList.remove('paused');
+      btn.textContent = 'Pause carousel';
+      btn.setAttribute('aria-label', 'Pause photo carousel');
+      btn.classList.remove('paused-state');
+    }
+  }
+</script>

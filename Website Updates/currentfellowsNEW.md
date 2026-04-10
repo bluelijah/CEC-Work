@@ -248,121 +248,6 @@
             text-align: center;
         }
 
-        /* Staff Cards */
-        .staff-section-title {
-            text-align: center;
-            color: #0f2d52;
-            border-bottom: 3px solid #ffbf3c;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
-            font-size: 1.6em;
-        }
-
-        .card-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            padding: 20px 0;
-            justify-content: center;
-        }
-
-        .flip-card {
-            background-color: transparent;
-            width: 100%;
-            max-width: 325px;
-            height: 434px;
-            perspective: 1000px;
-            margin: 0 auto;
-        }
-
-        .flip-card-inner {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            transition: transform 0.6s;
-            transform-style: preserve-3d;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            border-radius: 15px;
-        }
-
-        .flip-card:hover .flip-card-inner {
-            transform: rotateY(180deg);
-        }
-
-        .flip-card-front, .flip-card-back {
-            border-radius: 15px;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            -webkit-backface-visibility: hidden;
-            backface-visibility: hidden;
-            overflow: hidden;
-        }
-
-        .flip-card-front {
-            background-color: #fff;
-        }
-
-        .flip-card-back {
-            background: linear-gradient(300deg, #a6beea, #f4cd2a);
-            color: #0F2D52;
-            transform: rotateY(180deg);
-            box-shadow: inset 0 0 20px rgba(0,0,0,0.4);
-            padding: 20px;
-            box-sizing: border-box;
-            font-size: 0.9rem;
-            overflow-y: auto;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(15, 45, 82, 0.5) transparent;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-        }
-
-        .flip-card-back::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .flip-card-back::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-        }
-
-        .flip-card-back::-webkit-scrollbar-thumb {
-            background: rgba(15, 45, 82, 0.5);
-            border-radius: 3px;
-        }
-
-        .flip-card-back::-webkit-scrollbar-thumb:hover {
-            background: rgba(15, 45, 82, 0.7);
-        }
-
-        .flip-card-back h1 {
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-bottom: 10px;
-            flex-shrink: 0;
-        }
-
-        .flip-card-back p {
-            margin-bottom: 8px;
-            font-size: 0.9rem;
-            color: #0F2D52;
-        }
-
-        .flip-card-back a {
-            color: #0f2d52;
-            font-weight: 600;
-        }
-
-        .flip-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
         @media (max-width: 768px) {
             .current-fellows-container {
                 padding: 0;
@@ -404,14 +289,6 @@
             .content-section p {
                 font-size: 1em;
             }
-
-            .flip-card {
-                max-width: 100%;
-            }
-
-            .card-container {
-                grid-template-columns: 1fr;
-            }
         }
 </style>
 <div class="current-fellows-container">
@@ -419,27 +296,6 @@
 		<h1>Welcome Current College Corps Fellows!</h1>
 
 		<p>This page is your comprehensive guide for the fellowship. Find planning resources like the Target Hours Calendar and Living Stipend Disbursement schedule to manage your time, and stay updated with our Monthly Newsletter. Explore extra service and training opportunities, and get guidelines for timesheet submission and workshop participation. Navigate your host site easily with our interactive map of site locations. Access essential links, transportation surveys, and key contacts. Whether you need staff support, financial aid answers, or mental health resources, everything you need is right here. If you have any additional questions, feel free to reach out to our College Corps team!</p>
-	</div>
-	<!-- Table of Contents -->
-
-	<div class="toc-section">
-		<h2>Quick Navigation</h2>
-
-		<div class="toc-grid">
-			<div class="toc-card"><a href="#planning">Planning Your Year of Service</a></div>
-
-			<div class="toc-card"><a href="#americlearns">AmericaLearns &amp; Training</a></div>
-
-			<div class="toc-card"><a href="#transportation">Transportation Information</a></div>
-		</div>
-
-		<div class="toc-grid-row-2">
-			<div class="toc-card"><a href="#important-links">Important Links</a></div>
-
-			<div class="toc-card"><a href="#staff">Meet the Staff</a></div>
-
-			<div class="toc-card"><a href="#resources">Campus Resources</a></div>
-		</div>
 	</div>
 	<!-- Planning Your Year of Service -->
 
@@ -529,7 +385,7 @@
 			<h3>Where do Fellows Serve?</h3>
 
 			<p>Explore the map showcasing all the host sites that UC Merced College Corps has partnered with for the 2025-2026 academic year. This map highlights the various locations where our students will be making a positive impact in their communities. Discover the breadth of our partnerships and see where our efforts are taking place!</p>
-			<img alt="College Corps Host Sites Map" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/page/images/map_ss_0.png" />
+			<img alt="College Corps Host Sites Map" src="https://cec.ucmerced.edu/sites/g/files/ufvvjh561/f/page/images/map_ss_0.png" />
 			<div class="map-button-container"><a class="cta-button" href="https://www.google.com/maps/d/edit?mid=13OMlFhUbYOvoUY6LaD38tyz01H2trJY&amp;usp=sharing" target="_blank">View Interactive Map</a></div>
 		</div>
 
@@ -545,115 +401,6 @@
 		<h3 style="margin-top: 40px; padding-top: 20px; border-top: 2px solid #dbaa00;">Monthly Newsletters</h3>
 
 		<div class="button-grid"><a class="cta-button" href="https://septembernewsletter2025.my.canva.site/" target="_blank">September Newsletter</a></div>
-	</div>
-	<!-- Staff Section -->
-
-	<div class="content-section" id="staff">
-		<h2>Have Questions? Meet the Staff</h2>
-
-		<div class="card-container">
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front"><img alt="Eliza Sanchez" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/page/images/image_9-26-24_2.35.09_pm.jpg" /></div>
-
-					<div class="flip-card-back">
-						<h1>Eliza Sanchez</h1>
-
-						<p><strong>Fellow Program Coordinator</strong></p>
-
-						<p>Eliza is here to assist Fellows with any questions/concerns/suggestions they may have. Eliza is your main contact for AmericaLearns, additional service opportunities, training, and service back home.</p>
-
-						<p><a href="https://outlook.office.com/bookwithme/user/64ade8c431a44fbfacd81e578fd32366%40ucmerced.edu/meetingtype/060f98a8-05a9-471a-b92e-803cc89370dc?anonymous" target="_blank">Book with me</a></p>
-
-						<p><a class="__cf_email__" data-cfemail="690c1a08070a010c13585850291c0a040c1b0a0c0d470c0d1c" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front"><img alt="Alondra Franco Hernandez" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/page/images/alondra.jpg" /></div>
-
-					<div class="flip-card-back">
-						<h1>Alondra Franco Hernandez</h1>
-
-						<p><strong>Program Manager</strong></p>
-
-						<p>Alondra assists with any general questions about the program and with any issues/questions about transportation.</p>
-
-						<p><a href="https://outlook-sdf.office.com/bookwithme/user/95b08b725e044511b35161d0daf9dab4@ucmerced.edu?anonymous&amp;ep=pcard" target="_blank">Book with me</a></p>
-
-						<p><a class="__cf_email__" data-cfemail="88e9e4e7e6ecfae9e9e4fee9faedf2c8fdebe5edfaebedeca6edecfd" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front"><img alt="Kyla Perez" src="/sites/cec.ucmerced.edu/files/people/portraits/k.perez_cc_headshot.png" /></div>
-
-					<div class="flip-card-back">
-						<h1>Kyla Perez</h1>
-
-						<p><strong>Program Data Specialist</strong></p>
-
-						<p>Kyla is here to assist anyone with questions regarding DSIG Payment Request Forms and Mileage Reimbursement.</p>
-
-						<p><a href="https://outlook-sdf.office.com/bookwithme/user/fce3fc4acd984cacab383a701968b6a5%40ucmerced.edu/meetingtype/11d6251b-820c-4501-ad90-cb958e75f02c?anonymous" target="_blank">Book with me</a></p>
-
-						<p><a class="__cf_email__" data-cfemail="bed5c7d2dfcedbccdbc4fecbddd3dbccdddbda90dbdacb" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front"><img alt="Danielle Parga" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/page/images/danielle.jpg" /></div>
-
-					<div class="flip-card-back">
-						<h1>Danielle Parga</h1>
-
-						<p><strong>Public Service Program Specialist</strong></p>
-
-						<p>Danielle is here to assist Host Site Supervisors with any questions/concerns/suggestions they may have.</p>
-
-						<p><a class="__cf_email__" data-cfemail="9ffbeffeedf8fedfeafcf2faedfcfafbb1fafbea" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front"><img alt="Debra Fitzgerald" src="/sites/cec.ucmerced.edu/files/people/portraits/d.fitzgerald_cc_headshot.png" /></div>
-
-					<div class="flip-card-back">
-						<h1>Debra Fitzgerald</h1>
-
-						<p><strong>Grant Administrative Officer</strong></p>
-
-						<p>Debi is here to provide direction and oversight of administrative operations, including grant writing and day to day administration of budgets and recordkeeping systems.</p>
-
-						<p><a class="__cf_email__" data-cfemail="b6d2d0dfc2ccd1d3c4d7dad285f6c3d5dbd3c4d5d3d298d3d2c3" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
-					</div>
-				</div>
-			</div>
-
-			<div class="flip-card">
-				<div class="flip-card-inner">
-					<div class="flip-card-front"><img alt="Lisa Silveira" src="https://cec.ucmerced.edu/sites/cec.ucmerced.edu/files/page/images/lisa_-_photo_1.png" /></div>
-
-					<div class="flip-card-back">
-						<h1>Lisa Silveira</h1>
-
-						<p><strong>Financial Aid Advisor</strong></p>
-
-						<p>Lisa is here to assist with any inquiries regarding financial aid or living disbursements.</p>
-
-						<p><a class="__cf_email__" data-cfemail="bfd9d6d1ded6dbdcd0d3d3dad8dadcd0cdcfccffcadcd2dacddcdadb91dadbca" href="/cdn-cgi/l/email-protection">[email&nbsp;protected]</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
 	</div>
 	<!-- Campus Resources -->
 

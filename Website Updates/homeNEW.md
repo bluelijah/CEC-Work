@@ -2,7 +2,7 @@
 <title></title>
 <style type="text/css">.cec-mission-container {
             max-width: 1200px;
-            margin: 0 20px 0 auto;
+            margin: 0 20px 0 0;
             padding: 0 20px;
             border-top: 4px solid #dbaa00;
             border-bottom: 4px solid #dbaa00;
@@ -48,6 +48,7 @@
         }
 
         .cec-identity-block {
+            display: block;
             border-radius: 16px;
             padding: 60px 30px;
             text-align: center;
@@ -56,9 +57,9 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             position: relative;
             overflow: hidden;
-            cursor: pointer;
             background-size: cover;
             background-position: center;
+            text-decoration: none;
         }
 
         .cec-identity-block::after {
@@ -86,13 +87,18 @@
             z-index: 1;
         }
 
-        .cec-identity-block:hover::before {
+        .cec-identity-block:hover::before,
+        .cec-identity-block:focus::before {
             opacity: 0.85;
         }
 
-        .cec-identity-block:hover {
+        .cec-identity-block:hover,
+        .cec-identity-block:focus {
             transform: translateY(-8px);
             box-shadow: 0 12px 24px rgba(219, 170, 0, 0.3);
+            outline: 3px solid #dbaa00;
+            outline-offset: 3px;
+            cursor: pointer;
         }
 
         .cec-student-block {
@@ -182,32 +188,47 @@
             }
         }
 </style>
+
 <div class="cec-mission-container">
-	<p class="cec-mission-statement"><span class="cec-mission-label">Our Mission:</span> The Community Engagement Center brings together UC Merced students, staff, faculty, and community members with local agencies and organizations. Together, we create reciprocal partnerships that generate student learning, build capacity, and solve problems through service, scholarship, and leadership. From local to global, these actions contribute to building a healthy and sustainable community, creating positive, direct change.</p>
+    <p class="cec-mission-statement">
+        <span class="cec-mission-label">Our Mission:</span> The Community Engagement Center brings together UC Merced students, staff, faculty, and community members with local agencies and organizations. Together, we create reciprocal partnerships that generate student learning, build capacity, and solve problems through service, scholarship, and leadership. From local to global, these actions contribute to building a healthy and sustainable community, creating positive, direct change.
+    </p>
 </div>
 
 <div class="cec-blocks-container">
-	<div class="cec-identity-block cec-student-block" onclick="window.location.href='https://cec.ucmerced.edu/students'">
-		<div class="cec-block-content">
-			<h3 class="cec-block-title">I am a</h3>
+    <div class="cec-identity-block cec-student-block"
+         role="link"
+         tabindex="0"
+         aria-label="I am a Student — go to the Students page"
+         onclick="window.location.href='https://cec.ucmerced.edu/students'"
+         onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/students'">
+        <div class="cec-block-content">
+            <p class="cec-block-title">I am a</p>
+            <p class="cec-block-subtitle">Student</p>
+        </div>
+    </div>
 
-			<p class="cec-block-subtitle">Student</p>
-		</div>
-	</div>
+    <div class="cec-identity-block cec-corps-block"
+         role="link"
+         tabindex="0"
+         aria-label="I am College Corps — go to the College Corps directory"
+         onclick="window.location.href='https://cec.ucmerced.edu/college-corps-directory'"
+         onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/college-corps-directory'">
+        <div class="cec-block-content">
+            <p class="cec-block-title">I am</p>
+            <p class="cec-block-subtitle">College Corps</p>
+        </div>
+    </div>
 
-	<div class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/college-corps-directory'">
-		<div class="cec-block-content">
-			<h3 class="cec-block-title">I am</h3>
-
-			<p class="cec-block-subtitle">College Corps</p>
-		</div>
-	</div>
-
-	<div class="cec-identity-block cec-partner-block" onclick="window.location.href='https://cec.ucmerced.edu/community-partners'">
-		<div class="cec-block-content">
-			<h3 class="cec-block-title">I am a</h3>
-
-			<p class="cec-block-subtitle">Community Partner</p>
-		</div>
-	</div>
+    <div class="cec-identity-block cec-partner-block"
+         role="link"
+         tabindex="0"
+         aria-label="I am a Community Partner — go to the Community Partners page"
+         onclick="window.location.href='https://cec.ucmerced.edu/community-partners'"
+         onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/community-partners'">
+        <div class="cec-block-content">
+            <p class="cec-block-title">I am a</p>
+            <p class="cec-block-subtitle">Community Partner</p>
+        </div>
+    </div>
 </div>

@@ -1,5 +1,4 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
 <style type="text/css">/* One-Time Service Events - Unique CSS Classes */
 
@@ -70,7 +69,7 @@
             padding: 1em 1.5em;
             border: 2px solid #ffbf3c;
             border-radius: 8px;
-            color: #d4851e;
+            color: #b86b00;
             font-weight: bold;
             text-decoration: none;
             background: linear-gradient(135deg, #fffbf0 0%, #fff4e6 100%);
@@ -91,30 +90,24 @@
             }
         }
 </style>
+
 <div class="ots-page-container">
-	<p class="ots-intro-text">The CEC also coordinates and publicizes one-time community service projects which provide students with the opportunity to partner with and get to know new community agencies and organizations and to participate in various short (1-4 hour) service events. Please contact communityservice@ucmerced.edu if you have any questions. Please see our sidebar menu for current projects!</p>
+    <p class="ots-intro-text">The CEC also coordinates and publicizes one-time community service projects which provide students with the opportunity to partner with and get to know new community agencies and organizations and to participate in various short (1-4 hour) service events. Please contact <a href="mailto:communityservice@ucmerced.edu">communityservice@ucmerced.edu</a> if you have any questions. Please see our sidebar menu for current projects!</p>
 
-	<h3 class="ots-section-headline">UPCOMING One-Time Service Events</h3>
+    <h3 class="ots-section-headline">UPCOMING One-Time Service Events</h3>
 
-	<div class="ots-events-grid">
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/merced-field-honor-volunteer-opportunities">Field of Honor</a></div>
+    <div class="ots-events-grid">
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/earth-week-2026">Earth Week Events</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/junior-olympic-track-meet">Junior Olympic Track Meet</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/week-young-child-0">Week of the Young Child</a></div>
+    </div>
 
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/HHAW">Hunger &amp; Homelessness Awareness Week</a></div>
+    <h3 class="ots-section-headline">Ongoing One-Time Service Events</h3>
 
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/mvpgr-clear-cocklebur">MVPGR Cocklebur Cleanup</a></div>
-
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/events/turkey-distribution">Turkey Distribution</a></div>
-	</div>
-
-	<h3 class="ots-section-headline">Ongoing One-Time Service Events</h3>
-
-	<div class="ots-events-grid">
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/usda-food-distribution">USDA Food Distribution</a></div>
-
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/d-street-shelter">D Street Shelter</a></div>
-
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/clean-up">Community Clean-Up</a></div>
-
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/campus-garden">Campus Garden</a></div>
-	</div>
+    <div class="ots-events-grid">
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/usda-food-distribution">USDA Food Distribution</a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/d-street-shelter">D Street Shelter</a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/clean-up">Community Clean-Up</a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/campus-garden">Campus Garden</a></div>
+    </div>
 </div>
