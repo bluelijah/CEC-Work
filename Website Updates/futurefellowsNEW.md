@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Future Fellows - College Corps at UC Merced</title>
-    <style type="text/css">
-        .future-fellows-container {
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style type="text/css">.future-fellows-container {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
@@ -76,11 +71,14 @@
         }
         
         .cta-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             background: #dbaa00;
             color: #0f2d52 !important;
             padding: 14px 28px;
-            text-decoration: none;
+            text-decoration: none !important;
             border-radius: 6px;
             font-weight: 600;
             transition: all 0.3s ease;
@@ -130,47 +128,42 @@
                 font-size: 1em;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="future-fellows-container">
-        <div class="welcome-section">
-            <h1>Welcome Cohort 5 Prospective Fellows!</h1>
-            <p>The #CaliforniansForAll College Corps, also known as AmeriCorps, is the first state-funded service opportunity for all students. This program helps make college more affordable for thousands of California students by allowing them to earn up to $10,000 in financial support towards their degree when they commit to serve for a year.</p>
-        </div>
+</style>
 
-        <div class="content-section">
-            <h2>Cohort 5 (2026-27) Interest Form</h2>
-            <p>Are you interested in joining College Corps at UC Merced? Complete the interest form below to receive information once our next recruitment cycle opens!</p>
-            <div class="button-container">
-                <a class="cta-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_87Xjan3yma6oXzw" target="_blank">Submit Student Interest Form</a>
-            </div>
-        </div>
+<div class="future-fellows-container">
+    <div class="welcome-section">
+        <h1>Welcome Cohort 5 Prospective Fellows!</h1>
+        <p>The #CaliforniansForAll College Corps, also known as AmeriCorps, is the first state-funded service opportunity for all students. This program helps make college more affordable for thousands of California students by allowing them to earn up to $10,000 in financial support towards their degree when they commit to serve for a year.</p>
+    </div>
 
-        <div class="content-section">
-            <h2>Cohort 5 (2026-27) Prospective Fellow Informational Sessions</h2>
-            <p>If you are interested in becoming a prospective Cohort 5 Fellow for the 2026-2027 academic year, you <strong>MUST</strong> attend one informational session happening between March-May to receive the application.</p>
-            
-            <div class="info-box">
-                <p>PRIORITY DEADLINE: MAY 1ST</p>
-            </div>
-
-            <div class="button-container">
-                <a class="cta-button" href="https://www.signupgenius.com/go/10C0A4DADAC2AAAFCC52-55282137-cohort#/" target="_blank">Informational Session Sign Up</a>
-            </div>
-        </div>
-
-        <div class="content-section" style="border-left-color: #0f2d52;">
-            <h2 style="display: block; margin-bottom: 15px;">Questions?</h2>
-            <p>More information and dates are continuously being released on our <a href="https://cec.ucmerced.edu/college-corps" style="color: #dbaa00; font-weight: 600;">College Corps Main Page</a>.</p>
-            <p style="margin-bottom: 10px;"><strong>Visit us:</strong><br />
-            Community Engagement Center - KL 172<br />
-            Monday - Friday, 9:00 AM - 5:00 PM</p>
-            <p style="margin-bottom: 10px;"><strong>Email us:</strong><br />
-            <a href="mailto:collegecorps@ucmerced.edu" style="color: #dbaa00;">collegecorps@ucmerced.edu</a></p>
-            <p style="margin-bottom: 0;"><strong>Follow us on Instagram:</strong><br />
-            <a href="https://www.instagram.com/ucmcollegecorps/" target="_blank" style="color: #dbaa00;">@ucmcollegecorps</a> | <a href="https://www.instagram.com/ucmercedcec/" target="_blank" style="color: #dbaa00;">@ucmercedcec</a></p>
+    <div class="content-section">
+        <h2>Cohort 5 (2026-27) Interest Form</h2>
+        <p>Are you interested in joining College Corps at UC Merced? Complete the interest form below to receive information once our next recruitment cycle opens!</p>
+        <div class="button-container">
+            <a class="cta-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_87Xjan3yma6oXzw" target="_blank">Submit Student Interest Form (opens in new tab)</a>
         </div>
     </div>
-</body>
-</html>
+
+    <div class="content-section">
+        <h2>Cohort 5 (2026-27) Prospective Fellow Informational Sessions</h2>
+        <p>If you are interested in becoming a prospective Cohort 5 Fellow for the 2026-2027 academic year, you <strong>MUST</strong> attend one informational session happening between March-May to receive the application.</p>
+        <div class="info-box" role="note">
+            <p>PRIORITY DEADLINE: MAY 1ST</p>
+        </div>
+        <div class="button-container">
+            <a class="cta-button" href="https://www.signupgenius.com/go/10C0A4DADAC2AAAFCC52-62567802-cohort#/" target="_blank">Informational Session Sign Up (opens in new tab)</a>
+        </div>
+    </div>
+
+    <div class="content-section" style="border-left-color: #0f2d52;">
+        <h2>Questions?</h2>
+        <p>More information and dates are continuously being released on our <a href="https://cec.ucmerced.edu/college-corps" style="color: #0f2d52; font-weight: 600; text-decoration: underline;">College Corps Main Page</a>.</p>
+        <p style="margin-bottom: 10px;"><strong>Visit us:</strong><br />
+            Community Engagement Center - KL 172<br />
+            Monday - Friday, 9:00 AM - 5:00 PM</p>
+        <p style="margin-bottom: 10px;"><strong>Email us:</strong><br />
+            <a href="mailto:collegecorps@ucmerced.edu" style="color: #0f2d52;">collegecorps@ucmerced.edu</a></p>
+        <p style="margin-bottom: 0;"><strong>Follow us on Instagram:</strong><br />
+            <a href="https://www.instagram.com/ucmcollegecorps/" style="color: #0f2d52;" target="_blank">@ucmcollegecorps (opens in new tab)</a> | <a href="https://www.instagram.com/ucmercedcec/" style="color: #0f2d52;" target="_blank">@ucmercedcec (opens in new tab)</a></p>
+    </div>
+</div>

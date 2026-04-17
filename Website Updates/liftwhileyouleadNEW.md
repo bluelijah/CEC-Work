@@ -125,51 +125,56 @@
             margin-bottom: 2rem;
         }
 
-.lwyl-dropdown-header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    background: linear-gradient(135deg, #0f2d52 0%, #1a4573 100%);
-    color: white;
-    padding: 1.5rem;
-    cursor: pointer;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(15, 45, 82, 0.2);
-}
+        .lwyl-dropdown-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: linear-gradient(135deg, #0f2d52 0%, #1a4573 100%);
+            color: white;
+            padding: 1.5rem;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(15, 45, 82, 0.2);
+        }
 
-.lwyl-dropdown-header > div:first-child {
-    display: flex;
-    align-items: center;
-}
+        .lwyl-dropdown-header:focus,
+        .lwyl-dropdown-header:focus-visible {
+            outline: 3px solid #dbaa00;
+            outline-offset: 2px;
+        }
 
-.lwyl-dropdown-header > div:first-child::after {
-    content: ' ▼';
-    font-size: 1rem;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    margin-left: 1rem;
-}
+        .lwyl-dropdown-header > div:first-child {
+            display: flex;
+            align-items: center;
+        }
 
-.lwyl-dropdown-header.lwyl-active > div:first-child::after {
-    transform: rotate(180deg);
-}
+        .lwyl-dropdown-header > div:first-child .lwyl-arrow {
+            font-size: 1rem;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            margin-left: 1rem;
+        }
 
-.lwyl-dropdown-subtitle {
-    font-size: 0.85rem;
-    font-weight: normal;
-    text-transform: none;
-    margin-top: 0.3rem;
-    opacity: 0.9;
-}
+        .lwyl-dropdown-header.lwyl-active > div:first-child .lwyl-arrow {
+            transform: rotate(180deg);
+        }
 
-.lwyl-dropdown-header:hover {
-    background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
-    box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
-}
+        .lwyl-dropdown-subtitle {
+            font-size: 0.85rem;
+            font-weight: normal;
+            text-transform: none;
+            margin-top: 0.3rem;
+            opacity: 0.9;
+        }
+
+        .lwyl-dropdown-header:hover {
+            background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
+            box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
+        }
 
         .lwyl-dropdown-content {
             max-height: 0;
@@ -250,7 +255,10 @@
         }
 
         .lwyl-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             padding: 1rem 2.5rem;
             background: #0f2d52;
             color: white !important;
@@ -270,25 +278,21 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(219, 170, 0, 0.5);
         }
-.lwyl-button-center {
-    text-align: center;
-}
 
-
-.lwyl-dropdown-header.lwyl-active::after {
-    transform: rotate(180deg);
-}
+        .lwyl-button-center {
+            text-align: center;
+        }
 
         @media (max-width: 768px) {
-    .lwyl-button-center {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    
-    .lwyl-button {
-        margin-left: 0 !important;
-    }
+            .lwyl-button-center {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .lwyl-button {
+                margin-left: 0 !important;
+            }
 
             .lwyl-page {
                 margin-right: 40px;
@@ -312,136 +316,88 @@
             }
         }
 </style>
+
 <div class="lwyl-page">
-	<div class="lwyl-container">
-		<div class="lwyl-content-box">
-			<p>Lift While You Lead (LWYL) connects undergraduate students at UC Merced with students in Merced and the surrounding Central Valley area. UC Merced students serve as <strong>mentors to high school students</strong> enrolled in Women&#39;s Studies classes at <strong>Golden Valley High School</strong> and <strong>Yosemite High School</strong>.</p>
+    <div class="lwyl-container">
+        <div class="lwyl-content-box">
+            <p>Lift While You Lead (LWYL) connects undergraduate students at UC Merced with students in Merced and the surrounding Central Valley area. UC Merced students serve as <strong>mentors to high school students</strong> enrolled in Women&#39;s Studies classes at <strong>Golden Valley High School</strong> and <strong>Yosemite High School</strong>.</p>
 
-			<p>The small group mentoring relationship provides mentors and mentees with support, guidance, and encouragement &ndash; all with an emphasis on health, education, and leadership. Beyond small group mentoring, all participants are also strongly encouraged to participate in Women&#39;s Programs activities and other events related to the theme Lift While You Lead.</p>
+            <p>The small group mentoring relationship provides mentors and mentees with support, guidance, and encouragement &ndash; all with an emphasis on health, education, and leadership. Beyond small group mentoring, all participants are also strongly encouraged to participate in Women&#39;s Programs activities and other events related to the theme Lift While You Lead.</p>
 
-			<div class="lwyl-highlight-box">
-				<p><strong>The Lift While You Lead Women&#39;s Program has been federally recognized by President Obama&#39;s administration.</strong></p>
+            <div class="lwyl-highlight-box" role="note">
+                <p><strong>The Lift While You Lead Women&#39;s Program has been federally recognized by President Obama&#39;s administration.</strong></p>
+                <p><strong>By participating in the Lift While You Lead program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
+            </div>
 
-				<p><strong>By participating in the Lift While You Lead program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
-			</div>
+            <h3>Time Commitments</h3>
+            <ul>
+                <li>Runs every <strong>Wednesday or Friday</strong> (with exception to Holidays)</li>
+                <li>50 minute class time plus commute time (per week)</li>
+                <li>1-2 hours of program planning with your group (per week) unless group decides to assign different members days to plan</li>
+                <li>Approximately 3 hours per week for 10 weeks of total commitment</li>
+            </ul>
 
-			<h3>Time Commitments</h3>
+            <h3>When &amp; Where</h3>
+            <p><strong>Golden Valley High School or Yosemite High School in Merced, CA</strong></p>
+            <p>Ms. Delgado&#39;s Women&#39;s Studies Class on:</p>
+            <ul>
+                <li>Friday, 4th Period at Golden Valley HS (11:18am-12:06pm)</li>
+                <li>Friday, 5th Period at Golden Valley HS (12:11am-12:59pm)</li>
+                <li>Wednesday, 7th Period at Yosemite High School (1:38pm - 2:20pm)</li>
+            </ul>
+            <p>Volunteers will be able to select one or more class periods to attend.</p>
+        </div>
 
-			<ul>
-				<li>Runs every <strong>Wednesday or Friday</strong> (with exception to Holidays)</li>
-				<li>50 minute class time plus commute time (per week)</li>
-				<li>1-2 hours of program planning with your group (per week) unless group decides to assign different members days to plan</li>
-				<li>Approximately 3 hours per week for 10 weeks of total commitment</li>
-			</ul>
+        <div class="lwyl-content-box">
+            <div class="lwyl-dropdown">
+                <div
+                    class="lwyl-dropdown-header"
+                    role="button"
+                    tabindex="0"
+                    aria-expanded="false"
+                    aria-controls="sessionsDropdown"
+                    onclick="toggleDropdown(this)"
+                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleDropdown(this);}">
+                    <div>
+                        Start of Semester Required Info Sessions and Training
+                        <span class="lwyl-arrow" aria-hidden="true">▼</span>
+                    </div>
+                    <div class="lwyl-dropdown-subtitle">You only have to attend one</div>
+                </div>
 
-			<h3>When &amp; Where</h3>
+                <div class="lwyl-dropdown-content" id="sessionsDropdown">
+                    <div class="lwyl-session-item">
+                        <div class="lwyl-session-date">
+                            <div class="lwyl-session-month">Month: NA</div>
+                            <div class="lwyl-session-day">Day: NA</div>
+                        </div>
+                        <div class="lwyl-session-details">
+                            <h4>What is it? NA</h4>
+                            <p>Time: NA</p>
+                            <p>Zoom ID or Location: NA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<p><strong>Golden Valley High School or Yosemite High School in Merced, CA</strong></p>
-
-			<p>Ms. Delgado&#39;s Women&#39;s Studies Class on:</p>
-
-			<ul>
-				<li>Friday, 4th Period at Golden Valley HS (11:18am-12:06pm)</li>
-				<li>Friday, 5th Period at Golden Valley HS (12:11am-12:59pm)</li>
-				<li>Wednesday, 7th Period at Yosemite High School (1:38pm - 2:20pm)</li>
-			</ul>
-
-			<p>Volunteers will be able to select one or more class periods to attend.</p>
-		</div>
-
-		<div class="lwyl-content-box">
-			<div class="lwyl-dropdown">
-				<div class="lwyl-dropdown-header" onclick="toggleDropdown()">
-					<div>Start of Semester Required Info Sessions and Training</div>
-
-					<div class="lwyl-dropdown-subtitle">You only have to attend one</div>
-				</div>
-
-				<div class="lwyl-dropdown-content" id="sessionsDropdown"><!-- INFO SESSION 1 -->
-					<div class="lwyl-session-item">
-						<div class="lwyl-session-date">
-							<div class="lwyl-session-month">January</div>
-
-							<div class="lwyl-session-day">28</div>
-						</div>
-
-						<div class="lwyl-session-details">
-							<h4>Info Session - Wednesday</h4>
-
-							<p>1:30 PM - 2:30 PM In Person</p>
-
-							<p>Location: Granite 162</p>
-						</div>
-					</div>
-					<!-- INFO SESSION 2 -->
-
-					<div class="lwyl-session-item">
-						<div class="lwyl-session-date">
-							<div class="lwyl-session-month">January</div>
-
-							<div class="lwyl-session-day">30</div>
-						</div>
-
-						<div class="lwyl-session-details">
-							<h4>Info Session - Friday</h4>
-
-							<p>11:30 AM - 12:30 PM In Person</p>
-
-							<p>Location: KL 184D</p>
-						</div>
-					</div>
-					<!-- INFO SESSION 3 -->
-
-					<div class="lwyl-session-item">
-						<div class="lwyl-session-date">
-							<div class="lwyl-session-month">February</div>
-
-							<div class="lwyl-session-day">4</div>
-						</div>
-
-						<div class="lwyl-session-details">
-							<h4>Info Session - Wednesday</h4>
-
-							<p>1:30 PM - 2:30 PM <a href="https://ucmerced.zoom.us" style="color: #0f2d52; font-weight: bold;">via Zoom</a></p>
-
-							<p>Meeting ID: 885 3397 3329</p>
-						</div>
-					</div>
-					<!-- TRAINING SESSION 1 -->
-
-					<div class="lwyl-session-item">
-						<div class="lwyl-session-date">
-							<div class="lwyl-session-month">February</div>
-
-							<div class="lwyl-session-day">6</div>
-						</div>
-
-						<div class="lwyl-session-details">
-							<h4><strong>Mandatory</strong> Training Session - Friday</h4>
-
-							<p>3:00 PM - 6:00 PM In Person</p>
-
-							<p>Location: Glacier Point 140</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="lwyl-forms-section">
-			<h3>Required Service Forms and Registration</h3>
-
-			<p>You must complete these required service forms to participate in the program, and register below.</p>
-
-			<div class="lwyl-button-center"><a class="lwyl-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a> <a class="lwyl-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_0IBQcP6wXR0wado" style="margin-left: 1rem;">Register</a></div>
-		</div>
-	</div>
+        <div class="lwyl-forms-section">
+            <h3>Required Service Forms and Registration</h3>
+            <p>You must complete these required service forms to participate in the program, and register below.</p>
+            <div class="lwyl-button-center">
+                <a class="lwyl-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a>
+                <a class="lwyl-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_0IBQcP6wXR0wado" style="margin-left: 1rem;">Register</a>
+            </div>
+        </div>
+    </div>
 </div>
+
 <script>
-function toggleDropdown() {
-    const header = document.querySelector('.lwyl-dropdown-header');
+function toggleDropdown(btn) {
     const dropdown = document.getElementById('sessionsDropdown');
-    header.classList.toggle('lwyl-active');
+    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.classList.toggle('lwyl-active');
+    btn.setAttribute('aria-expanded', !isExpanded);
     dropdown.classList.toggle('lwyl-active');
 }
-    </script>
+</script>

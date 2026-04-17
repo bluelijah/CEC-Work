@@ -1,8 +1,6 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-<style type="text/css">
-.llc-page * {
+<style type="text/css">.llc-page * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -164,6 +162,7 @@
     color: #dbaa00;
     font-weight: bold;
     font-size: 1.3rem;
+    aria-hidden: true;
 }
 
 .llc-facilitators-image {
@@ -213,44 +212,22 @@
 }
 
 @media (max-width: 768px) {
-    .llc-page {
-        padding-right: 30px;
-    }
-
-    .llc-content-box {
-        padding: 1.5rem;
-    }
-
-    .llc-benefits-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .llc-images-row {
-        flex-direction: column;
-    }
-
-    .llc-images-row img {
-        max-width: 100%;
-    }
-
-    .llc-logo-row {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .llc-logo-row img {
-        max-width: 80%;
-        height: auto;
-    }
+    .llc-page { padding-right: 30px; }
+    .llc-content-box { padding: 1.5rem; }
+    .llc-benefits-grid { grid-template-columns: 1fr; }
+    .llc-images-row { flex-direction: column; }
+    .llc-images-row img { max-width: 100%; }
+    .llc-logo-row { flex-direction: column; gap: 1rem; }
+    .llc-logo-row img { max-width: 80%; height: auto; }
 }
 </style>
 
 <div class="llc-page">
     <div class="llc-container">
         <div class="llc-content-box">
-            <p>If you're passionate about making a difference and developing your leadership potential, the <strong>Leadership & Service Living Learning Community (LLC)</strong> is your perfect starting point! <strong>Exclusively for first-year students</strong>, this dynamic program brings together 30 driven individuals to live, learn, and lead together.</p>
+            <p>If you&#39;re passionate about making a difference and developing your leadership potential, the <strong>Leadership &amp; Service Living Learning Community (LLC)</strong> is your perfect starting point! <strong>Exclusively for first-year students</strong>, this dynamic program brings together 30 driven individuals to live, learn, and lead together.</p>
 
-            <h3>As a member of the Leadership & Service LLC, you'll:</h3>
+            <h3>As a member of the Leadership &amp; Service LLC, you&#39;ll:</h3>
 
             <div class="llc-benefits-grid">
                 <div class="llc-benefit-card">
@@ -279,13 +256,13 @@
                 </div>
             </div>
 
-            <p style="margin-top: 2rem; font-size: 1.15rem; text-align: center;"><em>This is more than a place to live — it's a launching pad for your personal growth and impact. Don't miss your chance to become part of a close-knit community that empowers you to lead, serve, and shine from day one.</em></p>
+            <p style="margin-top: 2rem; font-size: 1.15rem; text-align: center;"><em>This is more than a place to live &mdash; it&#39;s a launching pad for your personal growth and impact. Don&#39;t miss your chance to become part of a close-knit community that empowers you to lead, serve, and shine from day one.</em></p>
         </div>
 
         <div class="llc-images-row">
-            <img src="/sites/cec.ucmerced.edu/files/documents/1dcf35f7-f9a1-42ae-8c11-5081165ca1f8.jpeg" alt="Leadership and Service LLC">
-            <img src="/sites/cec.ucmerced.edu/files/documents/117f89c6-4b71-4bb3-9390-edf22157a913.jpeg" alt="Leadership and Service LLC">
-            <img src="/sites/cec.ucmerced.edu/files/documents/image_15.jpeg" alt="Leadership and Service LLC">
+            <img alt="Leadership and Service LLC members gathered together during a community event" src="/sites/g/files/ufvvjh561/f/documents/1dcf35f7-f9a1-42ae-8c11-5081165ca1f8.jpeg" />
+            <img alt="LLC students participating in a leadership workshop activity" src="/sites/g/files/ufvvjh561/f/documents/117f89c6-4b71-4bb3-9390-edf22157a913.jpeg" />
+            <img alt="First-year students in the Leadership and Service LLC during a campus experience" src="/sites/g/files/ufvvjh561/f/documents/image_15.jpeg" />
         </div>
 
         <div class="llc-content-box">
@@ -302,24 +279,25 @@
                 </ul>
             </div>
 
-            <div class="llc-cta-box" style="margin-top: 2rem;">
+            <div class="llc-cta-box" role="note" style="margin-top: 2rem;">
                 <p>Only students who have completed the LLC application and signed their housing contract by May 23, 2025 will be considered for the Leadership and Service LLC.</p>
             </div>
         </div>
 
         <div class="llc-content-box">
             <div class="llc-facilitators-image">
-                <img src="/sites/cec.ucmerced.edu/files/documents/llc_-_meet_the_facilitators.png" alt="Meet the Facilitators">
+                <img alt="Photo collage of the Leadership and Service LLC facilitators for the current academic year" src="/sites/g/files/ufvvjh561/f/documents/llc_-_meet_the_facilitators.png" />
             </div>
 
             <h3>Questions?</h3>
+
             <p>Please direct questions regarding the Leadership and Service LLC to <a href="mailto:lead@ucmerced.edu" style="color: #0f2d52; font-weight: bold;">lead@ucmerced.edu</a> and <a href="mailto:communityservice@ucmerced.edu" style="color: #0f2d52; font-weight: bold;">communityservice@ucmerced.edu</a>.</p>
 
-            <p>If you have specific questions regarding housing, including the cost of housing and meal plans, please visit the <a href="https://housing.ucmerced.edu/llc" style="color: #0f2d52; font-weight: bold;">housing website</a>.</p>
+            <p>If you have specific questions regarding housing, including the cost of housing and meal plans, please visit the <a href="https://housing.ucmerced.edu/llc" style="color: #0f2d52; font-weight: bold;">UC Merced Housing LLC page</a>.</p>
 
             <div class="llc-logo-row">
-                <img src="/sites/cec.ucmerced.edu/files/documents/12f8f586-91aa-4ec4-becb-1f7f0ce83512_4_5005_c.jpeg" alt="Student Leadership Center" style="width: 200px; height: 62px;">
-                <img src="/sites/cec.ucmerced.edu/files/documents/6027c7fb-3af1-4021-a680-0a23c854b3cf.png" alt="Community Engagement Center" style="width: 150px; height: 75px;">
+                <img alt="Student Leadership Center logo" src="/sites/g/files/ufvvjh561/f/documents/12f8f586-91aa-4ec4-becb-1f7f0ce83512_4_5005_c.jpeg" style="width: 200px; height: 62px;" />
+                <img alt="Community Engagement Center logo" src="/sites/g/files/ufvvjh561/f/documents/6027c7fb-3af1-4021-a680-0a23c854b3cf.png" style="width: 150px; height: 75px;" />
             </div>
         </div>
     </div>

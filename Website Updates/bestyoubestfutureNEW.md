@@ -19,7 +19,6 @@
 .infinite-slider .track.paused {
   animation-play-state: paused;
 }
-/* One "card" */
 .infinite-slider .slide {
   flex: 0 0 auto;
   width: clamp(220px, 28vw, 360px);
@@ -46,7 +45,6 @@
 @keyframes scroll-left {
   to { transform: translateX(-50%); }
 }
-/* accessibility: respect users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   .infinite-slider .track { animation: none; }
 }
@@ -58,6 +56,7 @@
 
 #sliderToggleBtn {
   display: block;
+  min-height: 44px;
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
   padding: 8px 16px;
@@ -170,6 +169,10 @@
     transition: all 0.3s ease;
     box-shadow: 0 2px 8px rgba(15, 45, 82, 0.2);
 }
+.bybf-dropdown-header:focus {
+    outline: 3px solid #dbaa00;
+    outline-offset: 2px;
+}
 .bybf-dropdown-subtitle {
     font-size: 0.85rem;
     font-weight: normal;
@@ -181,14 +184,13 @@
     background: linear-gradient(135deg, #dbaa00 0%, #c99a00 100%);
     box-shadow: 0 4px 15px rgba(219, 170, 0, 0.4);
 }
-.bybf-dropdown-header::after {
-    content: ' ▼';
+.bybf-dropdown-arrow {
     font-size: 1rem;
     transition: transform 0.3s ease;
     display: inline-block;
     margin-left: 1rem;
 }
-.bybf-dropdown-header.bybf-active::after {
+.bybf-dropdown-header.bybf-active .bybf-dropdown-arrow {
     transform: rotate(180deg);
 }
 .bybf-dropdown-content {
@@ -241,13 +243,12 @@
     margin-bottom: 0.3rem;
 }
 .bybf-session-details a {
-    color: #dbaa00;
+    color: #0f2d52;
     font-weight: bold;
-    text-decoration: none;
+    text-decoration: underline;
 }
 .bybf-session-details a:hover {
-    color: #0f2d52;
-    text-decoration: underline;
+    color: #1a4573;
 }
 .bybf-forms-section {
     background: white;
@@ -269,7 +270,10 @@
     text-align: center;
 }
 .bybf-button {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
     padding: 1rem 2.5rem;
     background: #0f2d52;
     color: white !important;
@@ -293,88 +297,85 @@
     margin-bottom: 1.5rem;
 }
 @media (max-width: 768px) {
-    .bybf-page {
-        padding-right: 30px;
-    }
-    .bybf-content-box {
-        padding: 1.5rem;
-    }
-    .bybf-session-item {
-        flex-direction: column;
-    }
-    .bybf-session-date {
-        min-width: auto;
-    }
-    .bybf-button-center {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-    .bybf-button {
-        margin-left: 0 !important;
-    }
+    .bybf-page { padding-right: 30px; }
+    .bybf-content-box { padding: 1.5rem; }
+    .bybf-session-item { flex-direction: column; }
+    .bybf-session-date { min-width: auto; }
+    .bybf-button-center { display: flex; flex-direction: column; gap: 1rem; }
+    .bybf-button { margin-left: 0 !important; }
 }
 </style>
 
 <div class="bybf-page">
-  <div class="bybf-container">
-    <!-- Image Slider -->
-      <div class="infinite-slider">
-        <div class="track" id="sliderTrack">
-          <!-- SET A -->
-          <div class="slide"><img alt="BYBF 1" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img1.jpeg" /></div>
-          <div class="slide"><img alt="BYBF 2" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img2.jpeg" /></div>
-          <div class="slide"><img alt="BYBF 3" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img3.jpeg" /></div>
-          <div class="slide"><img alt="BYBF 4" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img4.jpeg" /></div>
-          <!-- SET B (duplicate for seamless loop) -->
-          <div class="slide"><img alt="BYBF 1" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img1.jpeg" /></div>
-          <div class="slide"><img alt="BYBF 2" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img2.jpeg" /></div>
-          <div class="slide"><img alt="BYBF 3" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img3.jpeg" /></div>
-          <div class="slide"><img alt="BYBF 4" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img4.jpeg" /></div>
-        </div>
-      </div>
-    <!-- Carousel controls -->
-    <div class="bybf-slider-controls">
-      <button id="sliderToggleBtn" onclick="toggleSlider()">Pause carousel</button>
-    </div>
-
-    <div class="bybf-content-box">
-      <p>Are you looking for a service opportunity that will allow you to gain experience working with youth while empowering them? If so, Best You, Best Future (BYBF) is the perfect opportunity for you! The Community Engagement Center has partnered with 4 local school districts: Livingston, Weaver, Merced River &amp; Planada to bring their 7th grade students to UC Merced for a personalized tour, lunch and an empowering workshop! The Campus Visits will take place in March and April during a weekday (Monday - Friday) for two and a half hours, volunteers will be able to select which campus visits they can attend once they have completed the BYBF volunteer training.</p>
-      <p>We are looking for volunteers who want to make a positive impact in our local youth. Volunteers must attend a training in order to become a BYBF Mentor.</p>
-      <div class="bybf-highlight-box">
-        <p><strong>By participating in the Best You, Best Future program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
-      </div>
-    </div>
-
-    <div class="bybf-content-box">
-      <div class="bybf-dropdown">
-        <div class="bybf-dropdown-header" onclick="toggleBybfDropdown()">Upcoming Info Sessions and Training</div>
-        <div class="bybf-dropdown-content" id="bybfSessionsDropdown">
-          <!-- INFO SESSION 1 -->
-          <div class="bybf-session-item">
-            <div class="bybf-session-date">
-              <div class="bybf-session-month">Month: NA</div>
-              <div class="bybf-session-day">Day: NA</div>
+    <div class="bybf-container">
+        <!-- Image Slider -->
+        <div class="infinite-slider">
+            <div class="track" id="sliderTrack">
+                <!-- SET A -->
+                <div class="slide"><img alt="Best You Best Future volunteers mentoring 7th grade students on the UC Merced campus" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img1.jpeg" /></div>
+                <div class="slide"><img alt="UC Merced student mentors leading a workshop with visiting middle school students" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img2.jpeg" /></div>
+                <div class="slide"><img alt="Students participating in the Best You Best Future campus visit program" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img3.jpeg" /></div>
+                <div class="slide"><img alt="Group photo of BYBF mentors and mentees during a campus tour" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img4.jpeg" /></div>
+                <!-- SET B (duplicate for seamless loop) -->
+                <div class="slide"><img alt="Best You Best Future volunteers mentoring 7th grade students on the UC Merced campus" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img1.jpeg" /></div>
+                <div class="slide"><img alt="UC Merced student mentors leading a workshop with visiting middle school students" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img2.jpeg" /></div>
+                <div class="slide"><img alt="Students participating in the Best You Best Future campus visit program" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img3.jpeg" /></div>
+                <div class="slide"><img alt="Group photo of BYBF mentors and mentees during a campus tour" src="/sites/g/files/ufvvjh561/f/images/bestyoubestfuture/img4.jpeg" /></div>
             </div>
-            <div class="bybf-session-details">
-              <h4>What is it? NA</h4>
-              <p>Time: NA</p>
-              <p>Zoom ID or Location: NA</p>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="bybf-forms-section">
-    <h3>Required Service Forms and Registration</h3>
-    <p>You must complete these required service forms to participate in the program, and register below.</p>
-    <div class="bybf-button-center">
-      <a class="bybf-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a>
-      <a class="bybf-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_9FCg5RH6AJOQ3f8" style="margin-left: 1rem;">Register</a>
+        <!-- Carousel controls -->
+        <div class="bybf-slider-controls">
+            <button id="sliderToggleBtn" onclick="toggleSlider()" aria-label="Pause photo carousel">Pause carousel</button>
+        </div>
+
+        <div class="bybf-content-box">
+            <p>Are you looking for a service opportunity that will allow you to gain experience working with youth while empowering them? If so, Best You, Best Future (BYBF) is the perfect opportunity for you! The Community Engagement Center has partnered with 4 local school districts: Livingston, Weaver, Merced River &amp; Planada to bring their 7th grade students to UC Merced for a personalized tour, lunch and an empowering workshop! The Campus Visits will take place in March and April during a weekday (Monday - Friday) for two and a half hours, volunteers will be able to select which campus visits they can attend once they have completed the BYBF volunteer training.</p>
+            <p>We are looking for volunteers who want to make a positive impact in our local youth. Volunteers must attend a training in order to become a BYBF Mentor.</p>
+            <div class="bybf-highlight-box" role="note">
+                <p><strong>By participating in the Best You, Best Future program, you will be eligible for our Community Service Graduation Pin!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
+            </div>
+        </div>
+
+        <div class="bybf-content-box">
+            <div class="bybf-dropdown">
+                <div
+                    class="bybf-dropdown-header"
+                    role="button"
+                    tabindex="0"
+                    aria-expanded="false"
+                    aria-controls="bybfSessionsDropdown"
+                    onclick="toggleBybfDropdown(this)"
+                    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleBybfDropdown(this);}">
+                    Upcoming Info Sessions and Training
+                    <span class="bybf-dropdown-arrow" aria-hidden="true">▼</span>
+                </div>
+
+                <div class="bybf-dropdown-content" id="bybfSessionsDropdown">
+                    <div class="bybf-session-item">
+                        <div class="bybf-session-date">
+                            <div class="bybf-session-month">Month: NA</div>
+                            <div class="bybf-session-day">Day: NA</div>
+                        </div>
+                        <div class="bybf-session-details">
+                            <h4>What is it? NA</h4>
+                            <p>Time: NA</p>
+                            <p>Zoom ID or Location: NA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <div class="bybf-forms-section">
+        <h3>Required Service Forms and Registration</h3>
+        <p>You must complete these required service forms to participate in the program, and register below.</p>
+        <div class="bybf-button-center">
+            <a class="bybf-button" href="https://cec.ucmerced.edu/required-service-forms">Complete Forms</a>
+            <a class="bybf-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_9FCg5RH6AJOQ3f8" style="margin-left: 1rem;">Register</a>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -387,20 +388,21 @@
     if (sliderPaused) {
       track.classList.add('paused');
       btn.textContent = 'Resume carousel';
+      btn.setAttribute('aria-label', 'Resume photo carousel');
       btn.classList.add('paused-state');
     } else {
       track.classList.remove('paused');
       btn.textContent = 'Pause carousel';
+      btn.setAttribute('aria-label', 'Pause photo carousel');
       btn.classList.remove('paused-state');
     }
   }
 
-  function toggleBybfDropdown() {
-    const header = document.querySelector('.bybf-dropdown-header');
-    const dropdowns = document.querySelectorAll('.bybf-dropdown-content');
+  function toggleBybfDropdown(header) {
+    const dropdown = document.getElementById('bybfSessionsDropdown');
+    const isExpanded = header.getAttribute('aria-expanded') === 'true';
     header.classList.toggle('bybf-active');
-    dropdowns.forEach(dropdown => {
-      dropdown.classList.toggle('bybf-active');
-    });
+    header.setAttribute('aria-expanded', !isExpanded);
+    dropdown.classList.toggle('bybf-active');
   }
 </script>

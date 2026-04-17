@@ -111,7 +111,10 @@
         }
 
         .alz-email-link {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             padding: 1rem 2.5rem;
             background: #0f2d52;
             color: white !important;
@@ -158,10 +161,11 @@
         }
 
         .alz-language-btn {
+            min-height: 44px;
             padding: 1rem 2.5rem;
             border: none;
             background: #c0c0c0;
-            color: #666;
+            color: #333;
             font-size: 1.1rem;
             font-weight: bold;
             cursor: pointer;
@@ -178,19 +182,22 @@
             background: #a0a0a0;
         }
 
+        .alz-language-btn:focus-visible {
+            outline: 3px solid #dbaa00;
+            outline-offset: 2px;
+        }
+
+        /* Flyer container — tall enough to hold either flyer */
         .alz-flyer-container {
             position: relative;
             width: 100%;
-            height: auto;
             overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
         }
 
         .alz-flyer {
-            position: relative;
             width: 100%;
-            height: auto;
             display: block;
             background: #f9f9f9;
             transition: transform 0.5s ease;
@@ -202,6 +209,7 @@
             display: block;
         }
 
+        /* English shown by default, Spanish hidden off to the right */
         .alz-flyer.alz-english {
             transform: translateX(0);
         }
@@ -210,126 +218,102 @@
             position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
             transform: translateX(100%);
         }
 
-        .alz-flyer.alz-slide-out-left {
-            transform: translateX(-100%);
-        }
-
-        .alz-flyer.alz-slide-in-right {
-            transform: translateX(0);
-        }
-
-        .alz-flyer-placeholder {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            text-align: center;
-        }
-
-        .alz-flyer-placeholder h3 {
-            color: #0f2d52;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .alz-flyer-placeholder p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-
         @media (max-width: 768px) {
-            .alz-header h1 {
-                font-size: 1.8rem;
-            }
-
-            .alz-content-box, .alz-cta-section, .alz-flyer-section {
-                padding: 1.5rem;
-            }
-
-            .alz-language-btn {
-                padding: 0.8rem 1.5rem;
-                font-size: 1rem;
-            }
+            .alz-header h1 { font-size: 1.8rem; }
+            .alz-content-box, .alz-cta-section, .alz-flyer-section { padding: 1.5rem; }
+            .alz-language-btn { padding: 0.8rem 1.5rem; font-size: 1rem; }
         }
 </style>
+
 <div class="alz-page">
-	<div class="alz-container">
-		<div class="alz-header">
-			<h1>Join the Fight Against Alzheimer&#39;s</h1>
+    <div class="alz-container">
+        <div class="alz-content-box">
+            <p>Are you passionate about making a difference in the fight against Alzheimer&#39;s disease? <strong>The Alzheimer&#39;s Association</strong> is seeking dedicated volunteers like you to join their mission.</p>
 
-			<p>Volunteer with the Alzheimer&#39;s Association</p>
+            <div class="alz-volunteer-activities">
+                <ul>
+                    <li><strong>Education &amp; Outreach:</strong> Educate the community about Alzheimer&#39;s and dementia</li>
+                    <li><strong>Tabling Events:</strong> Share vital resources at community events</li>
+                    <li><strong>Walk Events:</strong> Support the signature fundraising walks</li>
+                    <li><strong>Advocacy:</strong> Advocate for those affected by Alzheimer&#39;s</li>
+                    <li><strong>Connections:</strong> Foster partnerships with organizations and companies</li>
+                </ul>
+            </div>
 
-			<div class="alz-hashtag">#ENDALZ</div>
-		</div>
+            <p><strong>Volunteers are the backbone of the organization</strong>, driving impactful change and touching countless lives. Your commitment and time can truly make a difference in the collective effort to end Alzheimer&#39;s disease.</p>
+        </div>
 
-		<div class="alz-content-box">
-			<h2>Make a Difference in Your Community</h2>
+        <div class="alz-cta-section">
+            <h2>Ready to Get Involved?</h2>
+            <p>If you are interested in becoming a volunteer, the Alzheimer&#39;s Association would be thrilled to connect with you!</p>
+            <a class="alz-email-link" href="mailto:mapena@alz.org">Contact Us: mapena@alz.org</a>
+        </div>
 
-			<p>Are you passionate about making a difference in the fight against Alzheimer&#39;s disease? The Alzheimer&#39;s Association is seeking dedicated volunteers like you to join their mission.</p>
+        <div class="alz-flyer-section">
+            <h2>Volunteer Opportunity Flyer</h2>
 
-			<div class="alz-volunteer-activities">
-				<ul>
-					<li><strong>Education &amp; Outreach:</strong> Educate the community about Alzheimer&#39;s and dementia</li>
-					<li><strong>Tabling Events:</strong> Share vital resources at community events</li>
-					<li><strong>Walk Events:</strong> Support the signature fundraising walks</li>
-					<li><strong>Advocacy:</strong> Advocate for those affected by Alzheimer&#39;s</li>
-					<li><strong>Connections:</strong> Foster partnerships with organizations and companies</li>
-				</ul>
-			</div>
+            <div class="alz-language-toggle" role="group" aria-label="Select flyer language">
+                <button
+                    class="alz-language-btn alz-active"
+                    id="alzEnglishBtn"
+                    aria-pressed="true">English</button>
+                <button
+                    class="alz-language-btn"
+                    id="alzSpanishBtn"
+                    aria-pressed="false">Español</button>
+            </div>
 
-			<p><strong>Volunteers are the backbone of the organization</strong>, driving impactful change and touching countless lives. Your commitment and time can truly make a difference in the collective effort to end Alzheimer&#39;s disease.</p>
-		</div>
-
-		<div class="alz-cta-section">
-			<h2>Ready to Get Involved?</h2>
-
-			<p>If you are interested in becoming a volunteer, the Alzheimer&#39;s Association would be thrilled to connect with you!</p>
-			<a class="alz-email-link" href="mailto:mapena@alz.org">Contact Us: mapena@alz.org</a></div>
-
-		<div class="alz-flyer-section">
-			<h2>Volunteer Opportunity Flyer</h2>
-
-			<div class="alz-language-toggle"><button class="alz-language-btn alz-active" id="alzEnglishBtn">English</button><button class="alz-language-btn" id="alzSpanishBtn">Español</button></div>
-
-			<div class="alz-flyer-container">
-				<div class="alz-flyer alz-english" id="alzEnglishFlyer"><img alt="Alzheimer's Association Volunteer Opportunity Flyer" src="/sites/cec.ucmerced.edu/files/images/alzenglish.jpg" /></div>
-
-				<div class="alz-flyer alz-spanish" id="alzSpanishFlyer"><img alt="Alzheimer's Association Volunteer Opportunity Flyer - Spanish" src="/sites/cec.ucmerced.edu/files/images/alzspanish.jpg" /></div>
-			</div>
-		</div>
-	</div>
+            <div class="alz-flyer-container">
+                <div class="alz-flyer alz-english" id="alzEnglishFlyer">
+                    <img
+                        alt="Alzheimer's Association volunteer opportunity flyer in English, describing ways to get involved in education, outreach, walk events, and advocacy"
+                        src="/sites/g/files/ufvvjh561/f/images/alzenglish.jpg" />
+                </div>
+                <div class="alz-flyer alz-spanish" id="alzSpanishFlyer" aria-hidden="true">
+                    <img
+                        alt="Folleto de oportunidades de voluntariado de la Asociación de Alzheimer en español"
+                        src="/sites/g/files/ufvvjh561/f/images/alzspanish.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 <script>
-        const alzEnglishBtn = document.getElementById('alzEnglishBtn');
-        const alzSpanishBtn = document.getElementById('alzSpanishBtn');
-        const alzEnglishFlyer = document.getElementById('alzEnglishFlyer');
-        const alzSpanishFlyer = document.getElementById('alzSpanishFlyer');
+    const alzEnglishBtn = document.getElementById('alzEnglishBtn');
+    const alzSpanishBtn = document.getElementById('alzSpanishBtn');
+    const alzEnglishFlyer = document.getElementById('alzEnglishFlyer');
+    const alzSpanishFlyer = document.getElementById('alzSpanishFlyer');
 
-        alzEnglishBtn.addEventListener('click', () => {
-            if (!alzEnglishBtn.classList.contains('alz-active')) {
-                // Switch to English
-                alzEnglishBtn.classList.add('alz-active');
-                alzSpanishBtn.classList.remove('alz-active');
-                
-                alzSpanishFlyer.style.transform = 'translateX(100%)';
-                alzEnglishFlyer.style.transform = 'translateX(0)';
-            }
-        });
+    alzEnglishBtn.addEventListener('click', () => {
+        if (!alzEnglishBtn.classList.contains('alz-active')) {
+            alzEnglishBtn.classList.add('alz-active');
+            alzEnglishBtn.setAttribute('aria-pressed', 'true');
+            alzSpanishBtn.classList.remove('alz-active');
+            alzSpanishBtn.setAttribute('aria-pressed', 'false');
 
-        alzSpanishBtn.addEventListener('click', () => {
-            if (!alzSpanishBtn.classList.contains('alz-active')) {
-                // Switch to Spanish
-                alzSpanishBtn.classList.add('alz-active');
-                alzEnglishBtn.classList.remove('alz-active');
-                
-                alzEnglishFlyer.style.transform = 'translateX(-100%)';
-                alzSpanishFlyer.style.transform = 'translateX(0)';
-            }
-        });
-    </script>
+            alzSpanishFlyer.style.transform = 'translateX(100%)';
+            alzSpanishFlyer.setAttribute('aria-hidden', 'true');
+            alzEnglishFlyer.style.transform = 'translateX(0)';
+            alzEnglishFlyer.setAttribute('aria-hidden', 'false');
+        }
+    });
+
+    alzSpanishBtn.addEventListener('click', () => {
+        if (!alzSpanishBtn.classList.contains('alz-active')) {
+            alzSpanishBtn.classList.add('alz-active');
+            alzSpanishBtn.setAttribute('aria-pressed', 'true');
+            alzEnglishBtn.classList.remove('alz-active');
+            alzEnglishBtn.setAttribute('aria-pressed', 'false');
+
+            alzEnglishFlyer.style.transform = 'translateX(-100%)';
+            alzEnglishFlyer.setAttribute('aria-hidden', 'true');
+            alzSpanishFlyer.style.transform = 'translateX(0)';
+            alzSpanishFlyer.setAttribute('aria-hidden', 'false');
+        }
+    });
+</script>

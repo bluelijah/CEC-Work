@@ -139,42 +139,42 @@
             }
         }
 </style>
-
 <div class="directory-container">
-    <div class="welcome-section">
-        <h1>Welcome to the College Corps Directory!</h1>
-        <p>Here you can find everything you&#39;ll need for College Corps related information and resources. Whether you&#39;re learning about the program for the first time, considering becoming a Fellow, or are currently serving, we&#39;ve organized everything you need in one place.</p>
-    </div>
+	<div class="welcome-section">
+		<h1>Welcome to the College Corps Directory!</h1>
 
-    <div class="directory-section">
-        <h2>Learn What College Corps Is</h2>
-        <p>Discover how the #CaliforniansForAll College Corps program combines meaningful community service with financial support to help students graduate on time with less debt. Learn about our focus areas, program goals, and the impact Fellows are making across California.</p>
-        <div class="button-container">
-            <a class="cta-button" href="https://cec.ucmerced.edu/college-corps">Explore College Corps</a>
-        </div>
-    </div>
+		<p>Here you can find everything you&#39;ll need for College Corps related information and resources. Whether you&#39;re learning about the program for the first time, considering becoming a Fellow, or are currently serving, we&#39;ve organized everything you need in one place.</p>
+	</div>
 
-    <div class="directory-section">
-        <h2>If You&#39;d Like to Become a College Corps Fellow</h2>
-        <p>Interested in joining College Corps? Learn about eligibility requirements, application processes, and the benefits of becoming a Fellow. Find out how you can serve your community while gaining valuable experience and reducing your educational costs.</p>
-        <div class="button-container">
-            <a class="cta-button" href="https://cec.ucmerced.edu/college-corps/future-fellows">Future Fellows Information</a>
-        </div>
-    </div>
+	<div class="directory-section">
+		<h2>Learn What College Corps Is</h2>
 
-    <div class="directory-section">
-        <h2>If You Are Already a College Corps Fellow</h2>
-        <p>Access important resources for current Fellows including hour tracking, required forms, training schedules, and program updates. Stay connected with your cohort and find everything you need to successfully complete your term of service.</p>
-        <div class="button-container">
-            <a class="cta-button" href="https://cec.ucmerced.edu/current-fellows">Current Fellows Resources</a>
-        </div>
-    </div>
+		<p>Discover how the #CaliforniansForAll College Corps program combines meaningful community service with financial support to help students graduate on time with less debt. Learn about our focus areas, program goals, and the impact Fellows are making across California.</p>
 
-    <div class="directory-section" style="border-left-color: #0f2d52;">
-        <h2>Questions?</h2>
-        <p>Our College Corps team is here to support you. If you have any questions or need assistance, please don&#39;t hesitate to reach out!</p>
-        <div class="button-container">
-            <a class="cta-button-secondary" href="https://cec.ucmerced.edu/college-corps-contact">Contact College Corps</a>
-        </div>
-    </div>
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/college-corps">Explore College Corps</a></div>
+	</div>
+
+	<div class="directory-section">
+		<h2>If You&#39;d Like to Become a College Corps Fellow</h2>
+
+		<p>Interested in joining College Corps? Learn about eligibility requirements, application processes, and the benefits of becoming a Fellow. Find out how you can serve your community while gaining valuable experience and reducing your educational costs.</p>
+
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/college-corps/future-fellows">Future Fellows Information</a></div>
+	</div>
+
+	<div class="directory-section">
+		<h2>If You Are Already a College Corps Fellow</h2>
+
+		<p>Access important resources for current Fellows including hour tracking, required forms, training schedules, and program updates. Stay connected with your cohort and find everything you need to successfully complete your term of service.</p>
+
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/current-fellows">Current Fellows Resources</a></div>
+	</div>
+
+	<div class="directory-section" style="border-left-color: #0f2d52;">
+		<h2>Questions?</h2>
+
+		<p>Our College Corps team is here to support you. If you have any questions or need assistance, please don&#39;t hesitate to reach out!</p>
+
+		<div class="button-container"><a class="cta-button-secondary" href="https://cec.ucmerced.edu/college-corps-contact">Contact College Corps</a></div>
+	</div>
 </div>

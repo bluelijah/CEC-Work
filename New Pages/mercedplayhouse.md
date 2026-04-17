@@ -187,8 +187,20 @@
             margin-bottom: 0.5rem;
         }
 
+        .playhouse-contact-item a {
+            color: #0f2d52;
+            text-decoration: underline;
+        }
+
+        .playhouse-contact-item a:hover {
+            color: #1a4573;
+        }
+
         .playhouse-button {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 44px;
             padding: 1rem 2.5rem;
             background: #0f2d52;
             color: white !important;
@@ -215,106 +227,73 @@
         }
 
         @media (max-width: 768px) {
-            .playhouse-button-center {
-                display: flex;
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .playhouse-page {
-                margin-right: 40px;
-                background-size: 70%;
-            }
-
-            .playhouse-header h1 {
-                font-size: 1.8rem;
-            }
-
-            .playhouse-content-box {
-                padding: 1.5rem;
-            }
-
-            .playhouse-contact-info {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            .playhouse-opportunity-card {
-                padding: 1.5rem;
-            }
+            .playhouse-button-center { display: flex; flex-direction: column; gap: 1rem; }
+            .playhouse-page { margin-right: 40px; background-size: 70%; }
+            .playhouse-header h1 { font-size: 1.8rem; }
+            .playhouse-content-box { padding: 1.5rem; }
+            .playhouse-contact-info { flex-direction: column; gap: 1rem; }
+            .playhouse-opportunity-card { padding: 1.5rem; }
         }
 </style>
+
 <div class="playhouse-page">
-	<div class="playhouse-container">
-		<div class="playhouse-header">
-			<h1>Playhouse Merced</h1>
+    <div class="playhouse-container">
+        <div class="playhouse-content-box">
+            <p><strong>Playhouse Merced - Center for the Performing Arts</strong> offers exciting volunteer opportunities for students interested in theater, performing arts, costume design, stage management, and more. Get hands-on experience while earning volunteer hours and contributing to community theater.</p>
 
-			<p>Center for the Performing Arts - Volunteer Opportunities</p>
-		</div>
+            <div class="playhouse-highlight-box" role="note">
+                <p><strong>Get involved in theater!</strong> From behind-the-scenes technical work to social media and promotions, Playhouse Merced provides opportunities to develop skills in the performing arts while contributing to community productions.</p>
+            </div>
+        </div>
 
-		<div class="playhouse-content-box">
-			<h2>Join the Playhouse Merced Community</h2>
+        <div class="playhouse-content-box">
+            <h2>Volunteer Intern Positions</h2>
+            <p>Playhouse Merced offers intern positions that provide valuable behind-the-scenes theater experience. All volunteer positions count toward high school community service and college volunteer requirements.</p>
 
-			<p>Playhouse Merced - Center for the Performing Arts offers exciting volunteer opportunities for students interested in theater, performing arts, costume design, stage management, and more. Get hands-on experience while earning volunteer hours and contributing to community theater.</p>
+            <div class="playhouse-opportunity-card">
+                <h4>Social Media &amp; Promotions Intern</h4>
+                <p>Do you dream about becoming an influencer? Or maybe a photographer or marketing agent? This is the job for you! Help reach the community by making fun social media posts and posters!</p>
+            </div>
 
-			<div class="playhouse-highlight-box">
-				<p><strong>Get involved in theater!</strong> From behind-the-scenes technical work to social media and promotions, Playhouse Merced provides opportunities to develop skills in the performing arts while contributing to community productions.</p>
-			</div>
-		</div>
+            <div class="playhouse-opportunity-card">
+                <h4>Stage Manager Intern</h4>
+                <p>Are you a natural leader and organized individual? Want to learn the ins &amp; outs of a theater behind-the-scenes? Come work with us and get more experience in learning to manage a show!</p>
+            </div>
 
-		<div class="playhouse-content-box">
-			<h2>Volunteer Intern Positions</h2>
+            <div class="playhouse-opportunity-card">
+                <h4>Prop Master Intern</h4>
+                <p>Props are a vital part of a performance, so come help us and get experience in making, gathering, and organizing props for a show!</p>
+            </div>
 
-			<p>Playhouse Merced offers intern positions that provide valuable behind-the-scenes theater experience. All volunteer positions count toward high school community service and college volunteer requirements.</p>
+            <div class="playhouse-highlight-box" role="note">
+                <p><strong>Playhouse Merced is also hiring for paid positions.</strong> If you&#39;re interested in paid opportunities such as costume design, conservatory assistant, or directing positions, please reach out directly via email at <a href="mailto:playhousemercedED@gmail.com" style="color: #0f2d52; font-weight: bold;">playhousemercedED@gmail.com</a> or call <a href="tel:+12097258587" style="color: #0f2d52; font-weight: bold;">209-725-8587</a>.</p>
+            </div>
+        </div>
 
-			<div class="playhouse-opportunity-card">
-				<h4>Social Media &amp; Promotions Intern</h4>
+        <div class="playhouse-contact-section">
+            <h3>Get Involved</h3>
+            <p>Interested in volunteering with Playhouse Merced? Sign up below or contact us to learn more about available positions!</p>
 
-				<p>Do you dream about becoming an influencer? Or maybe a photographer or marketing agent? This is the job for you! Help reach the community by making fun social media posts and posters!</p>
-			</div>
+            <div class="playhouse-contact-info">
+                <div class="playhouse-contact-item">
+                    <strong>Phone</strong>
+                    <p><a href="tel:+12097258587">209-725-8587</a></p>
+                </div>
+                <div class="playhouse-contact-item">
+                    <strong>Email</strong>
+                    <p><a href="mailto:playhousemercedED@gmail.com">playhousemercedED@gmail.com</a></p>
+                </div>
+                <div class="playhouse-contact-item">
+                    <strong>Website</strong>
+                    <p><a href="https://hisawyer.com/playhouse-merced-center-for-the-performing-arts" target="_blank">Playhouse Merced ticketing &amp; info (opens in new tab)</a></p>
+                </div>
+            </div>
 
-			<div class="playhouse-opportunity-card">
-				<h4>Stage Manager Intern</h4>
+            <p>Follow <a href="https://www.facebook.com/playhousemerced" target="_blank" style="color: #0f2d52; font-weight: bold;">Playhouse Merced on Facebook (opens in new tab)</a> for more information about upcoming shows and opportunities!</p>
 
-				<p>Are you a natural leader and organized individual? Want to learn the ins &amp; outs of a theater behind-the-scenes? Come work with us and get more experience in learning to manage a show!</p>
-			</div>
-
-			<div class="playhouse-opportunity-card">
-				<h4>Prop Master Intern</h4>
-
-				<p>Props are a vital part of a performance, so come help us and get experience in making, gathering, and organizing props for a show!</p>
-			</div>
-
-			<div class="playhouse-highlight-box">
-				<p><strong>Playhouse Merced is also hiring for paid positions.</strong> If you&#39;re interested in paid opportunities such as costume design, conservatory assistant, or directing positions, please reach out directly via email at playhousemercedED@gmail.com or call 209-725-8587.</p>
-			</div>
-		</div>
-
-		<div class="playhouse-contact-section">
-			<h3>Get Involved</h3>
-
-			<p>Interested in volunteering with Playhouse Merced? Sign up below or contact us to learn more about available positions!</p>
-
-			<div class="playhouse-contact-info">
-				<div class="playhouse-contact-item"><strong>Phone</strong>
-
-					<p>209-725-8587</p>
-				</div>
-
-				<div class="playhouse-contact-item"><strong>Email</strong>
-
-					<p>playhousemercedED@gmail.com</p>
-				</div>
-
-				<div class="playhouse-contact-item"><strong>Website</strong>
-
-					<p><a href="https://hisawyer.com/playhouse-merced-center-for-the-performing-arts" style="color: #0f2d52; font-weight: bold;">hisawyer.com</a></p>
-				</div>
-			</div>
-
-			<p>Follow Playhouse Merced on Facebook for more information about upcoming shows and opportunities!</p>
-
-			<div class="playhouse-button-center"><a class="playhouse-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_ahsggABGp0H0AcK">Sign Up Now</a></div>
-		</div>
-	</div>
+            <div class="playhouse-button-center">
+                <a class="playhouse-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_ahsggABGp0H0AcK">Sign Up Now</a>
+            </div>
+        </div>
+    </div>
 </div>

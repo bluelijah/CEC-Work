@@ -189,17 +189,17 @@
 		<div class="bsp-content-box">
 			<h2>Become a UCM Bright Spark Scholars Tutor</h2>
 
-			<p><strong>We have a few tutoring spots available for Spring 2026. Please fill out the application by January 15th:</strong></p>
+			<p><strong>Applications are currently CLOSED. &nbsp;Recruitment for Fall 2026 will open late Spring of 2026.&nbsp;</strong></p>
 
-			<p>All UCM students are welcome to apply to be a part of this program &ndash; including AB 540 eligible students! Prospective tutors are required to attend an info session, submit an application (only students who attend an info session will receive access to the application), and receive training.</p>
+			<p>When applications re-open, all UCM students are welcome to apply to be a part of this program - including AB 540 eligible students!</p>
 
 			<div class="bsp-highlight-box">
-				<p><strong>Applications are currently open. To apply, please fill out the form below:</strong></p>
+				<p><strong>Those interested in applying for the Fall 2026 - Spring 2027 cohort can fill out the form below:</strong></p>
 			</div>
 
-			<div class="bsp-iframe-container"><iframe height="500px" src="https://ucmerced.az1.qualtrics.com/jfe/form/SV_0GSlf7s94jEEcbY" style="border: none;" width="100%"></iframe></div>
+			<div class="bsp-iframe-container"><iframe height="500px" src="https://ucmerced.az1.qualtrics.com/jfe/form/SV_6WLv0zh05lTA0zs" style="border: none;" width="100%"></iframe></div>
 
-			<p style="text-align: center; margin-top: 1rem;">Click <a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_0GSlf7s94jEEcbY" style="color: #0f2d52; font-weight: bold;">HERE</a> to register if the form above is not working.</p>
+			<p style="text-align: center; margin-top: 1rem;">Click <a href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_6WLv0zh05lTA0zs" style="color: #0f2d52; font-weight: bold;">HERE</a> to register if the form above is not working.</p>
 		</div>
 
 		<div class="bsp-forms-section">

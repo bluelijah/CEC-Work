@@ -8,7 +8,6 @@
             background: #f8f9fa;
         }
 
-        /* Headline and intro - unique classes */
         .ots-section-headline {
             border-bottom: 2px solid #ffbf3c;
             padding-bottom: 6px;
@@ -24,7 +23,6 @@
             color: #555;
         }
         
-        /* Grid layout for event cards - unique class */
         .ots-events-grid {
             display: grid;
             gap: 1.5rem;
@@ -42,7 +40,6 @@
             }
         }
         
-        /* Blue button styling for upcoming events - unique class */
         .ots-event-card-blue a {
             display: flex;
             align-items: center;
@@ -66,7 +63,6 @@
             box-shadow: 0 4px 15px rgba(0, 119, 204, 0.3);
         }
         
-        /* Gold button styling for ongoing events - unique class */
         .ots-event-card-gold a {
             display: flex;
             flex-direction: column;
@@ -78,7 +74,7 @@
             padding: 1em 1.5em;
             border: 2px solid #ffbf3c;
             border-radius: 8px;
-            color: #d4851e;
+            color: #b86b00;
             font-weight: bold;
             text-decoration: none;
             background: linear-gradient(135deg, #fffbf0 0%, #fff4e6 100%);
@@ -91,172 +87,49 @@
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(255, 191, 60, 0.4);
         }
-        
-        /* Toggle button styles for past events - unique class */
-        .ots-past-events-toggle {
-            cursor: pointer;
-            font-weight: bold;
-            color: #0077cc;
-            padding: 0.75em 1.5em;
-            border: 2px solid #0077cc;
-            border-radius: 8px;
-            background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
-            transition: all 0.3s ease;
-            user-select: none;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 2px 8px rgba(0, 119, 204, 0.1);
-        }
-        .ots-past-events-toggle:hover {
-            background: linear-gradient(135deg, #0077cc 0%, #005a99 100%);
-            color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0, 119, 204, 0.3);
-        }
-        
-        /* Arrow indicator for toggle button - unique class */
-        .ots-past-events-toggle::after {
-            content: " ▼";
-            font-size: 0.9em;
-            margin-left: 8px;
-        }
-        .ots-past-events-toggle.ots-toggle-expanded::after {
-            content: " ▲";
-        }
-        
-        /* Past events container - hidden by default - unique class */
-        .ots-past-events-container {
-            display: none;
-            margin-top: 1rem;
-        }
-        
-        /* Smooth transition when showing/hiding - unique class */
-        .ots-past-events-container.ots-container-show {
-            display: block;
-            animation: otsFadeIn 0.4s ease-in;
-        }
-        
-        @keyframes otsFadeIn {
-            from { 
-                opacity: 0; 
-                transform: translateY(-10px); 
-            }
-            to { 
-                opacity: 1; 
-                transform: translateY(0); 
-            }
-        }
-        
-        /* Past events use blue styling but smaller - unique class */
-        .ots-event-card-past a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            min-height: 3.5em;
-            padding: 0.75em 1em;
-            border: 2px solid #0077cc;
-            border-radius: 6px;
-            color: #0077cc;
-            font-weight: 600;
-            font-size: 0.9em;
-            text-decoration: none;
-            background: linear-gradient(135deg, #f8fbff 0%, #f0f7ff 100%);
-            transition: all 0.3s ease;
-            box-shadow: 0 1px 4px rgba(0, 119, 204, 0.1);
-        }
-        .ots-event-card-past a:hover {
-            background: linear-gradient(135deg, #0077cc 0%, #005a99 100%);
-            color: #fff;
-            transform: translateY(-1px);
-            box-shadow: 0 3px 10px rgba(0, 119, 204, 0.25);
-        }
 
-        /* Mobile responsiveness */
         @media (max-width: 768px) {
             .lts-page-container {
                 margin-right: 20px;
             }
         }
 </style>
+
 <div class="lts-page-container">
-	<p class="ots-intro-text">The Community Engagement Center at UC Merced offers a variety of pathways to engage with the community. Each of the Impact Initiatives requires students to attend an initial training and a semester-long commitment. The Initiatives offer the opportunity to develop relationships and to see and experience change over time. They are, at once, challenging and inspiring! Click on any of the initiatives down below to learn more.</p>
+    <p class="ots-intro-text">The Community Engagement Center at UC Merced offers a variety of pathways to engage with the community. Each of the Impact Initiatives requires students to attend an initial training and a semester-long commitment. The Initiatives offer the opportunity to develop relationships and to see and experience change over time. They are, at once, challenging and inspiring! Click on any of the initiatives down below to learn more.</p>
 
-	<p class="ots-intro-text">By participating in any of the following programs, you will be eligible for our <strong><a href="https://cec.ucmerced.edu/Graduation/Pin" style="color: #0077cc; text-decoration: none;">Community Service Graduation Pin</a>!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
+    <p class="ots-intro-text">By participating in any of the following programs, you will be eligible for our <strong><a href="https://cec.ucmerced.edu/Graduation/Pin" style="color: #0077cc; text-decoration: underline;">Community Service Graduation Pin</a>!</strong> Full participation must be completed for the Community Service Graduation Pin, which is a semester-long commitment.</p>
 
-	<h3 class="ots-section-headline">Ongoing Programs</h3>
+    <h3 class="ots-section-headline">CEC Programs</h3>
 
-	<div class="ots-events-grid">
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/lift-while-you-lead">Lift While You Lead<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">A semester-long mentorship of high school students in Women&#39;s Studies classes</span></a></div>
+    <div class="ots-events-grid">
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/college-corps-directory">College Corps<br /><br />
+            <span style="font-size: 0.85em; font-weight: normal;">College Corps pays students up to $10,000 to serve their communities in education, food security, climate action, and public health.</span></a></div>
 
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Bright-Sparks-Program">Bright Spark Scholars Program<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">A long-term service opportunity to tutor elementary-aged students at schools in Merced</span></a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/lift-while-you-lead">Lift While You Lead<br /><br />
+            <span style="font-size: 0.85em; font-weight: normal;">A semester-long mentorship of high school students in Women&#39;s Studies classes</span></a></div>
 
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/current-events/long-term-service/best-you-best-future-program">Best You Best Future<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">A semester-long opportunity to tutor-mentor younger students</span></a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Bright-Sparks-Program">Bright Spark Scholars Program<br /><br />
+            <span style="font-size: 0.85em; font-weight: normal;">A long-term service opportunity to tutor elementary-aged students at schools in Merced</span></a></div>
 
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/leadershipandservicellc">Leadership &amp; Service LLC<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">An opportunity for first-years to learn about service and connect with like-minded students</span></a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/current-events/long-term-service/best-you-best-future-program">Best You Best Future<br /><br />
+            <span style="font-size: 0.85em; font-weight: normal;">A semester-long opportunity to tutor-mentor younger students</span></a></div>
 
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/mcoe">MCOE Tutoring Program<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">A long term opportunity for UCM students to serve as mentors for Merced residents</span></a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/leadershipandservicellc">Leadership &amp; Service LLC<br /><br />
+            <span style="font-size: 0.85em; font-weight: normal;">An opportunity for first-years to learn about service and connect with like-minded students</span></a></div>
 
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/library/literacy/program">Merced County Library Literacy Program<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">An opportunity to use your language and mentoring skills to teach others</span></a></div>
+        <div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Alternative/Spring/Break/2026">Seeds of Connection<br /><br />
+            <span style="font-size: 0.85em; font-weight: normal;">Learn as guests on Yurok land in this unique experience!</span></a></div>
+    </div>
 
-		<div class="ots-event-card-gold"><a href="https://cec.ucmerced.edu/Alternative/Spring/Break/2026">Alternative Spring Break<br />
-			<br />
-			<span style="font-size: 0.85em; font-weight: normal;">Learn as guests on Yurok land in this unique experience! </span> </a></div>
-	</div>
+    <h3 class="ots-section-headline">Partner Programs</h3>
 
-	<h3 class="ots-section-headline">Other Opportunities</h3>
-
-	<div class="ots-events-grid">
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/tutoring">Tutoring</a></div>
-
-		<div class="ots-event-card-blue"><a href="https://conversationstoremember.org/">Conversations to Remember</a></div>
-
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/tutoring">Read &amp; Succeed</a></div>
-
-		<div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/alzheimers-association">Alzheimer&#39;s Association</a></div>
-	</div>
-
-	<h3 class="ots-section-headline">Past Opportunities</h3>
-
-	<div class="ots-past-events-toggle" id="otsPastEventsToggle" onclick="otsTogglePastEvents()">View Past Opportunities</div>
-
-	<div class="ots-past-events-container" id="otsPastEventsContainer">
-		<div class="ots-events-grid">
-			<div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/projects-with-purpose">Projects with Purpose</a></div>
-
-			<div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/bobcat-online-homework-help">Bobcat Online Homework Help</a></div>
-
-			<div class="ots-event-card-past"><a href="https://cec.ucmerced.edu/merced-county-project-10">Merced County Project 10%</a></div>
-		</div>
-	</div>
+    <div class="ots-events-grid">
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/mcoe">MCOE Tutoring Program</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/library-literacy-program">Merced County Library Literacy Program</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/compassionate-care-hospice">Help Compassionate Care Hospice</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/agency-on-aging">Agency on Aging</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/playhouse-merced">Playhouse Merced</a></div>
+        <div class="ots-event-card-blue"><a href="https://cec.ucmerced.edu/alzheimers-association">Alzheimer&#39;s Association</a></div>
+    </div>
 </div>
-<script>
-        function otsTogglePastEvents() {
-            const container = document.getElementById('otsPastEventsContainer');
-            const button = document.getElementById('otsPastEventsToggle');
-            
-            if (container.style.display === 'none' || container.style.display === '') {
-                // Show past events
-                container.style.display = 'block';
-                button.classList.add('ots-toggle-expanded');
-                button.textContent = 'Hide Past Opportunities';
-            } else {
-                // Hide past events
-                container.style.display = 'none';
-                button.classList.remove('ots-toggle-expanded');
-                button.textContent = 'View Past Opportunities';
-            }
-        }
-    </script>
