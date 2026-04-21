@@ -36,6 +36,13 @@
             margin-bottom: 40px;
             color: #0f2d52;
         }
+.cec-block-subtext {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    letter-spacing: 0.3px;
+}
 
         .cec-blocks-container {
             display: grid;
@@ -111,6 +118,8 @@
 
         .cec-partner-block {
             background-image: url('/sites/g/files/ufvvjh561/f/images/jamboreemain.jpg');
+            padding-top: 44px;
+            padding-bottom: 44px;
         }
 
         .cec-block-content {
@@ -188,47 +197,34 @@
             }
         }
 </style>
-
 <div class="cec-mission-container">
-    <p class="cec-mission-statement">
-        <span class="cec-mission-label">Our Mission:</span> The Community Engagement Center brings together UC Merced students, staff, faculty, and community members with local agencies and organizations. Together, we create reciprocal partnerships that generate student learning, build capacity, and solve problems through service, scholarship, and leadership. From local to global, these actions contribute to building a healthy and sustainable community, creating positive, direct change.
-    </p>
+	<p class="cec-mission-statement"><span class="cec-mission-label">Our Mission:</span> The Community Engagement Center brings together UC Merced students, staff, faculty, and community members with local agencies and organizations. Together, we create reciprocal partnerships that generate student learning, build capacity, and solve problems through service, scholarship, and leadership. From local to global, these actions contribute to building a healthy and sustainable community, creating positive, direct change.</p>
 </div>
 
 <div class="cec-blocks-container">
-    <div class="cec-identity-block cec-student-block"
-         role="link"
-         tabindex="0"
-         aria-label="I am a Student — go to the Students page"
-         onclick="window.location.href='https://cec.ucmerced.edu/students'"
-         onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/students'">
-        <div class="cec-block-content">
-            <p class="cec-block-title">I am a</p>
-            <p class="cec-block-subtitle">Student</p>
-        </div>
-    </div>
+	<div aria-label="I am a Student — go to the Students page" class="cec-identity-block cec-student-block" onclick="window.location.href='https://cec.ucmerced.edu/students'" onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/students'" role="link" tabindex="0">
+		<div class="cec-block-content">
+			<p class="cec-block-title">I am a</p>
 
-    <div class="cec-identity-block cec-corps-block"
-         role="link"
-         tabindex="0"
-         aria-label="I am College Corps — go to the College Corps directory"
-         onclick="window.location.href='https://cec.ucmerced.edu/college-corps-directory'"
-         onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/college-corps-directory'">
-        <div class="cec-block-content">
-            <p class="cec-block-title">I am</p>
-            <p class="cec-block-subtitle">College Corps</p>
-        </div>
-    </div>
+			<p class="cec-block-subtitle">Student</p>
+		</div>
+	</div>
 
-    <div class="cec-identity-block cec-partner-block"
-         role="link"
-         tabindex="0"
-         aria-label="I am a Community Partner — go to the Community Partners page"
-         onclick="window.location.href='https://cec.ucmerced.edu/community-partners'"
-         onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/community-partners'">
-        <div class="cec-block-content">
-            <p class="cec-block-title">I am a</p>
-            <p class="cec-block-subtitle">Community Partner</p>
-        </div>
-    </div>
+	<div aria-label="I am College Corps — go to the College Corps directory" class="cec-identity-block cec-corps-block" onclick="window.location.href='https://cec.ucmerced.edu/college-corps-directory'" onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/college-corps-directory'" role="link" tabindex="0">
+		<div class="cec-block-content">
+			<p class="cec-block-title">I am</p>
+
+			<p class="cec-block-subtitle">College Corps</p>
+		</div>
+	</div>
+
+	<div aria-label="I am a Community Partner — go to the Community Partners page" class="cec-identity-block cec-partner-block" onclick="window.location.href='https://cec.ucmerced.edu/community-partners'" onkeydown="if(event.key==='Enter'||event.key===' ')window.location.href='https://cec.ucmerced.edu/community-partners'" role="link" tabindex="0">
+		<div class="cec-block-content">
+			<p class="cec-block-title">I am a</p>
+
+			<p class="cec-block-subtitle">Community Partner</p>
+
+			<p class="cec-block-subtext">(Host Partners Too)</p>
+			<!-- ADD THIS --></div>
+	</div>
 </div>

@@ -1,5 +1,5 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>College Corps Future Fellows - Cohort 5</title>
 <style type="text/css">.future-fellows-container {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -95,6 +95,11 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.15);
             border: 2px solid #0f2d52;
         }
+
+        .cta-button:focus {
+            outline: 3px solid #0f2d52;
+            outline-offset: 2px;
+        }
         
         @media (max-width: 768px) {
             .future-fellows-container {
@@ -129,7 +134,6 @@
             }
         }
 </style>
-
 <div class="future-fellows-container">
     <div class="welcome-section">
         <h1>Welcome Cohort 5 Prospective Fellows!</h1>

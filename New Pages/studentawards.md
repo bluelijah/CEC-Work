@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Awards</title>
-    <style>
-        .awards-page-wrapper {
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Engagement Center Awards and Recognition</title>
+<style type="text/css">.awards-page-wrapper {
             font-family: Arial, sans-serif;
             margin: 0;
             color: #333;
@@ -114,27 +109,39 @@
             position: relative;
             z-index: 2;
             text-align: center;
-            margin-bottom: auto; /* push Learn More to bottom */
+            margin-bottom: auto;
         }
 
         .award-card-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            min-height: 44px;
             margin-top: 20px;
-            padding: 10px 20px;
-            background: rgba(255,215,0,0.3);
-            border: 2px solid #dbaa00;
-            border-radius: 6px;
-            display: inline-block;
+            padding: 0;
+            background: none;
+            border: none;
+            border-radius: 0;
+            font-size: 1.3rem;
             font-weight: bold;
-            transition: all 0.3s ease;
+            transition: opacity 0.3s ease;
             position: relative;
             z-index: 2;
-            color: white;
+            color: #dbaa00 !important;
             text-decoration: none;
         }
 
+        .award-card-cta .cta-arrow {
+            color: #dbaa00 !important;
+        }
+
         .award-card-cta:hover {
-            background: #dbaa00;
-            color: #003262;
+            opacity: 0.8;
+        }
+
+        .award-card-cta:focus {
+            outline: 3px solid #fff;
+            outline-offset: 2px;
         }
 
         @media (max-width: 768px) {
@@ -142,51 +149,58 @@
                 margin-right: 20px;
             }
         }
-    </style>
-</head>
-<body>
-    <div class="awards-page-wrapper">
-        <div class="awards-container">
-            <p class="awards-intro-text">The Community Engagement Center is proud to recognize students who demonstrate exceptional commitment to service, leadership, and community impact. Explore our awards below to find the recognition that matches your dedication and achievements.</p>
+</style>
+<div class="awards-page-wrapper">
+    <div class="awards-container">
+        <h1 class="awards-main-title">Awards and Recognition</h1>
 
-            <div class="awards-grid-container">
-                <!-- Card 1 -->
-                <div class="award-card-link">
-                    <div class="award-card-overlay">&nbsp;</div>
+        <p class="awards-intro-text">The Community Engagement Center is proud to recognize students who demonstrate exceptional commitment to service, leadership, and community impact. Explore our awards below to find the recognition that matches your dedication and achievements.</p>
 
-                    <div class="award-trophy-icon"><img alt="Trophy" src="/sites/cec.ucmerced.edu/files/images/greytrophy.png" /></div>
+        <div class="awards-grid-container">
+            <!-- Card 1 -->
+            <div class="award-card-link">
+                <div class="award-card-overlay" aria-hidden="true">&nbsp;</div>
 
-                    <div class="award-card-title">Community Service Graduation Pin</div>
-
-                    <div class="award-card-description">Recognizes students who have demonstrated exceptional dedication to supporting and empowering the local Merced community through sustained service.</div>
-                    <a class="award-card-cta" href="https://cec.ucmerced.edu/Graduation/Pin">Learn More &rarr;</a>
+                <div class="award-trophy-icon">
+                    <img alt="" src="/sites/g/files/ufvvjh561/f/images/greytrophy.png" />
                 </div>
 
-                <!-- Card 2 -->
-                <div class="award-card-link">
-                    <div class="award-card-overlay">&nbsp;</div>
+                <div class="award-card-title">Community Service Graduation Pin</div>
 
-                    <div class="award-trophy-icon"><img alt="Trophy" src="/sites/cec.ucmerced.edu/files/images/greytrophy.png" /></div>
+                <div class="award-card-description">Recognizes students who have demonstrated exceptional dedication to supporting and empowering the local Merced community through sustained service.</div>
 
-                    <div class="award-card-title">Public Service & Leadership Certificate</div>
+                <a class="award-card-cta" href="https://cec.ucmerced.edu/Graduation/Pin">Learn More <span class="cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
 
-                    <div class="award-card-description">For students who have shown outstanding commitment to learning about, and practicing community engagement.</div>
-                    <a class="award-card-cta" href="https://cec.ucmerced.edu/psl-certificate">Learn More &rarr;</a>
+            <!-- Card 2 -->
+            <div class="award-card-link">
+                <div class="award-card-overlay" aria-hidden="true">&nbsp;</div>
+
+                <div class="award-trophy-icon">
+                    <img alt="" src="/sites/g/files/ufvvjh561/f/images/greytrophy.png" />
                 </div>
 
-                <!-- Card 3 -->
-                <div class="award-card-link">
-                    <div class="award-card-overlay">&nbsp;</div>
+                <div class="award-card-title">Public Service &amp; Leadership Certificate</div>
 
-                    <div class="award-trophy-icon"><img alt="Trophy" src="/sites/cec.ucmerced.edu/files/images/greytrophy.png" /></div>
+                <div class="award-card-description">For students who have shown outstanding commitment to learning about, and practicing community engagement.</div>
 
-                    <div class="award-card-title">UFC Service Organization Award</div>
+                <a class="award-card-cta" href="https://cec.ucmerced.edu/psl-certificate">Learn More <span class="cta-arrow" aria-hidden="true">&rarr;</span></a>
+            </div>
 
-                    <div class="award-card-description">This award recognizes a student club or organization for exemplary service in the community surrounding UC Merced. The University Friends Circle will present the recipient with a $1,000 award to support continued community service efforts.</div>
-                    <a class="award-card-cta" href="https://cec.ucmerced.edu/UFC_Award">Learn More &rarr;</a>
+            <!-- Card 3 -->
+            <div class="award-card-link">
+                <div class="award-card-overlay" aria-hidden="true">&nbsp;</div>
+
+                <div class="award-trophy-icon">
+                    <img alt="" src="/sites/g/files/ufvvjh561/f/images/greytrophy.png" />
                 </div>
+
+                <div class="award-card-title">UFC Service Organization Award</div>
+
+                <div class="award-card-description">This award recognizes a student club or organization for exemplary service in the community surrounding UC Merced. The University Friends Circle will present the recipient with a $1,000 award to support continued community service efforts.</div>
+
+                <a class="award-card-cta" href="https://cec.ucmerced.edu/UFC_Award">Learn More <span class="cta-arrow" aria-hidden="true">&rarr;</span></a>
             </div>
         </div>
     </div>
-</body>
-</html>
+</div>
