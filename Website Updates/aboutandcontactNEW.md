@@ -1,7 +1,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>About & Contact</title>
 <style type="text/css">.cec-about-page {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Open Sans', sans-serif;
             line-height: 1.6;
             color: #333;
             margin: 0 auto;
@@ -118,12 +118,10 @@
             padding: 0;
         }
 
-        .cec-about-accordion input[type=checkbox] {
-            display: none;
-        }
-
-        .cec-about-accordion label {
+        .cec-acc-btn {
             display: block;
+            width: 100%;
+            font-family: 'Open Sans', sans-serif;
             font-size: 1.3rem;
             line-height: 1.4;
             padding: 1em 1.5em;
@@ -132,44 +130,44 @@
             background: linear-gradient(135deg, #002856 0%, #003d7a 100%);
             border: 2px solid #002856;
             border-radius: 8px;
-            color: #FFF;
+            color: #fff;
             font-weight: 700;
             text-transform: uppercase;
+            text-align: left;
             transition: all 0.3s ease;
             box-shadow: 0 2px 8px rgba(0, 40, 86, 0.2);
         }
 
-        .cec-about-accordion label:hover {
+        .cec-acc-btn:hover {
             background: linear-gradient(135deg, #ffbf3c 0%, #e6a829 100%);
             border-color: #ffbf3c;
+            color: #002856;
             transform: translateY(-2px);
             box-shadow: 0 4px 15px rgba(255, 191, 60, 0.4);
         }
 
-        .cec-about-accordion input[type=checkbox]:checked ~ label {
+        .cec-acc-btn:focus {
+            outline: 3px solid #ffbf3c;
+            outline-offset: 2px;
+        }
+
+        .cec-acc-btn[aria-expanded="true"] {
             background: linear-gradient(135deg, #ffbf3c 0%, #e6a829 100%);
             border-color: #ffbf3c;
+            color: #002856;
             box-shadow: 0 4px 15px rgba(255, 191, 60, 0.4);
         }
 
         .cec-about-acc-content {
-            max-height: 0;
-            overflow: hidden;
-            padding: 0 1.5em;
-            background: #fff;
-            border: 2px solid transparent;
+            padding: 1.5em;
+            background: linear-gradient(135deg, #fffbf0 0%, #fff 100%);
+            border: 2px solid #e0e0e0;
             border-radius: 8px;
-            transition: all 0.4s ease;
-            opacity: 0;
+            margin-top: 8px;
         }
 
-        .cec-about-accordion input[type=checkbox]:checked ~ .cec-about-acc-content {
-            max-height: 5000px;
-            opacity: 1;
-            padding: 1.5em;
-            margin-top: 8px;
-            border-color: #e0e0e0;
-            background: linear-gradient(135deg, #fffbf0 0%, #fff 100%);
+        .cec-about-acc-content[hidden] {
+            display: none;
         }
 
         .cec-about-acc-content h4 {
@@ -252,6 +250,16 @@
             background: linear-gradient(135deg, #e6a829 0%, #d49820 100%);
         }
 
+        .cec-cta-button:focus {
+            outline: 3px solid #fff;
+            outline-offset: 2px;
+        }
+
+        .cec-contact-item a:focus {
+            outline: 3px solid #002856;
+            outline-offset: 2px;
+        }
+
         @media (max-width: 768px) {
             .cec-about-page {
                 padding: 0 15px 15px 15px;
@@ -281,9 +289,9 @@
 
 	<div class="cec-about-accordion">
 		<ul>
-			<li><input id="cec-checkbox-1" type="checkbox" /> <label for="cec-checkbox-1">Community Engagement Center Goals</label>
-
-				<div class="cec-about-acc-content">
+			<li>
+				<button aria-controls="cec-acc-1" aria-expanded="false" class="cec-acc-btn">Community Engagement Center Goals</button>
+				<div class="cec-about-acc-content" hidden id="cec-acc-1">
 					<h4>Community Engagement Center Goals</h4>
 
 					<ul>
@@ -293,8 +301,9 @@
 					</ul>
 				</div>
 			</li>
-			<li><input id="cec-checkbox-2" type="checkbox" /> <label for="cec-checkbox-2">Learning Outcomes</label>
-				<div class="cec-about-acc-content">
+			<li>
+				<button aria-controls="cec-acc-2" aria-expanded="false" class="cec-acc-btn">Learning Outcomes</button>
+				<div class="cec-about-acc-content" hidden id="cec-acc-2">
 					<h4>Learning Outcomes</h4>
 
 					<ul>
@@ -304,8 +313,9 @@
 					</ul>
 				</div>
 			</li>
-			<li><input id="cec-checkbox-3" type="checkbox" /> <label for="cec-checkbox-3">UC Merced Strategic Plan Related to the CEC</label>
-				<div class="cec-about-acc-content">
+			<li>
+				<button aria-controls="cec-acc-3" aria-expanded="false" class="cec-acc-btn">UC Merced Strategic Plan Related to the CEC</button>
+				<div class="cec-about-acc-content" hidden id="cec-acc-3">
 					<h4>Strategic Plans</h4>
 
 					<ul>
@@ -320,7 +330,7 @@
 							Bold scholarship requires us to dismantle long-standing exclusionary practices in higher education. We aim to adopt research-grounded practices that drive our campus toward inclusive excellence. To do so, we will invest in the resources, and cultivate the skills, knowledge, and comprehensively inclusive and anti-racist attitudes necessary to ensure that each unit, department, division, and stakeholder clearly demonstrates their contribution to our Principles of Community.</li>
 					</ul>
 
-					<p>Click <a href="https://strategicplan.ucmerced.edu/goals-and-objectives" target="_blank">HERE</a> to learn more!</p>
+					<p><a href="https://strategicplan.ucmerced.edu/goals-and-objectives" target="_blank">View UC Merced Strategic Plan Goals and Objectives (opens in new tab)</a></p>
 				</div>
 			</li>
 		</ul>
@@ -340,7 +350,7 @@
 			<div class="cec-contact-item">
 				<h3>Email</h3>
 
-				<p><a href="mailto:communityservice@ucmerced.edu">communityservice@ucmerced.edu</a></p>
+				<p><a href="mailto:communityservice@ucmerced.edu">communityservice@ucmerced.edu (opens email)</a></p>
 			</div>
 
 			<div class="cec-contact-item">
@@ -348,7 +358,7 @@
 
 				<p>Our office is at <strong>KL 190</strong>. Please feel free to stop by any time during our hours!</p>
 
-				<p>Visit <a href="http://www.ucmerced.edu/directions-map" target="_blank">Maps and Directions</a> and <a href="https://registrar.ucmerced.edu/resources/maps" target="_blank">Classroom Maps</a> for further details.</p>
+				<p>Visit <a href="http://www.ucmerced.edu/directions-map" target="_blank">Maps and Directions (opens in new tab)</a> and <a href="https://registrar.ucmerced.edu/resources/maps" target="_blank">Classroom Maps (opens in new tab)</a> for further details.</p>
 			</div>
 		</div>
 	</div>
@@ -367,3 +377,17 @@
 			<a class="cec-cta-button" href="https://cec.ucmerced.edu/mailing-list">Join the Mailing List</a></div>
 	</div>
 </div>
+<script>
+document.querySelectorAll('.cec-acc-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        var content = document.getElementById(this.getAttribute('aria-controls'));
+        this.setAttribute('aria-expanded', expanded ? 'false' : 'true');
+        if (expanded) {
+            content.setAttribute('hidden', '');
+        } else {
+            content.removeAttribute('hidden');
+        }
+    });
+});
+</script>

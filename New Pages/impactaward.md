@@ -1,21 +1,19 @@
-<style>
-
-.award-container {
-width: 100%;
-padding: 0 20px;
-font-family: "Helvetica Neue", Arial, sans-serif;
-line-height: 1.6;
-color: #333;
+<style type="text/css">.award-container {
+    box-sizing: border-box;   /* include padding in width */
+    margin: 0 auto;           /* center it */
+    max-width: 100%;          /* prevent overflow */
+    padding: 0 15px;          /* reduce side padding */
 }
 
-h1, h2 {
+
+.award-container h1, .award-container h2 {
 font-weight: 700;
 color: #003366;
 margin-top: 30px;
 margin-bottom: 15px;
 }
 
-h2 {
+.award-container h2 {
 border-bottom: 3px solid #dbaa00;
 display: inline-block;
 padding-bottom: 5px;
@@ -73,129 +71,77 @@ color: #dbaa00;
 
 }
 
+.nominate-button:focus {
+outline: 3px solid #003366;
+outline-offset: 2px;
+}
+
 .note {
 font-size: 0.95em;
 color: #666;
 margin-top: 10px;
 }
 
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+    .award-container {
+        padding-left: 15px;   /* match student guide mobile padding */
+        padding-right: 15px;
+    }
+
+    .highlight-box,
+    .deadline-box {
+        padding: 15px;        /* shrink inner boxes on mobile */
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
 </style>
-
-
-
 <div class="award-container">
+	<div class="highlight-box">
+		<p>The <strong>Community Partner Impact Award</strong> recognizes an inspiring and thoughtful community partner who has collaborated with UC Merced during the past year to bridge campus and community in addressing community-identified challenges.</p>
 
+		<p>Through dedicated leadership, meaningful action has been taken in an empathetic, resourceful, and reciprocal manner to create positive and lasting change.</p>
+	</div>
 
-<div class="highlight-box">
+	<h2>About the Award</h2>
 
-<h2 style="margin-top:0;">Community Partner Impact Award</h2>
+	<ul>
+		<li>Mutual benefit between UC Merced and the community</li>
+		<li>Innovation in addressing community challenges</li>
+		<li>Student engagement and experiential learning</li>
+		<li>Lasting impact for underserved populations in Merced County</li>
+	</ul>
 
-<p>
+	<h2>Selection Criteria</h2>
 
-The <strong>Community Partner Impact Award</strong> recognizes an inspiring and thoughtful community partner who has collaborated with UC Merced during the past year to bridge campus and community in addressing community-identified challenges.
+	<ul class="criteria-list">
+		<li><span class="criteria-title">Community Impact:</span> The partnership has produced meaningful and lasting positive change for underserved populations in Merced County.</li>
+		<li><span class="criteria-title">Innovation:</span> The partnership demonstrates creative or innovative approaches to solving community-identified challenges.</li>
+		<li><span class="criteria-title">Student Success:</span> The partnership supports student development through experiential learning and engagement.</li>
+	</ul>
 
-</p>
+	<h2>2025 Award Recipient</h2>
 
-<p>
+	<div class="highlight-box">
+		<p style="font-size:1.15em; margin-top:0;"><strong><a href="https://www.countyofmerced.com/3876/Library" target="_blank">Merced County Library (opens in new tab)</a></strong></p>
 
-Through dedicated leadership, meaningful action has been taken in an empathetic, resourceful, and reciprocal manner to create positive and lasting change.
+		<p>The Merced County Library was recognized for its outstanding partnership with UC Merced and its commitment to expanding access to educational resources, supporting student engagement, and strengthening the Merced community through innovative and inclusive programming.</p>
+		<img alt="Merced County Library Award Recipients" src="/sites/g/files/ufvvjh561/f/images/impactaward2025.jpeg" style="width:100%; max-width:600px; border-radius:10px; margin-top:15px;" /></div>
 
-</p>
+	<h2>Nomination Information</h2>
 
-</div>
+	<p>Students, faculty, staff, and members of the UC Merced community are encouraged to submit nominations.</p>
 
+	<p><strong>Self-nominations are not permitted.</strong></p>
 
+	<div class="deadline-box"><strong>Nomination Deadline:</strong><br />
+		Sunday, March 1, 2026 at 11:59 PM</div>
+	<a class="nominate-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_b9FtCDXaz3y4Q1E" target="_blank">Submit a Nomination (opens in new tab)</a>
 
-<h2>About the Award</h2>
-
-<ul>
-
-<li>Mutual benefit between UC Merced and the community</li>
-
-<li>Innovation in addressing community challenges</li>
-
-<li>Student engagement and experiential learning</li>
-
-<li>Lasting impact for underserved populations in Merced County</li>
-
-</ul>
-
-
-
-<h2>Selection Criteria</h2>
-
-<ul class="criteria-list">
-
-<li>
-
-<span class="criteria-title">Community Impact:</span>
-
-The partnership has produced meaningful and lasting positive change for underserved populations in Merced County.
-
-</li>
-
-
-<li>
-
-<span class="criteria-title">Innovation:</span>
-
-The partnership demonstrates creative or innovative approaches to solving community-identified challenges.
-
-</li>
-
-
-<li>
-
-<span class="criteria-title">Student Success:</span>
-
-The partnership supports student development through experiential learning and engagement.
-
-</li>
-
-</ul>
-
-
-
-<h2>Nomination Information</h2>
-
-<p>
-
-Students, faculty, staff, and members of the UC Merced community are encouraged to submit nominations.
-
-</p>
-
-<p>
-
-<strong>Self-nominations are not permitted.</strong>
-
-</p>
-
-
-
-<div class="deadline-box">
-
-<strong>Nomination Deadline:</strong><br>
-
-Sunday, March 1, 2026 at 11:59 PM
-
-</div>
-
-
-
-<a class="nominate-button"
-href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_b9FtCDXaz3y4Q1E"
-target="_blank">
-
-Submit a Nomination
-
-</a>
-
-
-<p class="note">
-
-Please ensure all nomination information is complete before submitting.
-
-</p>
-
-
+	<p class="note">Please ensure all nomination information is complete before submitting.</p>
 </div>

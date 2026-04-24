@@ -1,7 +1,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title></title>
+<title>Community Partners</title>
 <style type="text/css">.partner-guide-container {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: #333;
     margin: 0 auto;
@@ -99,6 +99,11 @@
     border: 2px solid #0f2d52;
 }
 
+.cta-button:focus {
+    outline: 3px solid #0f2d52;
+    outline-offset: 2px;
+}
+
 .info-box {
     background: #e8f4f8;
     border-left: 4px solid #0f2d52;
@@ -118,71 +123,74 @@
     }
 }
 </style>
+<div class="partner-guide-container"><!-- Welcome -->
+	<div class="welcome-section">
+		<h1>Welcome, Community Partners!</h1>
 
-<div class="partner-guide-container">
-    <!-- Welcome -->
-    <div class="welcome-section">
-        <h1>Welcome, Community Partners!</h1>
-        <p>The UC Merced Center for Community Engagement (CEC) connects community organizations with passionate UC Merced students. Through reciprocal partnerships, we help address community-identified needs while supporting student learning, leadership, and civic engagement.</p>
-    </div>
+		<p>The UC Merced Center for Community Engagement (CEC) connects community organizations with passionate UC Merced students. Through reciprocal partnerships, we help address community-identified needs while supporting student learning, leadership, and civic engagement.</p>
+	</div>
+	<!-- Step 1: Partner with CEC -->
 
-    <!-- Step 1: Partner with CEC -->
-    <div class="step-section">
-        <h2><span class="step-number" aria-hidden="true">1</span>Partner With UC Merced CEC</h2>
-        <p>The Center for Community Engagement serves as a bridge between your organization and UC Merced students. If you have volunteer opportunities, events, or ongoing projects, we can help recruit and connect student volunteers to support your work.</p>
-        <p>Our goal is to create partnerships that are meaningful, reciprocal, and beneficial to both your organization and our students.</p>
-        <div class="info-box" role="note">
-            <p><strong>Community partners are essential educators.</strong> Your partnership provides valuable real-world learning while strengthening our community.</p>
-        </div>
-        <div class="button-container">
-            <a class="cta-button" href="mailto:communityservice@ucmerced.edu">Contact CEC to Become a Partner</a>
-            <a class="cta-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_6mQPSZAKiAUCeRE">Join Mailing List</a>
-            <a class="cta-button" href="https://cec.ucmerced.edu/books-for-partners">Books for Partners</a>
-        </div>
-    </div>
+	<div class="step-section">
+		<h2><span aria-hidden="true" class="step-number">1</span>Partner With UC Merced CEC</h2>
 
-    <!-- Step 2: Partner with College Corps -->
-    <div class="step-section">
-        <h2><span class="step-number" aria-hidden="true">2</span>Partner With UC Merced College Corps</h2>
-        <p>College Corps is a year-long fellowship program where UC Merced students commit 450 hours of service to community organizations. Partnering with College Corps means hosting a dedicated fellow who will serve your organization consistently throughout the academic year.</p>
-        <div class="info-box" role="note">
-            <p><strong>College Corps fellows commit to 12&ndash;15 hours per week of direct service.</strong> This provides your organization with reliable, sustained support.</p>
-        </div>
-        <div class="button-container">
-            <a class="cta-button" href="https://cec.ucmerced.edu/college-corps-contact">Contact College Corps to Become a Partner</a>
-            <a class="cta-button" href="https://cec.ucmerced.edu/college-corps-community-partners-resources">College Corps Partner Resources</a>
-        </div>
-    </div>
+		<p>The Center for Community Engagement serves as a bridge between your organization and UC Merced students. If you have volunteer opportunities, events, or ongoing projects, we can help recruit and connect student volunteers to support your work.</p>
 
-    <!-- Step 3: Community Partner Jamboree -->
-    <div class="step-section">
-        <h2><span class="step-number" aria-hidden="true">3</span>Community Partner Jamboree</h2>
-        <p>The Community Partner Jamboree is one of our largest annual events, bringing together hundreds of UC Merced students and community organizations. This event provides partners the opportunity to connect directly with students, share their mission, and recruit volunteers.</p>
-        <div class="info-box" role="note">
-            <p><strong>Over 140 students participated in our most recent Jamboree.</strong> It&#39;s one of the best ways to build meaningful connections with UC Merced students.</p>
-        </div>
-        <div class="button-container">
-            <a class="cta-button" href="https://cec.ucmerced.edu/community-partner-jamboree">Learn About the Jamboree</a>
-        </div>
-    </div>
+		<p>Our goal is to create partnerships that are meaningful, reciprocal, and beneficial to both your organization and our students.</p>
 
-    <!-- Step 4: Community Partner Impact Award -->
-    <div class="step-section">
-        <h2><span class="step-number" aria-hidden="true">4</span>Community Partner Impact Award</h2>
-        <p>This award recognizes outstanding partners who have collaborated with UC Merced to create meaningful community impact while supporting student success.</p>
-        <div class="info-box" role="note">
-            <p><strong>If you have partnered with UC Merced, your organization may be eligible to be nominated.</strong></p>
-        </div>
-        <div class="button-container">
-            <a class="cta-button" href="https://cec.ucmerced.edu/community-partner-impact-award">Learn More About the Award</a>
-        </div>
-    </div>
+		<div class="info-box" role="note">
+			<p><strong>Community partners are essential educators.</strong> Your partnership provides valuable real-world learning while strengthening our community.</p>
+		</div>
 
-    <!-- Questions -->
-    <div class="step-section" style="border-left-color: #0f2d52;">
-        <h2>Questions?</h2>
-        <p><strong>Contact the Center for Community Engagement:</strong><br />
-            <a href="mailto:communityservice@ucmerced.edu" style="color: #0f2d52;">communityservice@ucmerced.edu</a>
-        </p>
-    </div>
+		<div class="button-container"><a class="cta-button" href="mailto:communityservice@ucmerced.edu">Contact CEC to Become a Partner (opens email)</a> <a class="cta-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_6mQPSZAKiAUCeRE">Join Mailing List</a> <a class="cta-button" href="https://cec.ucmerced.edu/books-for-partners">Books for Partners</a></div>
+	</div>
+	<!-- Step 2: Partner with College Corps -->
+
+	<div class="step-section">
+		<h2><span aria-hidden="true" class="step-number">2</span>Partner With UC Merced College Corps</h2>
+
+		<p>College Corps is a year-long fellowship program where UC Merced students commit 450 hours of service to community organizations. Partnering with College Corps means hosting a dedicated fellow who will serve your organization consistently throughout the academic year.</p>
+
+		<div class="info-box" role="note">
+			<p><strong>College Corps fellows commit to 12&ndash;15 hours per week of direct service.</strong> This provides your organization with reliable, sustained support.</p>
+
+			<p><strong>If you are interested in hosting College Corps fellows at your community organization, please contact by pressing the Contact button below, and fill out the Partner Interest Form</strong></p>
+		</div>
+
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/college-corps-contact">Contact College Corps to Become a Partner</a> <a class="cta-button" href="https://ucmerced.az1.qualtrics.com/jfe/form/SV_2mKHGLIGSchL4Ee">Partner Interest Form</a> <a class="cta-button" href="https://cec.ucmerced.edu/college-corps-community-partners-resources">College Corps Partner Resources</a></div>
+	</div>
+	<!-- Step 3: Community Partner Jamboree -->
+
+	<div class="step-section">
+		<h2><span aria-hidden="true" class="step-number">3</span>Community Partner Jamboree</h2>
+
+		<p>The Community Partner Jamboree is one of our largest annual events, bringing together hundreds of UC Merced students and community organizations. This event provides partners the opportunity to connect directly with students, share their mission, and recruit volunteers.</p>
+
+		<div class="info-box" role="note">
+			<p><strong>Over 140 students participated in our most recent Jamboree.</strong> It&#39;s one of the best ways to build meaningful connections with UC Merced students.</p>
+		</div>
+
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/community-partner-jamboree">Learn About the Jamboree</a></div>
+	</div>
+	<!-- Step 4: Community Partner Impact Award -->
+
+	<div class="step-section">
+		<h2><span aria-hidden="true" class="step-number">4</span>Community Partner Impact Award</h2>
+
+		<p>This award recognizes outstanding partners who have collaborated with UC Merced to create meaningful community impact while supporting student success.</p>
+
+		<div class="info-box" role="note">
+			<p><strong>If you have partnered with UC Merced, your organization may be eligible to be nominated.</strong></p>
+		</div>
+
+		<div class="button-container"><a class="cta-button" href="https://cec.ucmerced.edu/community-partner-impact-award">Learn More About the Award</a></div>
+	</div>
+	<!-- Questions -->
+
+	<div class="step-section" style="border-left-color: #0f2d52;">
+		<h2>Questions?</h2>
+
+		<p><strong>Contact the Center for Community Engagement:</strong><br />
+			<a href="mailto:communityservice@ucmerced.edu" style="color: #0f2d52;">communityservice@ucmerced.edu (opens email)</a></p>
+	</div>
 </div>
