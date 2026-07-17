@@ -1,8 +1,5 @@
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style type="text/css">
-  .ylp-capstone-page * {
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style type="text/css">.ylp-capstone-page * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -172,47 +169,48 @@
     }
   }
 </style>
-
 <section class="ylp-capstone-page">
-  <div class="ylp-capstone-container">
+	<div class="ylp-capstone-container">
+		<div class="ylp-capstone-content-box">
+			<div class="ylp-capstone-highlight-box" role="note">
+				<p><strong>Applications for Capstone Proposals are currently OPEN!</strong></p>
 
-    <div class="ylp-capstone-content-box">
+				<p><strong>Project period:</strong> October 7, 2026 &ndash; May 1, 2027</p>
 
-      <div class="ylp-capstone-highlight-box" role="note">
-        <p><strong>Applications for Capstone Proposals are currently OPEN!</strong></p>
-        <p><strong>Project period:</strong> October 7, 2026 &ndash; May 1, 2027</p>
-      </div>
+				<p><strong>Proposal deadline:</strong> August 2, 2026</p>
+			</div>
 
-      <p>The Yosemite Leadership Program (YLP) at the University of California, Merced seeks project proposals for the <strong>2026&ndash;2027 Social Change Practicum</strong>. The Capstone Project serves as the culminating leadership experience for YLP participants prior to completing the two-year program.</p>
+			<p>The Yosemite Leadership Program (YLP) at the University of California, Merced seeks project proposals for the <strong>2026&ndash;2027 Social Change Practicum</strong>. The Capstone Project serves as the culminating leadership experience for YLP participants prior to completing the two-year program.</p>
 
-      <p>Capstone Projects are designed to provide meaningful, community-centered impact and are developed in partnership with community organizations, campus groups, or other external partners.</p>
+			<p>Capstone Projects are designed to provide meaningful, community-centered impact and are developed in partnership with community organizations, campus groups, or other external partners.</p>
 
-      <h2>Capstone Proposal Requirements</h2>
+			<h2>Capstone Proposal Requirements</h2>
 
-      <ol>
-        <li><strong>Project Timeline:</strong> Projects should be manageable for a team of <strong>3&ndash;5 undergraduate students</strong>, working <strong>1&ndash;4 hours per week</strong> over a six-month period (October 7, 2026 &ndash; May 1, 2027).</li>
-        <li><strong>Project Topics:</strong> Proposals should address <strong>social, environmental, economic, education-related, and/or public health issues</strong> or <strong>community needs</strong>. Projects must involve background research on root causes, relationship-building with community partners, and quantitative and/or qualitative analysis to deliver an impactful service, product, or set of recommendations.</li>
-        <li><strong>Funding:</strong> Students donate their extracurricular time to complete Capstone Projects. External funding or resource support from project partners (e.g., supplies, internships, data collection or analysis) is considered during project selection. Proposals requiring substantial resources must include a clear commitment of financial support.</li>
-      </ol>
+			<ol>
+				<li><strong>Project Timeline:</strong> Projects should be manageable for a team of <strong>3&ndash;5 undergraduate students</strong>, working <strong>1&ndash;4 hours per week</strong> over a six-month period (October 7, 2026 &ndash; May 1, 2027).</li>
+				<li><strong>Project Topics:</strong> Proposals should address <strong>social, environmental, economic, education-related, and/or public health issues</strong> or <strong>community needs</strong>. Projects must involve background research on root causes, relationship-building with community partners, and quantitative and/or qualitative analysis to deliver an impactful service, product, or set of recommendations.</li>
+				<li><strong>Funding:</strong> Students donate their extracurricular time to complete Capstone Projects. External funding or resource support from project partners (e.g., supplies, internships, data collection or analysis) is considered during project selection. Proposals requiring substantial resources must include a clear commitment of financial support.</li>
+			</ol>
 
-      <h2>More Information</h2>
+			<h2>More Information</h2>
 
-      <p>For detailed requirements, please review the full YLP Capstone Requirements document.</p>
+			<p>For detailed requirements, please review the full YLP Capstone Requirements document.</p>
 
-      <div class="ylp-capstone-button-wrap">
-        <a class="ylp-capstone-button" href="https://ucmerced.box.com/s/78mrvt32z03zomgm2u98c3ed89pidh19" target="_blank" rel="noopener noreferrer">View Capstone Requirements</a>
-      </div>
+			<div class="ylp-capstone-button-wrap"><a class="ylp-capstone-button" href="https://ucmerced.box.com/s/78mrvt32z03zomgm2u98c3ed89pidh19" rel="noopener noreferrer" target="_blank">View Capstone Requirements</a></div>
 
-      <p>We also invite interested partners to attend one of our <strong>Virtual Information Sessions</strong>. Details coming soon!</p>
+			<p>We also invite interested partners to attend one of our <strong>In-Person Information Sessions</strong>. All sessions are held on the UC Merced campus:</p>
 
-      <p>All proposers are strongly encouraged to contact YLP Co-Director <a href="mailto:sbarrera7@ucmerced.edu?subject=YLP%20Capstone%20Project%20Inquiry">Stephany Barrera</a> as a first step in project proposal development.</p>
+			<ul>
+				<li>Thursday, June 25, 2026 &mdash; 1:00 PM &ndash; 2:00 PM</li>
+				<li>Friday, June 26, 2026 &mdash; 1:00 PM &ndash; 2:00 PM</li>
+				<li>Monday, July 27, 2026 &mdash; 2:00 PM &ndash; 3:00 PM</li>
+				<li>Tuesday, July 28, 2026 &mdash; 2:00 PM &ndash; 3:00 PM</li>
+			</ul>
 
-    </div>
+			<p>All proposers are strongly encouraged to contact YLP Co-Director <a href="mailto:sbarrera7@ucmerced.edu?subject=YLP%20Capstone%20Project%20Inquiry">Stephany Barrera</a> (sbarrera7@ucmerced.edu) as a first step in project proposal development.</p>
+		</div>
+		<!-- Contact -->
 
-    <!-- Contact -->
-    <p class="ylp-capstone-contact">
-      <strong>Ready to get started?</strong> Contact <a href="mailto:sbarrera7@ucmerced.edu?subject=YLP%20Capstone%20Project%20Inquiry">Stephany Barrera</a> at the Yosemite Leadership Program.
-    </p>
-
-  </div>
+		<p class="ylp-capstone-contact"><strong>Ready to get started?</strong> Contact <a href="mailto:sbarrera7@ucmerced.edu?subject=YLP%20Capstone%20Project%20Inquiry">Stephany Barrera</a> (sbarrera7@ucmerced.edu) at the Yosemite Leadership Program.</p>
+	</div>
 </section>
